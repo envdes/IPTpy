@@ -1,0 +1,2340 @@
+
+
+640 pes participating in computation for CLM
+
+-----------------------------------
+
+NODE#  NAME
+(    0)  nid005525
+(    1)  nid005525
+(    2)  nid005525
+(    3)  nid005525
+(    4)  nid005525
+(    5)  nid005525
+(    6)  nid005525
+(    7)  nid005525
+(    8)  nid005525
+(    9)  nid005525
+(   10)  nid005525
+(   11)  nid005525
+(   12)  nid005525
+(   13)  nid005525
+(   14)  nid005525
+(   15)  nid005525
+(   16)  nid005525
+(   17)  nid005525
+(   18)  nid005525
+(   19)  nid005525
+(   20)  nid005525
+(   21)  nid005525
+(   22)  nid005525
+(   23)  nid005525
+(   24)  nid005525
+(   25)  nid005525
+(   26)  nid005525
+(   27)  nid005525
+(   28)  nid005525
+(   29)  nid005525
+(   30)  nid005525
+(   31)  nid005525
+(   32)  nid005525
+(   33)  nid005525
+(   34)  nid005525
+(   35)  nid005525
+(   36)  nid005525
+(   37)  nid005525
+(   38)  nid005525
+(   39)  nid005525
+(   40)  nid005525
+(   41)  nid005525
+(   42)  nid005525
+(   43)  nid005525
+(   44)  nid005525
+(   45)  nid005525
+(   46)  nid005525
+(   47)  nid005525
+(   48)  nid005525
+(   49)  nid005525
+(   50)  nid005525
+(   51)  nid005525
+(   52)  nid005525
+(   53)  nid005525
+(   54)  nid005525
+(   55)  nid005525
+(   56)  nid005525
+(   57)  nid005525
+(   58)  nid005525
+(   59)  nid005525
+(   60)  nid005525
+(   61)  nid005525
+(   62)  nid005525
+(   63)  nid005525
+(   64)  nid005525
+(   65)  nid005525
+(   66)  nid005525
+(   67)  nid005525
+(   68)  nid005525
+(   69)  nid005525
+(   70)  nid005525
+(   71)  nid005525
+(   72)  nid005525
+(   73)  nid005525
+(   74)  nid005525
+(   75)  nid005525
+(   76)  nid005525
+(   77)  nid005525
+(   78)  nid005525
+(   79)  nid005525
+(   80)  nid005525
+(   81)  nid005525
+(   82)  nid005525
+(   83)  nid005525
+(   84)  nid005525
+(   85)  nid005525
+(   86)  nid005525
+(   87)  nid005525
+(   88)  nid005525
+(   89)  nid005525
+(   90)  nid005525
+(   91)  nid005525
+(   92)  nid005525
+(   93)  nid005525
+(   94)  nid005525
+(   95)  nid005525
+(   96)  nid005525
+(   97)  nid005525
+(   98)  nid005525
+(   99)  nid005525
+(  100)  nid005525
+(  101)  nid005525
+(  102)  nid005525
+(  103)  nid005525
+(  104)  nid005525
+(  105)  nid005525
+(  106)  nid005525
+(  107)  nid005525
+(  108)  nid005525
+(  109)  nid005525
+(  110)  nid005525
+(  111)  nid005525
+(  112)  nid005525
+(  113)  nid005525
+(  114)  nid005525
+(  115)  nid005525
+(  116)  nid005525
+(  117)  nid005525
+(  118)  nid005525
+(  119)  nid005525
+(  120)  nid005525
+(  121)  nid005525
+(  122)  nid005525
+(  123)  nid005525
+(  124)  nid005525
+(  125)  nid005525
+(  126)  nid005525
+(  127)  nid005525
+(  128)  nid005526
+(  129)  nid005526
+(  130)  nid005526
+(  131)  nid005526
+(  132)  nid005526
+(  133)  nid005526
+(  134)  nid005526
+(  135)  nid005526
+(  136)  nid005526
+(  137)  nid005526
+(  138)  nid005526
+(  139)  nid005526
+(  140)  nid005526
+(  141)  nid005526
+(  142)  nid005526
+(  143)  nid005526
+(  144)  nid005526
+(  145)  nid005526
+(  146)  nid005526
+(  147)  nid005526
+(  148)  nid005526
+(  149)  nid005526
+(  150)  nid005526
+(  151)  nid005526
+(  152)  nid005526
+(  153)  nid005526
+(  154)  nid005526
+(  155)  nid005526
+(  156)  nid005526
+(  157)  nid005526
+(  158)  nid005526
+(  159)  nid005526
+(  160)  nid005526
+(  161)  nid005526
+(  162)  nid005526
+(  163)  nid005526
+(  164)  nid005526
+(  165)  nid005526
+(  166)  nid005526
+(  167)  nid005526
+(  168)  nid005526
+(  169)  nid005526
+(  170)  nid005526
+(  171)  nid005526
+(  172)  nid005526
+(  173)  nid005526
+(  174)  nid005526
+(  175)  nid005526
+(  176)  nid005526
+(  177)  nid005526
+(  178)  nid005526
+(  179)  nid005526
+(  180)  nid005526
+(  181)  nid005526
+(  182)  nid005526
+(  183)  nid005526
+(  184)  nid005526
+(  185)  nid005526
+(  186)  nid005526
+(  187)  nid005526
+(  188)  nid005526
+(  189)  nid005526
+(  190)  nid005526
+(  191)  nid005526
+(  192)  nid005526
+(  193)  nid005526
+(  194)  nid005526
+(  195)  nid005526
+(  196)  nid005526
+(  197)  nid005526
+(  198)  nid005526
+(  199)  nid005526
+(  200)  nid005526
+(  201)  nid005526
+(  202)  nid005526
+(  203)  nid005526
+(  204)  nid005526
+(  205)  nid005526
+(  206)  nid005526
+(  207)  nid005526
+(  208)  nid005526
+(  209)  nid005526
+(  210)  nid005526
+(  211)  nid005526
+(  212)  nid005526
+(  213)  nid005526
+(  214)  nid005526
+(  215)  nid005526
+(  216)  nid005526
+(  217)  nid005526
+(  218)  nid005526
+(  219)  nid005526
+(  220)  nid005526
+(  221)  nid005526
+(  222)  nid005526
+(  223)  nid005526
+(  224)  nid005526
+(  225)  nid005526
+(  226)  nid005526
+(  227)  nid005526
+(  228)  nid005526
+(  229)  nid005526
+(  230)  nid005526
+(  231)  nid005526
+(  232)  nid005526
+(  233)  nid005526
+(  234)  nid005526
+(  235)  nid005526
+(  236)  nid005526
+(  237)  nid005526
+(  238)  nid005526
+(  239)  nid005526
+(  240)  nid005526
+(  241)  nid005526
+(  242)  nid005526
+(  243)  nid005526
+(  244)  nid005526
+(  245)  nid005526
+(  246)  nid005526
+(  247)  nid005526
+(  248)  nid005526
+(  249)  nid005526
+(  250)  nid005526
+(  251)  nid005526
+(  252)  nid005526
+(  253)  nid005526
+(  254)  nid005526
+(  255)  nid005526
+(  256)  nid005527
+(  257)  nid005527
+(  258)  nid005527
+(  259)  nid005527
+(  260)  nid005527
+(  261)  nid005527
+(  262)  nid005527
+(  263)  nid005527
+(  264)  nid005527
+(  265)  nid005527
+(  266)  nid005527
+(  267)  nid005527
+(  268)  nid005527
+(  269)  nid005527
+(  270)  nid005527
+(  271)  nid005527
+(  272)  nid005527
+(  273)  nid005527
+(  274)  nid005527
+(  275)  nid005527
+(  276)  nid005527
+(  277)  nid005527
+(  278)  nid005527
+(  279)  nid005527
+(  280)  nid005527
+(  281)  nid005527
+(  282)  nid005527
+(  283)  nid005527
+(  284)  nid005527
+(  285)  nid005527
+(  286)  nid005527
+(  287)  nid005527
+(  288)  nid005527
+(  289)  nid005527
+(  290)  nid005527
+(  291)  nid005527
+(  292)  nid005527
+(  293)  nid005527
+(  294)  nid005527
+(  295)  nid005527
+(  296)  nid005527
+(  297)  nid005527
+(  298)  nid005527
+(  299)  nid005527
+(  300)  nid005527
+(  301)  nid005527
+(  302)  nid005527
+(  303)  nid005527
+(  304)  nid005527
+(  305)  nid005527
+(  306)  nid005527
+(  307)  nid005527
+(  308)  nid005527
+(  309)  nid005527
+(  310)  nid005527
+(  311)  nid005527
+(  312)  nid005527
+(  313)  nid005527
+(  314)  nid005527
+(  315)  nid005527
+(  316)  nid005527
+(  317)  nid005527
+(  318)  nid005527
+(  319)  nid005527
+(  320)  nid005527
+(  321)  nid005527
+(  322)  nid005527
+(  323)  nid005527
+(  324)  nid005527
+(  325)  nid005527
+(  326)  nid005527
+(  327)  nid005527
+(  328)  nid005527
+(  329)  nid005527
+(  330)  nid005527
+(  331)  nid005527
+(  332)  nid005527
+(  333)  nid005527
+(  334)  nid005527
+(  335)  nid005527
+(  336)  nid005527
+(  337)  nid005527
+(  338)  nid005527
+(  339)  nid005527
+(  340)  nid005527
+(  341)  nid005527
+(  342)  nid005527
+(  343)  nid005527
+(  344)  nid005527
+(  345)  nid005527
+(  346)  nid005527
+(  347)  nid005527
+(  348)  nid005527
+(  349)  nid005527
+(  350)  nid005527
+(  351)  nid005527
+(  352)  nid005527
+(  353)  nid005527
+(  354)  nid005527
+(  355)  nid005527
+(  356)  nid005527
+(  357)  nid005527
+(  358)  nid005527
+(  359)  nid005527
+(  360)  nid005527
+(  361)  nid005527
+(  362)  nid005527
+(  363)  nid005527
+(  364)  nid005527
+(  365)  nid005527
+(  366)  nid005527
+(  367)  nid005527
+(  368)  nid005527
+(  369)  nid005527
+(  370)  nid005527
+(  371)  nid005527
+(  372)  nid005527
+(  373)  nid005527
+(  374)  nid005527
+(  375)  nid005527
+(  376)  nid005527
+(  377)  nid005527
+(  378)  nid005527
+(  379)  nid005527
+(  380)  nid005527
+(  381)  nid005527
+(  382)  nid005527
+(  383)  nid005527
+(  384)  nid005528
+(  385)  nid005528
+(  386)  nid005528
+(  387)  nid005528
+(  388)  nid005528
+(  389)  nid005528
+(  390)  nid005528
+(  391)  nid005528
+(  392)  nid005528
+(  393)  nid005528
+(  394)  nid005528
+(  395)  nid005528
+(  396)  nid005528
+(  397)  nid005528
+(  398)  nid005528
+(  399)  nid005528
+(  400)  nid005528
+(  401)  nid005528
+(  402)  nid005528
+(  403)  nid005528
+(  404)  nid005528
+(  405)  nid005528
+(  406)  nid005528
+(  407)  nid005528
+(  408)  nid005528
+(  409)  nid005528
+(  410)  nid005528
+(  411)  nid005528
+(  412)  nid005528
+(  413)  nid005528
+(  414)  nid005528
+(  415)  nid005528
+(  416)  nid005528
+(  417)  nid005528
+(  418)  nid005528
+(  419)  nid005528
+(  420)  nid005528
+(  421)  nid005528
+(  422)  nid005528
+(  423)  nid005528
+(  424)  nid005528
+(  425)  nid005528
+(  426)  nid005528
+(  427)  nid005528
+(  428)  nid005528
+(  429)  nid005528
+(  430)  nid005528
+(  431)  nid005528
+(  432)  nid005528
+(  433)  nid005528
+(  434)  nid005528
+(  435)  nid005528
+(  436)  nid005528
+(  437)  nid005528
+(  438)  nid005528
+(  439)  nid005528
+(  440)  nid005528
+(  441)  nid005528
+(  442)  nid005528
+(  443)  nid005528
+(  444)  nid005528
+(  445)  nid005528
+(  446)  nid005528
+(  447)  nid005528
+(  448)  nid005528
+(  449)  nid005528
+(  450)  nid005528
+(  451)  nid005528
+(  452)  nid005528
+(  453)  nid005528
+(  454)  nid005528
+(  455)  nid005528
+(  456)  nid005528
+(  457)  nid005528
+(  458)  nid005528
+(  459)  nid005528
+(  460)  nid005528
+(  461)  nid005528
+(  462)  nid005528
+(  463)  nid005528
+(  464)  nid005528
+(  465)  nid005528
+(  466)  nid005528
+(  467)  nid005528
+(  468)  nid005528
+(  469)  nid005528
+(  470)  nid005528
+(  471)  nid005528
+(  472)  nid005528
+(  473)  nid005528
+(  474)  nid005528
+(  475)  nid005528
+(  476)  nid005528
+(  477)  nid005528
+(  478)  nid005528
+(  479)  nid005528
+(  480)  nid005528
+(  481)  nid005528
+(  482)  nid005528
+(  483)  nid005528
+(  484)  nid005528
+(  485)  nid005528
+(  486)  nid005528
+(  487)  nid005528
+(  488)  nid005528
+(  489)  nid005528
+(  490)  nid005528
+(  491)  nid005528
+(  492)  nid005528
+(  493)  nid005528
+(  494)  nid005528
+(  495)  nid005528
+(  496)  nid005528
+(  497)  nid005528
+(  498)  nid005528
+(  499)  nid005528
+(  500)  nid005528
+(  501)  nid005528
+(  502)  nid005528
+(  503)  nid005528
+(  504)  nid005528
+(  505)  nid005528
+(  506)  nid005528
+(  507)  nid005528
+(  508)  nid005528
+(  509)  nid005528
+(  510)  nid005528
+(  511)  nid005528
+(  512)  nid005530
+(  513)  nid005530
+(  514)  nid005530
+(  515)  nid005530
+(  516)  nid005530
+(  517)  nid005530
+(  518)  nid005530
+(  519)  nid005530
+(  520)  nid005530
+(  521)  nid005530
+(  522)  nid005530
+(  523)  nid005530
+(  524)  nid005530
+(  525)  nid005530
+(  526)  nid005530
+(  527)  nid005530
+(  528)  nid005530
+(  529)  nid005530
+(  530)  nid005530
+(  531)  nid005530
+(  532)  nid005530
+(  533)  nid005530
+(  534)  nid005530
+(  535)  nid005530
+(  536)  nid005530
+(  537)  nid005530
+(  538)  nid005530
+(  539)  nid005530
+(  540)  nid005530
+(  541)  nid005530
+(  542)  nid005530
+(  543)  nid005530
+(  544)  nid005530
+(  545)  nid005530
+(  546)  nid005530
+(  547)  nid005530
+(  548)  nid005530
+(  549)  nid005530
+(  550)  nid005530
+(  551)  nid005530
+(  552)  nid005530
+(  553)  nid005530
+(  554)  nid005530
+(  555)  nid005530
+(  556)  nid005530
+(  557)  nid005530
+(  558)  nid005530
+(  559)  nid005530
+(  560)  nid005530
+(  561)  nid005530
+(  562)  nid005530
+(  563)  nid005530
+(  564)  nid005530
+(  565)  nid005530
+(  566)  nid005530
+(  567)  nid005530
+(  568)  nid005530
+(  569)  nid005530
+(  570)  nid005530
+(  571)  nid005530
+(  572)  nid005530
+(  573)  nid005530
+(  574)  nid005530
+(  575)  nid005530
+(  576)  nid005530
+(  577)  nid005530
+(  578)  nid005530
+(  579)  nid005530
+(  580)  nid005530
+(  581)  nid005530
+(  582)  nid005530
+(  583)  nid005530
+(  584)  nid005530
+(  585)  nid005530
+(  586)  nid005530
+(  587)  nid005530
+(  588)  nid005530
+(  589)  nid005530
+(  590)  nid005530
+(  591)  nid005530
+(  592)  nid005530
+(  593)  nid005530
+(  594)  nid005530
+(  595)  nid005530
+(  596)  nid005530
+(  597)  nid005530
+(  598)  nid005530
+(  599)  nid005530
+(  600)  nid005530
+(  601)  nid005530
+(  602)  nid005530
+(  603)  nid005530
+(  604)  nid005530
+(  605)  nid005530
+(  606)  nid005530
+(  607)  nid005530
+(  608)  nid005530
+(  609)  nid005530
+(  610)  nid005530
+(  611)  nid005530
+(  612)  nid005530
+(  613)  nid005530
+(  614)  nid005530
+(  615)  nid005530
+(  616)  nid005530
+(  617)  nid005530
+(  618)  nid005530
+(  619)  nid005530
+(  620)  nid005530
+(  621)  nid005530
+(  622)  nid005530
+(  623)  nid005530
+(  624)  nid005530
+(  625)  nid005530
+(  626)  nid005530
+(  627)  nid005530
+(  628)  nid005530
+(  629)  nid005530
+(  630)  nid005530
+(  631)  nid005530
+(  632)  nid005530
+(  633)  nid005530
+(  634)  nid005530
+(  635)  nid005530
+(  636)  nid005530
+(  637)  nid005530
+(  638)  nid005530
+(  639)  nid005530
+ atm component                 = cam
+ rof component                 = mosart
+ glc component                 = sglc
+ atm_prognostic                =  T
+ rof_prognostic                =  T
+ glc_present                   =  F
+ flds_scalar_name              = cpl_scalars
+ flds_scalar_num               =        4
+ flds_scalar_index_nx          =        1
+ flds_scalar_index_ny          =        2
+ flds_scalar_index_nextsw_cday =        3
+flds_co2a=  T
+flds_co2b=  F
+flds_co2c=  F
+sending co2 to atm     =  F
+receiving co2 from atm =  T
+(shr_drydep_read) Read in drydep_inparm namelist from: drv_flds_in
+(shr_drydep_init) Number of dry deposition fields transfered is **
+(shr_fire_emis_readnl) Read in fire_emis_readnl namelist from: drv_flds_in
+(shr_megan_readnl) Read in megan_emis_readnl namelist from: drv_flds_in
+ MEGAN entries:
+  species : ISOP                                                            
+      1.0000 * isoprene                                                        
+  species : MTERP                                                           
+      1.0000 * carene_3                                                        
+      1.0000 * pinene_a                                                        
+      1.0000 * thujene_a                                                       
+      1.0000 * bornene                                                         
+      1.0000 * terpineol_4                                                     
+      1.0000 * terpineol_a                                                     
+      1.0000 * terpinyl_ACT_a                                                  
+      1.0000 * myrtenal                                                        
+      1.0000 * sabinene                                                        
+      1.0000 * pinene_b                                                        
+      1.0000 * camphene                                                        
+      1.0000 * fenchene_a                                                      
+      1.0000 * limonene                                                        
+      1.0000 * phellandrene_a                                                  
+      1.0000 * terpinene_a                                                     
+      1.0000 * terpinene_g                                                     
+      1.0000 * terpinolene                                                     
+      1.0000 * phellandrene_b                                                  
+      1.0000 * linalool                                                        
+      1.0000 * ionone_b                                                        
+      1.0000 * geranyl_acetone                                                 
+      1.0000 * neryl_acetone                                                   
+      1.0000 * jasmone                                                         
+      1.0000 * verbenene                                                       
+      1.0000 * ipsenol                                                         
+      1.0000 * myrcene                                                         
+      1.0000 * ocimene_t_b                                                     
+      1.0000 * ocimene_al                                                      
+      1.0000 * ocimene_c_b                                                     
+      1.0000 * 2met_nonatriene                                                 
+  species : BCARY                                                           
+      1.0000 * farnescene_a                                                    
+      1.0000 * caryophyllene_b                                                 
+      1.0000 * acoradiene                                                      
+      1.0000 * aromadendrene                                                   
+      1.0000 * bergamotene_a                                                   
+      1.0000 * bergamotene_b                                                   
+      1.0000 * bisabolene_a                                                    
+      1.0000 * bisabolene_b                                                    
+      1.0000 * bourbonene_b                                                    
+      1.0000 * cadinene_d                                                      
+      1.0000 * cadinene_g                                                      
+      1.0000 * cedrene_a                                                       
+      1.0000 * copaene_a                                                       
+      1.0000 * cubebene_a                                                      
+      1.0000 * cubebene_b                                                      
+      1.0000 * elemene_b                                                       
+      1.0000 * farnescene_b                                                    
+      1.0000 * germacrene_B                                                    
+      1.0000 * germacrene_D                                                    
+      1.0000 * gurjunene_b                                                     
+      1.0000 * humulene_a                                                      
+      1.0000 * humulene_g                                                      
+      1.0000 * isolongifolene                                                  
+      1.0000 * longifolene                                                     
+      1.0000 * longipinene                                                     
+      1.0000 * muurolene_a                                                     
+      1.0000 * muurolene_g                                                     
+      1.0000 * selinene_b                                                      
+      1.0000 * selinene_d                                                      
+      1.0000 * nerolidol_c                                                     
+      1.0000 * nerolidol_t                                                     
+  species : BIGALK                                                          
+      1.0000 * tricyclene                                                      
+      1.0000 * camphor                                                         
+      1.0000 * fenchone                                                        
+      1.0000 * thujone_a                                                       
+      1.0000 * thujone_b                                                       
+      1.0000 * cineole_1_8                                                     
+      1.0000 * borneol                                                         
+      1.0000 * bornyl_ACT                                                      
+      1.0000 * cedrol                                                          
+      1.0000 * decanal                                                         
+      1.0000 * heptanal                                                        
+      1.0000 * heptane                                                         
+      1.0000 * hexane                                                          
+      1.0000 * nonanal                                                         
+      1.0000 * octanal                                                         
+      1.0000 * octanol                                                         
+      1.0000 * oxopentanal                                                     
+      1.0000 * pentane                                                         
+      1.0000 * hexanal                                                         
+      1.0000 * hexanol_1                                                       
+      1.0000 * pentanal                                                        
+      1.0000 * heptanone                                                       
+  species : BIGENE                                                          
+      1.0000 * 2met_styrene                                                    
+      1.0000 * estragole                                                       
+      1.0000 * piperitone                                                      
+      1.0000 * linalool_OXD_c                                                  
+      1.0000 * linalool_OXD_t                                                  
+      1.0000 * dodecene_1                                                      
+      1.0000 * met_heptenone                                                   
+      1.0000 * nonenal                                                         
+      1.0000 * octenol_1e3ol                                                   
+      1.0000 * tetradecene_1                                                   
+      1.0000 * butene                                                          
+      1.0000 * diallyl_2s                                                      
+      1.0000 * met_propenyl_2s                                                 
+      1.0000 * met_jasmonate                                                   
+      1.0000 * hexenal_c3                                                      
+      1.0000 * hexenal_t2                                                      
+      1.0000 * hexenol_c3                                                      
+      1.0000 * hexenyl_ACT_c3                                                  
+  species : TOLUENE                                                         
+      1.0000 * toluene                                                         
+      1.0000 * met_benzoate                                                    
+      1.0000 * phenyl_CCO                                                      
+      1.0000 * met_salicylate                                                  
+      1.0000 * indole                                                          
+      1.0000 * anisole                                                         
+      1.0000 * benzyl-acetate                                                  
+      1.0000 * benzyl-alcohol                                                  
+      1.0000 * Napthalene                                                      
+  species : XYLENES                                                         
+      1.0000 * cymene_p                                                        
+      1.0000 * cymene_o                                                        
+      1.0000 * homosalate                                                      
+      1.0000 * meta-cymenene                                                   
+  species : CH3OH                                                           
+      1.0000 * methanol                                                        
+  species : CH3COCH3                                                        
+      1.0000 * acetone                                                         
+  species : CH3CHO                                                          
+      1.0000 * acetaldehyde                                                    
+  species : C2H5OH                                                          
+      1.0000 * ethanol                                                         
+  species : HCOOH                                                           
+      1.0000 * formic_acid                                                     
+  species : CH2O                                                            
+      1.0000 * formaldehyde                                                    
+  species : CH3COOH                                                         
+      1.0000 * acetic_acid                                                     
+  species : BZALD                                                           
+      1.0000 * benzaldehyde                                                    
+  species : MEK                                                             
+      1.0000 * butanone_2                                                      
+  species : CO                                                              
+      1.0000 * carbon_monoxide                                                 
+  species : C2H6                                                            
+      1.0000 * ethane                                                          
+  species : C2H4                                                            
+      1.0000 * ethene                                                          
+  species : HCN                                                             
+      1.0000 * hydrogen_cyanide                                                
+  species : C3H8                                                            
+      1.0000 * propane                                                         
+  species : C3H6                                                            
+      1.0000 * propene                                                         
+(shr_carma_readnl) Read in carma_inparm namelist from: drv_flds_in
+ shr_carma_readnl:  no carma_inparm namelist found in drv_flds_in
+(shr_ndep_readnl) Read in ndep_inparm namelist from: drv_flds_in
+ LND: PIO numiotasks=           5
+ LND: PIO stride=         128
+ LND: PIO rearranger=           2
+ LND: PIO root=           1
+ dtime =         1800
+(shr_orb_params) ------ Computed Orbital Parameters ------
+(shr_orb_params) Eccentricity      =   1.670366E-02
+(shr_orb_params) Obliquity (deg)   =   2.343977E+01
+(shr_orb_params) Obliquity (rad)   =   4.091011E-01
+(shr_orb_params) Long of perh(deg) =   1.028955E+02
+(shr_orb_params) Long of perh(rad) =   4.937458E+00
+(shr_orb_params) Long at v.e.(rad) =  -3.247250E-02
+(shr_orb_params) -----------------------------------------
+ unknown
+
+ Attempting to initialize the land model .....
+
+ Attempting to initialize run control settings .....
+ Read in clm_inparm namelist from: lnd_in
+ using interpolated initial dataset file ./init_generated_files/finidat_interp_dest.nc
+ Read in clm_initinterp_inparm  namelist
+ (OPNFIL): Successfully opened file lnd_in on unit=           99
+  
+ initInterp settings:
+&CLM_INITINTERP_INPARM
+ INIT_INTERP_METHOD="general                                                         ",
+ INIT_INTERP_FILL_MISSING_WITH_NATVEG=F,
+ /
+  
+  
+ rooting_profile settings:
+   rooting_profile_method_water  =            1
+   (rooting_profile_varindex_water  =            1 )
+   rooting_profile_method_carbon =            1
+   (rooting_profile_varindex_carbon  =            2 )
+  
+ soilwater_movement settings:
+   soilwater_movement_method  =            1
+   upper_boundary_condition   =            1
+   lower_boundary_condition   =            2
+   use_bedrock                =  T
+   dtmin                      =    60.000000000000000     
+   verySmall                  =    1.0000000000000000E-008
+   xTolerUpper                =   0.10000000000000001     
+   xTolerLower                =    1.0000000000000000E-002
+   expensive                  =           42
+   inexpensive                =            1
+   flux_calculation           =            1
+  
+ soil_resis settings:
+   soil_resis_method  =            1
+ Read in canopyfluxes_inparm  namelist
+ (OPNFIL): Successfully opened file lnd_in on unit=           99
+  
+ canopyfluxes_inparm settings:
+&CANOPYFLUXES_INPARM
+ USE_UNDERCANOPY_STABILITY=F,
+ USE_BIOMASS_HEAT_STORAGE=F,
+ ITMAX_CANOPY_FLUXES=40         ,
+ /
+  
+ Read in clm_CanopyHydrology_inparm  namelist
+ (OPNFIL): Successfully opened file lnd_in on unit=           99
+  
+ canopyhydrology settings:
+   interception_fraction        =    1.0000000000000000     
+   maximum_leaf_wetted_fraction =    5.0000000000000003E-002
+   use_clm5_fpi                 =  T
+ Read in surfacealbedo_inparm  namelist
+ (OPNFIL): Successfully opened file lnd_in on unit=           99
+
+ surfacealbedo_inparm settings
+&SURFACEALBEDO_INPARM
+ SNOWVEG_AFFECTS_RADIATION=T,
+ /
+
+ Read in clm_SnowHydrology_inparm  namelist
+ (OPNFIL): Successfully opened file lnd_in on unit=           99
+  
+ SnowHydrology settings:
+&CLM_SNOWHYDROLOGY_INPARM
+ WIND_DEPENDENT_SNOW_DENSITY=T,
+ SNOW_OVERBURDEN_COMPACTION_METHOD="Vionnet2012                                                     ",
+ LOTMP_SNOWDENSITY_METHOD="Slater2017               ",
+ UPPLIM_DESTRUCT_METAMORPH=  175.00000000000000     ,
+ OVERBURDEN_COMPRESS_TFACTOR=  8.0000000000000002E-002,
+ RESET_SNOW=F,
+ RESET_SNOW_GLC=F,
+ RESET_SNOW_GLC_ELA=  1000000000.0000000     ,
+ SNOW_DZMIN_1=  1.0000000000000000E-002,
+ SNOW_DZMAX_L_1=  2.9999999999999999E-002,
+ SNOW_DZMAX_U_1=  2.0000000000000000E-002,
+ SNOW_DZMIN_2=  1.4999999999999999E-002,
+ SNOW_DZMAX_L_2=  7.0000000000000007E-002,
+ SNOW_DZMAX_U_2=  5.0000000000000003E-002,
+ /
+  
+ Read in clmu_inparm  namelist
+ (OPNFIL): Successfully opened file lnd_in on unit=           99
+    urban air conditioning/heating and wasteheat   = ON_WASTEHEAT    
+    urban traffic flux   =  F
+ Read in clm_humanindex_inparm  namelist
+ (OPNFIL): Successfully opened file lnd_in on unit=           99
+ Read in luna  namelist
+ (OPNFIL): Successfully opened file lnd_in on unit=           99
+  
+ luna settings:
+&LUNA
+ JMAXB1= 0.17000000000000001     ,
+ /
+  
+ Read in soilhydrology_inparm  namelist
+ (OPNFIL): Successfully opened file lnd_in on unit=           99
+  
+ soilhydrology_inparm settings:
+&SOILHYDROLOGY_INPARM
+ BASEFLOW_SCALAR=  1.0000000000000000E-003,
+ /
+  
+ Successfully initialized run control settings
+
+ Attempting to read maxsoil_patches and numcft from the surface data .....
+(GETFIL): attempting to find local file 
+surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+ Successfully read maxsoil_patches and numcft from the surface data
+
+ Attempting to read nlevurb from the surface data .....
+(GETFIL): attempting to find local file 
+surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+ Successfully read nlevurb from the surface data
+
+ soil_layerstruct_predefined varpar 20SL_8.5m       
+ soil_layerstruct_userdefined varpar   -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000     
+ nlevsoi, nlevgrnd varpar           20          25
+ CLM varpar subsurface discretization levels 
+    nlevsoi =  20
+    nlevgrnd =  25
+    nlevdecomp =   1
+    nlevdecomp_full =   1
+    nlevlak =  10
+
+ define run:
+    source                = Community Terrestrial Systems Model
+    model_version         = unknown
+    run type              = initial
+    case title            = ipt-py_ceds
+    username              = yuansun
+    hostname              = archer2
+ process control parameters:
+     use_lch4 =  F
+     use_nitrif_denitrif =  F
+     use_extralakelayers =  F
+     use_vichydro =  F
+     use_excess_ice =  F
+     use_cn =  F
+     use_cndv =  F
+     use_crop =  F
+     use_fertilizer =  F
+     use_grainproduct =  F
+     crop_residue_removal_frac =    0.0000000000000000     
+     o3_veg_stress_method = unset                                                           
+     use_snicar_frc =  F
+     snicar_use_aerosol =  T
+     use_vancouver =  F
+     use_mexicocity =  F
+     use_noio =  F
+     use_SSRE =  F
+ input data files:
+    PFT physiology and parameters file = /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/paramdata/clm50_params.c240208.nc
+    surface data   = /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+    fatmlndfrc not set, setting frac/mask to 1
+    Convert ocean to land =  T
+    Number of ACTIVE PFTS (0 means input pft data NOT collapsed to n_dom_pfts) =           0
+    Number of ACTIVE LANDUNITS (0 means input landunit data NOT collapsed to n_dom_landunits) =           0
+    Collapse urban landunits; done before collapsing all landunits to n_dom_landunits; .false. means do nothing i.e. keep all the urban landunits, though n_dom_landunits may still remove them = F
+    Threshold above which the model keeps the soil landunit =   0.0000000000000000     
+    Threshold above which the model keeps the crop landunit =   0.0000000000000000     
+    Threshold above which the model keeps the glacier landunit =   0.0000000000000000     
+    Threshold above which the model keeps the lake landunit =   0.0000000000000000     
+    Threshold above which the model keeps the wetland landunit =   0.0000000000000000     
+    Threshold above which the model keeps the urban landunits =   0.0000000000000000     
+     use_lcz =  F
+   snow optical properties file = /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/snicardata/snicar_optics_5bnd_c013122.nc
+   snow aging parameters file = /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/snicardata/snicar_drdt_bst_fit_60_c070416.nc
+    SNICAR: downward solar radiation spectrum type =mid_latitude_winter      
+    SNICAR: dust optics type = sahara                   
+    SNICAR: number of bands in snow albedo calculation =           5
+    SNICAR: snow grain shape type = sphere                   
+    SNICAR: BC-snow internal mixing =  F
+    SNICAR: dust-snow internal mixing =  F
+    SNICAR: OC in snow =  F
+   Number of snow layers =      12
+   Max snow depth (mm) =    0.1000000000D+05
+   glc number of elevation classes =      10
+   glc CLM glacier areas and topography will NOT evolve dynamically
+   glc snow persistence max days =        0
+   initial data: 
+./init_generated_files/finidat_interp_dest.nc
+   atmospheric forcing data is from cesm atm model
+Restart parameters:
+   restart pointer file directory     = .
+   restart pointer file name          = rpointer.lnd
+model physics parameters:
+   CO2 volume mixing ratio                = diagnostic
+    land-ice albedos      (unitless 0-1)   =   0.50000000000000000       0.29999999999999999     
+    hillslope hydrology    =  F
+    downscale hillslope meteorology    =  T
+    hillslope routing      =  F
+    pre-defined soil layer structure = 20SL_8.5m       
+    user-defined soil layer structure =   -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000       -9999999.0000000000     
+    user-defined number of soil layers =     -9999999
+    plant hydraulic stress =  T
+    dynamic roots          =  F
+    nsegspc              =           35
+  perchroot (plant water stress based on unfrozen layers only) =  F
+  perchroot (plant water stress based on time-integrated active layer only) =  F
+
+ Lake Model Namelists:
+ Increased mixing relative to Hostetler wind-driven eddy expression will be used for deep lakes exceeding depth    25.000000000000000       by a factor of    10.000000000000000      .
+ Albedo over melting lakes will approach values (visible, NIR):  0.10000000000000001       0.10000000000000001      as compared with 0.60, 0.40 for cold frozen lakes with no snow.
+ plant nitrogen model namelists:
+   use_flexibleCN =  F
+   use_luna =  T
+   ED/FATES: 
+     use_fates =  F
+  
+ dynamic_subgrid settings:
+&DYNAMIC_SUBGRID
+ FLANDUSE_TIMESERIES="/work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/landuse.timeseries_0.9x1.25_SSP3-7.0_1850-2100_78pfts_c240216.nc                                                                                                                     ",
+ DO_TRANSIENT_PFTS=T,
+ DO_TRANSIENT_CROPS=T,
+ DO_TRANSIENT_LAKES=T,
+ DO_TRANSIENT_URBAN=T,
+ DO_HARVEST=F,
+ DO_GROSSUNREP=F,
+ RESET_DYNBAL_BASELINES=F,
+ FOR_TESTING_ALLOW_NON_ANNUAL_CHANGES=F,
+ FOR_TESTING_ZERO_DYNBAL_FLUXES=F,
+ /
+  
+  
+ hillslope_properties settings:
+   hillslope_pft_distribution_method = Standard                                          
+   hillslope_soil_profile_method     = Uniform                                           
+
+ Input land mesh file /work/n02/n02/yuansun/cesm/cesm_inputdata/share/meshes/fv0.9x1.25_141008_polemod_ESMFmesh.nc
+ Input mask mesh file /work/n02/n02/yuansun/cesm/cesm_inputdata/share/meshes/gx1v7_151008_ESMFmesh.nc
+ Obtaining land mask and fraction from mask file /work/n02/n02/yuansun/cesm/cesm_inputdata/share/meshes/gx1v7_151008_ESMFmesh.nc
+
+ Attempting to read global dimensions from surface dataset
+(GETFIL): attempting to find local file 
+surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+global ni,nj =      288       192
+model grid is 2-dimensional
+
+ Computing land fraction and land mask by mapping mask from mesh_mask file
+  decomp precompute numg,nclumps,seglen1,avg_seglen,nsegspc=       21013         640 T   1.00000000       32.8328133    
+  Surface Grid Characteristics
+    longitude points               =          288
+    latitude points                =          192
+    total number of land gridcells =        21013
+  Decomposition Characteristics
+    clumps per process             =            1
+
+ Attempting to read GLACIER_REGION...
+(GETFIL): attempting to find local file 
+surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+ (OPNFIL): Successfully opened file lnd_in on unit=           99
+  
+ clm_glacier_behavior settings:
+&CLM_GLACIER_BEHAVIOR
+ GLACIER_REGION_BEHAVIOR="single_at_atm_topo              ", 2*"virtual                         ","multiple                        ", 7*"UNSET                           ",
+ GLACIER_REGION_MELT_BEHAVIOR="remains_in_place                ", 3*"replaced_by_ice                 ", 7*"UNSET                           ",
+ GLACIER_REGION_ICE_RUNOFF_BEHAVIOR= 2*"melted                          ", 2*"remains_ice                     ", 7*"UNSET                           ",
+ /
+  
+  Reading in urban input data from fsurdat file ...
+(GETFIL): attempting to find local file 
+surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+ UrbanInput                      /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+  Sucessfully read urban input data
+
+ Attempting to read PFT physiological data .....
+(GETFIL): attempting to find local file 
+clm50_params.c240208.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/paramdata/clm50_params.c240208.nc
+ Successfully read PFT physiological data
+
+ Attempting to read surface boundary data .....
+(GETFIL): attempting to find local file 
+surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+ check_var: variable xc is not on dataset
+ surfrd_get_data lon_var = LONGXY lat_var =LATIXY
+ ncd_inqvid: variable irrigation_method is not on dataset
+  WARNING: irrigation_method NOT on surfdata file; using default
+ collapse_crop_types irrigate=.F., so merging irrigated pfts with rainfed
+ collapse_crop_types merging crops into C3 generic crops
+ Successfully read surface boundary data
+
+ Attempting to read landuse.timeseries data .....
+(GETFIL): attempting to find local file 
+landuse.timeseries_0.9x1.25_SSP3-7.0_1850-2100_78pfts_c240216.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/landuse.timeseries_0.9x1.25_SSP3-7.0_1850-2100_78pfts_c240216.nc
+ Attempting to read landuse.timeseries data .....
+(GETFIL): attempting to find local file 
+landuse.timeseries_0.9x1.25_SSP3-7.0_1850-2100_78pfts_c240216.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/landuse.timeseries_0.9x1.25_SSP3-7.0_1850-2100_78pfts_c240216.nc
+  Surface Grid Characteristics
+    longitude points          =          288
+    latitude points           =          192
+    total number of gridcells =        21013
+    total number of landunits =        64409
+    total number of columns   =       143960
+    total number of patches   =       438142
+    total number of cohorts   =            0
+  Decomposition Characteristics
+    clumps per process        =            1
+
+
+proc =            0 beg gridcell=            1 end gridcell=           33 gridcells per proc =           33
+proc =            0 beg landunit=            1 end landunit=          100 landunits per proc =          100
+proc =            0 beg column  =            1 end column  =          219 columns per proc =          219
+proc =            0 beg patch   =            1 end patch   =          681 patches per proc =          681
+proc =            0 beg cohort  =            1 end cohort  =            0 coh per proc =            0
+proc =            0 nclumps =            1
+ Read in clm_canopy_inparm  namelist
+ (OPNFIL): Successfully opened file lnd_in on unit=           99
+ Read in photosyns_inparm  namelist
+ (OPNFIL): Successfully opened file lnd_in on unit=           99
+  
+ photosyns_inparm settings:
+&PHOTOSYNS_INPARM
+ LEAFRESP_METHOD=0          ,
+ LIGHT_INHIBIT=T,
+ ROOTSTEM_ACC=F,
+ STOMATALCOND_METHOD="Medlyn2011                                        ",
+ MODIFYPHOTO_AND_LMR_FORCROP=T,
+ /
+  
+ paramMod.F90::readParameters :: reading CLM  parameters 
+(GETFIL): attempting to find local file 
+clm50_params.c240208.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/paramdata/clm50_params.c240208.nc
+  ******** CLM Time Manager Configuration ********
+   Calendar type:            NO_LEAP
+   Timestep size (seconds):          1800
+   Start date (yr mon day tod):             2000           1          16           0
+   Reference date (yr mon day tod):         2000           1          16           0
+   Current step number:                 0
+   Current date (yr mon day tod):           2000           1          16           0
+  ************************************************
+  Skip balance checking for the first            3  time steps
+(GETFIL): attempting to find local file 
+clm50_params.c240208.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/paramdata/clm50_params.c240208.nc
+  
+urbantv_streams settings:
+  stream_year_first_urbantv  =     1850
+  stream_year_last_urbantv   =     2106
+  model_year_align_urbantv   =     1850
+  stream_fldFileName_urbantv = /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/urbandata/CLM50_tbuildmax_Oleson_2016_0.9x1.25_simyr1849-2106_c160923.nc                                                                                                                                     
+  stream_meshfile_urbantv    = /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/urbandata/CLM50_tbuildmax_Oleson_2016_0.9x1_ESMFmesh_cdf5_100621.nc                                                                                                                                          
+  urbantv_tintalgo           = linear                                                                                                                                                                                                                                                          
+  stream_varname         = tbuildmax_TBD
+  stream_varname         = tbuildmax_HD
+  stream_varname         = tbuildmax_MD
+  
+(shr_stream_getCalendar) opening stream filename = /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/urbandata/CLM50_tbuildmax_Oleson_2016_0.9x1.25_simyr1849-2106_c160923.nc
+(shr_stream_getCalendar) closing stream filename = /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/urbandata/CLM50_tbuildmax_Oleson_2016_0.9x1.25_simyr1849-2106_c160923.nc
+ (shr_strdata_set_stream_domain) stream_nlev =            1
+(shr_sdat_init) Creating field bundle array fldbun_data of size 2 for stream        1
+    adding field tbuildmax_TBD to fldbun_data for stream        1
+    adding field tbuildmax_HD to fldbun_data for stream        1
+    adding field tbuildmax_MD to fldbun_data for stream        1
+
+(shr_strdata_print) ----------------------------------------------------------
+(shr_strdata_print) name        = Urban time varying data
+(shr_strdata_print) calendar    = NO_LEAP
+(shr_strdata_print) eccen       =  1.000000E+36
+(shr_strdata_print) mvelpp      =  1.000000E+36
+(shr_strdata_print) lambm0      =  1.000000E+36
+(shr_strdata_print) obliqr      =  1.000000E+36
+(shr_strdata_print) pio_iotype  =      1
+(shr_strdata_print) nstreams    =      1
+(shr_strdata_print) Per stream information 
+(shr_strdata_print)   taxMode ( 1) = extend
+(shr_strdata_print)   dtlimit ( 1) =  1.000000E+30
+(shr_strdata_print)   mapalgo ( 1) = nn
+(shr_strdata_print)   tintalgo( 1) = linear
+(shr_strdata_print)   readmode( 1) = single
+(shr_strdata_print)   vectors ( 1) = null
+(shr_strdata_print)   src_mask( 1) = 0
+(shr_strdata_print)   dst_mask( 1) = 0
+(shr_strdata_print)  
+(shr_strdata_print) ----------------------------------------------------------
+  successfully initialized sdat
+(shr_strdata_readstrm) opening   : /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/urbandata/CLM50_tbuildmax_Oleson_2016_0.9x1.25_simyr1849-2106_c160923.nc
+(shr_strdata_readstrm) setting pio descriptor : /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/urbandata/CLM50_tbuildmax_Oleson_2016_0.9x1.25_simyr1849-2106_c160923.nc
+(shr_strdata_set_stream_iodesc) setting iodesc for : tbuildmax_TBD with dimlens(1), dimlens(2) =      288       192   variable as time dimension time
+(shr_strdata_readstrm) reading file lb: /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/urbandata/CLM50_tbuildmax_Oleson_2016_0.9x1.25_simyr1849-2106_c160923.nc     152
+(shr_strdata_readstrm) reading file ub: /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/urbandata/CLM50_tbuildmax_Oleson_2016_0.9x1.25_simyr1849-2106_c160923.nc     153
+(GETFIL): attempting to find local file 
+surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+ zsoi   1.0000000000000000E-002   4.0000000000000001E-002   8.9999999999999997E-002  0.16000000000000000       0.26000000000000001       0.40000000000000002       0.57999999999999996       0.79999999999999993        1.0600000000000001        1.3599999999999999        1.7000000000000002        2.0800000000000001        2.5000000000000000        2.9900000000000002        3.5800000000000001        4.2700000000000005        5.0600000000000005        5.9500000000000002        6.9399999999999995        8.0299999999999994        9.7949999999999999        13.327766952966369        19.483129170124386        28.870724434316031        41.998436864002869     
+ zisoi:    0.0000000000000000        2.0000000000000000E-002   5.9999999999999998E-002  0.12000000000000000       0.20000000000000001       0.32000000000000001       0.47999999999999998       0.67999999999999994       0.91999999999999993        1.2000000000000000        1.5200000000000000        1.8800000000000001        2.2800000000000002        2.7200000000000002        3.2600000000000002        3.9000000000000004        4.6400000000000006        5.4800000000000004        6.4199999999999999        7.4600000000000000        8.5999999999999996        10.990000000000000        15.665533905932739        23.300724434316031        34.440724434316031        49.556149293689714     
+ dzsoi:    2.0000000000000000E-002   4.0000000000000001E-002   5.9999999999999998E-002   8.0000000000000002E-002  0.12000000000000000       0.16000000000000000       0.20000000000000001       0.23999999999999999       0.28000000000000003       0.32000000000000001       0.36000000000000004       0.40000000000000002       0.44000000000000000       0.54000000000000004       0.64000000000000001       0.73999999999999999       0.84000000000000008       0.93999999999999995        1.0400000000000000        1.1400000000000001        2.3900000000000001        4.6755339059327383        7.6351905283832906        11.140000000000001        15.115424859373686     
+ dzsoi_decomp:    2.0000000000000000E-002   4.0000000000000001E-002   5.9999999999999998E-002   8.0000000000000002E-002  0.12000000000000000       0.16000000000000000       0.20000000000000001       0.23999999999999999       0.28000000000000003       0.32000000000000001       0.36000000000000004       0.40000000000000002       0.44000000000000000       0.54000000000000004       0.64000000000000001       0.73999999999999999       0.84000000000000008       0.93999999999999995        1.0400000000000000        1.1400000000000001        2.3900000000000001        4.6755339059327383        7.6351905283832906        11.140000000000001        15.115424859373686     
+ jmin_bedrock:            6
+ dzmin =   1.0000000000000000E-002   1.4999999999999999E-002   2.5000000000000001E-002   5.5000000000000000E-002  0.11500000000000000       0.23500000000000001       0.47500000000000003       0.95500000000000007        1.9150000000000000        3.8350000000000000        7.6749999999999998        15.355000000000000     
+ dzmax_l =   2.9999999999999999E-002   7.0000000000000007E-002  0.17999999999999999       0.41000000000000003       0.88000000000000012        1.8300000000000001        3.7400000000000002        7.5700000000000003        15.240000000000000        30.590000000000000        61.299999999999997        1.7976931348623157E+308
+ dzmax_u =   2.0000000000000000E-002   5.0000000000000003E-002  0.11000000000000000       0.23000000000000001       0.47000000000000003       0.95000000000000007        1.9100000000000001        3.8300000000000001        7.6699999999999999        15.350000000000000        30.710000000000001        1.7976931348623157E+308
+ (OPNFIL): Successfully opened file lnd_in on unit=           99
+  
+ atm2lnd_inparm settings:
+ repartition_rain_snow =  T
+ glcmec_downscale_longwave =  T
+ lapse_rate =    6.0000000000000001E-003
+ lapse_rate_longwave =    3.2000000000000001E-002
+ longwave_downscaling_limit =   0.50000000000000000     
+ precip_repartition_glc_all_snow_t =   -2.0000000000000000     
+ precip_repartition_glc_all_rain_t =    0.0000000000000000     
+ precip_repartition_nonglc_all_snow_t =    0.0000000000000000     
+ precip_repartition_nonglc_all_rain_t =    2.0000000000000000     
+  
+ Read in lnd2atm_inparm  namelist
+ (OPNFIL): Successfully opened file lnd_in on unit=           99
+
+ lnd2atm_inparm settings:
+&LND2ATM_INPARM
+ MELT_NON_ICESHEET_ICE_RUNOFF=T,
+ /
+  
+ Read in clm_soilstate_inparm namelist
+ (OPNFIL): Successfully opened file lnd_in on unit=           99
+(GETFIL): attempting to find local file 
+clm50_params.c240208.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/paramdata/clm50_params.c240208.nc
+ Attempting to read soil color, sand and clay boundary data .....
+(GETFIL): attempting to find local file 
+surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+ Attempting to read organic matter data .....
+ organicrd                       /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+(GETFIL): attempting to find local file 
+surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+ Successfully read organic matter data
+
+ Read in water_tracers  namelist
+ (OPNFIL): Successfully opened file lnd_in on unit=           99
+
+ water_tracers settings
+&WATER_TRACERS_INPARM
+ ENABLE_WATER_TRACER_CONSISTENCY_CHECKS=F,
+ ENABLE_WATER_ISOTOPES=F,
+ /
+
+ Read in friction_velocity  namelist
+ (OPNFIL): Successfully opened file lnd_in on unit=           99
+  
+ friction_velocity settings:
+&FRICTION_VELOCITY
+ ZETAMAXSTABLE= 0.50000000000000000     ,
+ /
+  
+(GETFIL): attempting to find local file 
+surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+ ncd_inqvid: variable ETALAKE is not on dataset
+ WARNING:: ETALAKE not found on surface data set. All lake columns will have eta set equal to default value as a function of depth.
+ ncd_inqvid: variable LAKEFETCH is not on dataset
+ WARNING:: LAKEFETCH not found on surface data set. All lake columns will have fetch set equal to default value as a function of depth.
+ Attempting to initialize time invariant variables for lakes
+ Successfully initialized time invariant variables for lakes
+ Read in clm_soilhydrology_inparm  namelist
+ (OPNFIL): Successfully opened file lnd_in on unit=           99
+(GETFIL): attempting to find local file 
+surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+ Attempting to read soil colo data .....
+ Read in scf_swenson_lawrence_2012_inparm  namelist
+ (OPNFIL): Successfully opened file lnd_in on unit=           99
+  
+ scf_swenson_lawrence_2012_inparm settings:
+&SCF_SWENSON_LAWRENCE_2012_INPARM
+ INT_SNOW_MAX=  2000.0000000000000     ,
+ N_MELT_GLCMEC=  10.000000000000000     ,
+ /
+  
+ Read in irrigation_inparm  namelist
+ (OPNFIL): Successfully opened file lnd_in on unit=           99
+  
+ irrigation_inparm settings:
+ irrig_min_lai =    0.0000000000000000     
+ irrig_start_time =        21600
+ irrig_length =        14400
+ irrig_target_smp =   -3400.0000000000000     
+ irrig_depth =   0.59999999999999998     
+ irrig_threshold_fraction =    1.0000000000000000     
+ limit_irrigation_if_rof_enabled =  F
+ use_groundwater_irrigation =  F
+ irrig_method_default = drip                                                            
+  
+(GETFIL): attempting to find local file 
+megan21_emis_factors_78pft_c20161108.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/atm/cam/chem/trop_mozart/emis/megan21_emis_factors_78pft_c20161108.nc
+(GETFIL): attempting to find local file 
+surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+ Read in lifire_inparm  namelist
+ (OPNFIL): Successfully opened file lnd_in on unit=           99
+  
+ lifire_inparm settings:
+&LIFIRE_INPARM
+ CLI_SCALE=  3.5000000000000003E-002,
+ BOREAL_PEATFIRE_C=  4.1999999999999998E-005,
+ POT_HMN_IGN_COUNTS_ALPHA=  3.5000000000000001E-003,
+ NON_BOREAL_PEATFIRE_C=  1.0000000000000000E-003,
+ CROPFIRE_A1= 0.29999999999999999     ,
+ RH_LOW=  30.000000000000000     ,
+ RH_HGH=  80.000000000000000     ,
+ BT_MIN= 0.29999999999999999     ,
+ BT_MAX= 0.69999999999999996     ,
+ OCCUR_HI_GDP_TREE= 0.39000000000000001     ,
+ LFUEL=  75.000000000000000     ,
+ UFUEL=  650.00000000000000     ,
+ CMB_CMPLT_FACT_LITTER= 0.50000000000000000     ,
+ CMB_CMPLT_FACT_CWD= 0.25000000000000000     ,
+ /
+  
+
+ Initializing variables for time accumulation .....
+------------------------------------------------------------
+ Accumulated fields
+ No Name     Units    Type    Period Inival Description
+_______________________________________________________________________
+  1 FSD24    W/m2     runmean     48   0. 24hr average of direct solar radiation  
+  2 FSD240   W/m2     runmean    480   0. 240hr average of direct solar radiation 
+  3 FSI24    W/m2     runmean     48   0. 24hr average of diffuse solar radiation 
+  4 FSI240   W/m2     runmean    480   0. 240hr average of diffuse solar radiation
+  5 po2_240  Pa       runmean    480 **** 10-day running mean of parial O2 pressur
+  6 pco2_240 Pa       runmean    480  28. 10-day running mean of parial CO2 pressu
+  7 pbot240  Pa       runmean    480 **** 10-day running mean of air pressure     
+  8 T_VEG24  K        runmean     48   0. 24hr average of vegetation temperature  
+  9 T_VEG240 K        runmean    480   0. 240hr average of vegetation temperature 
+ 10 TREFAV   K        timeavg      2   0. average over an hour of 2-m temperature 
+ 11 TREFAV_U K        timeavg      2   0. average over an hour of urban 2-m temper
+ 12 TREFAV_R K        timeavg      2   0. average over an hour of rural 2-m temper
+ 13 T10      K        runmean    480 293. 10-day running mean of 2-m temperature  
+ 14 SOIL10   K        runmean    480 273. 10-day running mean of 3rd layer soil te
+ 15 TDM5     K        runmean    240 273. 5-day running mean of min 2-m temperatur
+ 16 SNOW_5D  m        runmean    240   0. 5-day running mean of snowdepth         
+ 17 BTRANAV  -        timeavg      2   0. average over an hour of btran           
+ 18 FSUN24   fraction runmean     48   0. 24hr average of diffuse solar radiation 
+ 19 FSUN240  fraction runmean    480   0. 240hr average of diffuse solar radiation
+ 20 LAI240   m2/m2    runmean    480   0. 240hr average of leaf area index        
+_______________________________________________________________________
+
+------------------------------------------------------------
+ Successfully initialized variables for accumulation
+
+ Attempting to read snow optical properties...
+(GETFIL): attempting to find local file 
+snicar_optics_5bnd_c013122.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/snicardata/snicar_optics_5bnd_c013122.nc
+ SnowOptics_init                 /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/snicardata/snicar_optics_5bnd_c013122.nc
+ Successfully read snow optical properties
+ SNICAR: Mie single scatter albedos for direct-beam ice, rds=100um:   0.99999141078544840       0.99967782773142388       0.99759244913509071       0.98630450980640327       0.86392868204265616     
+ SNICAR: Mie single scatter albedos for diffuse ice, rds=100um:   0.99999153988786693       0.99970407334064115       0.99763641606496856       0.98826268839917752       0.87369034174761884     
+ SNICAR: Excluding OC aerosols from snow radiative transfer calculations
+ SNICAR: Mie single scatter albedos for hydrophillic BC:   0.36637650903057334       0.30230368148922637       0.25189406303919176       0.21721983111434620       0.15241977424012246     
+ SNICAR: Mie single scatter albedos for hydrophobic BC:   0.36637650903057334       0.30230368148922637       0.25189406303919176       0.21721983111434620       0.15241977424012246     
+ SNICAR: Mie single scatter albedos for dust species 1:   0.94507552595764310       0.99094476415800448       0.99244559675792821       0.99232362309372646       0.98349930540162012     
+ SNICAR: Mie single scatter albedos for dust species 2:   0.87017783300889884       0.97591159892945534       0.98861516756880896       0.99209231439709245       0.99144104868288818     
+ SNICAR: Mie single scatter albedos for dust species 3:   0.80187952364088921       0.94769835932247548       0.96517862980911329       0.97373642349281764       0.98367686734155757     
+ SNICAR: Mie single scatter albedos for dust species 4:   0.73012997489396370       0.91258189415989199       0.94343530461924530       0.95419020339739535       0.96460746529371255     
+
+ Attempting to read snow aging parameters .....
+(GETFIL): attempting to find local file 
+snicar_drdt_bst_fit_60_c070416.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/snicardata/snicar_drdt_bst_fit_60_c070416.nc
+ SnowOptics_init                 /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/snicardata/snicar_drdt_bst_fit_60_c070416.nc
+ Successfully read snow aging properties
+ SNICAR: snowage tau for T=263K, dTdz = 100 K/m, rhos = 150 kg/m3:    6.3205800298267860     
+ SNICAR: snowage kappa for T=263K, dTdz = 100 K/m, rhos = 150 kg/m3:    1.5669689418953008     
+ SNICAR: snowage dr/dt_0 for T=263K, dTdz = 100 K/m, rhos = 150 kg/m3:    5.4872755027422642     
+ CLM_hist_printflds : number of history fields =          700
+  ******* LIST OF ALL HISTORY FIELDS *******
+    1 SNO_Z                            m               
+    2 SNO_Z_ICE                        m               
+    3 ZII                              m               
+    4 SWBGT                            C               
+    5 SWBGT_U                          C               
+    6 SWBGT_R                          C               
+    7 HUMIDEX                          C               
+    8 HUMIDEX_U                        C               
+    9 HUMIDEX_R                        C               
+   10 WBT                              C               
+   11 WBT_U                            C               
+   12 WBT_R                            C               
+   13 HIA                              C               
+   14 HIA_U                            C               
+   15 HIA_R                            C               
+   16 TBUILD_MAX                       K               
+   17 WIND                             m/s             
+   18 Wind                             m/s             
+   19 UWIND                            m/s             
+   20 VWIND                            m/s             
+   21 ZBOT                             m               
+   22 ATM_TOPO                         m               
+   23 FSDS_from_atm                    W/m^2           
+   24 ATM_O3                           mol/mol         
+   25 PCO2                             Pa              
+   26 SWdown                           W/m^2           
+   27 Tair_from_atm                    K               
+   28 FSDS                             W/m^2           
+   29 TBOT                             K               
+   30 Tair                             K               
+   31 PBOT                             Pa              
+   32 PSurf                            Pa              
+   33 PBOT_NOT_DOWNSCALED              Pa              
+   34 FLDS                             W/m^2           
+   35 LWdown                           W/m^2           
+   36 FLDS_NOT_DOWNSCALED              W/m^2           
+   37 FLDS_ICE                         W/m^2           
+   38 THBOT                            K               
+   39 Thair_from_atm                   K               
+   40 Rho_from_atm                     kg/m^3          
+   41 BCPHIDRY                         kg/m^2/s        
+   42 BCPHODRY                         kg/m^2/s        
+   43 BCPHIWET                         kg/m^2/s        
+   44 OCPHIDRY                         kg/m^2/s        
+   45 OCPHODRY                         kg/m^2/s        
+   46 OCPHIWET                         kg/m^2/s        
+   47 DSTWET1                          kg/m^2/s        
+   48 DSTDRY1                          kg/m^2/s        
+   49 DSTWET2                          kg/m^2/s        
+   50 DSTDRY2                          kg/m^2/s        
+   51 DSTWET3                          kg/m^2/s        
+   52 DSTDRY3                          kg/m^2/s        
+   53 DSTWET4                          kg/m^2/s        
+   54 DSTDRY4                          kg/m^2/s        
+   55 FSI24                            K               
+   56 FSI240                           K               
+   57 FSD24                            K               
+   58 FSD240                           K               
+   59 PCO2_240                         Pa              
+   60 PO2_240                          Pa              
+   61 PBOT_240                         Pa              
+   62 FSH_TO_COUPLER                   W/m^2           
+   63 FSH_RUNOFF_ICE_TO_LIQ            W/m^2           
+   64 FCO2                             kgCO2/m2/s      
+   65 Z0M_TO_COUPLER                   m               
+   66 ICE_MODEL_FRACTION               unitless        
+   67 QICE_FORC                        mm/s            
+   68 TSRF_FORC                        K               
+   69 TOPO_FORC                        m               
+   70 TH2OSFC                          K               
+   71 TG_U                             K               
+   72 TLAKE                            K               
+   73 SNO_T                            K               
+   74 SNO_T_ICE                        K               
+   75 TSA                              K               
+   76 TSA_ICE                          K               
+   77 TSA_R                            K               
+   78 TREFMNAV                         K               
+   79 TREFMXAV                         K               
+   80 TREFMNAV_R                       K               
+   81 TREFMXAV_R                       K               
+   82 TSA_U                            K               
+   83 TREFMNAV_U                       K               
+   84 TREFMXAV_U                       K               
+   85 TV                               K               
+   86 TSKIN                            K               
+   87 TG                               K               
+   88 TG_ICE                           K               
+   89 TG_R                             K               
+   90 TSOI                             K               
+   91 TSOI_ICE                         K               
+   92 TSOI_10CM                        K               
+   93 TSL                              K               
+   94 SNOTXMASS                        K kg/m2         
+   95 SNOTXMASS_ICE                    K kg/m2         
+   96 T10                              K               
+   97 SOIL10                           K               
+   98 A5TMIN                           K               
+   99 TBUILD                           K               
+  100 TROOF_INNER                      K               
+  101 TSUNW_INNER                      K               
+  102 TSHDW_INNER                      K               
+  103 TFLOOR                           K               
+  104 HEAT_CONTENT1                    J/m^2           
+  105 HEAT_CONTENT1_VEG                J/m^2           
+  106 HEAT_CONTENT2                    J/m^2           
+  107 LIQUID_WATER_TEMP1               K               
+  108 SNOTTOPL                         K               
+  109 SNOTTOPL_ICE                     K               
+  110 SNOdTdzL                         K/m             
+  111 TV24                             K               
+  112 TV240                            K               
+  113 TVEGD10                          Kelvin          
+  114 TVEGN10                          Kelvin          
+  115 ALT                              m               
+  116 ALTMAX                           m               
+  117 ALTMAX_LASTYEAR                  m               
+  118 ELAI                             m^2/m^2         
+  119 ESAI                             m^2/m^2         
+  120 LAISUN                           m^2/m^2         
+  121 LAISHA                           m^2/m^2         
+  122 AGSB                             kg/m^2          
+  123 AGLB                             kg/m^2          
+  124 TLAI                             m^2/m^2         
+  125 TSAI                             m^2/m^2         
+  126 Z0MV_DENSE                       m               
+  127 FSUN24                           K               
+  128 FSUN240                          K               
+  129 LAI240                           m^2/m^2         
+  130 VEGWP                            mm              
+  131 VEGWPLN                          mm              
+  132 VEGWPPD                          mm              
+  133 SMP                              mm              
+  134 KROOT                            1/s             
+  135 KSOIL                            1/s             
+  136 SNO_TK                           W/m-K           
+  137 SNO_TK_ICE                       W/m-K           
+  138 HK                               mm/s            
+  139 SoilAlpha                        unitless        
+  140 SoilAlpha_U                      unitless        
+  141 SOILRESIS                        s/m             
+  142 DSL                              mm              
+  143 SNO_LIQH2O                       kg/m2           
+  144 SNO_ICE                          kg/m2           
+  145 H2OSOI                           mm3/mm3         
+  146 SOILLIQ                          kg/m2           
+  147 SOILICE                          kg/m2           
+  148 SNOCAN                           mm              
+  149 LIQCAN                           mm              
+  150 H2OSFC                           mm              
+  151 INT_SNOW                         mm              
+  152 INT_SNOW_ICE                     mm              
+  153 SNOW_PERSISTENCE                 seconds         
+  154 SOILWATER_10CM                   kg/m2           
+  155 TWS                              mm              
+  156 Q2M                              kg/kg           
+  157 H2OCAN                           mm              
+  158 SNOWLIQ                          kg/m2           
+  159 SNOWLIQ_ICE                      kg/m2           
+  160 SNOWICE                          kg/m2           
+  161 SNOWICE_ICE                      kg/m2           
+  162 H2OSNO                           mm              
+  163 H2OSNO_ICE                       mm              
+  164 TOTSOILLIQ                       kg/m2           
+  165 TOTSOILICE                       kg/m2           
+  166 IWUELN                           umolCO2/molH2O  
+  167 VPD2M                            Pa              
+  168 RH2M                             %               
+  169 RH2M_R                           %               
+  170 RH2M_U                           %               
+  171 RHAF                             fraction        
+  172 RHAF10                           fraction        
+  173 FH2OSFC                          unitless        
+  174 FH2OSFC_NOSNOW                   unitless        
+  175 FSNO                             unitless        
+  176 FSNO_ICE                         unitless        
+  177 FSNO_EFF                         unitless        
+  178 SNOW_DEPTH                       m               
+  179 SNOW_5D                          m               
+  180 SNOW_DEPTH_ICE                   m               
+  181 SNOWDP                           m               
+  182 SNOMELT_ACCUM                    m               
+  183 H2OSNO_TOP                       kg/m2           
+  184 SNORDSL                          m^-6            
+  185 SNOLIQFL                         fraction        
+  186 SNO_EXISTENCE                    unitless        
+  187 SNO_BW                           kg/m3           
+  188 SNO_BW_ICE                       kg/m3           
+  189 SNO_GS                           Microns         
+  190 SNO_GS_ICE                       Microns         
+  191 QINTR                            mm/s            
+  192 SNOW_SOURCES                     mm/s            
+  193 SNOW_SINKS                       mm/s            
+  194 LIQUID_CONTENT1                  mm              
+  195 LIQUID_CONTENT2                  mm              
+  196 ICE_CONTENT1                     mm              
+  197 ICE_CONTENT2                     mm              
+  198 ERRH2O                           mm              
+  199 ERRH2OSNO                        mm              
+  200 QDIRECT_THROUGHFALL              mm/s            
+  201 QDIRECT_THROUGHFALL_SNOW         mm/s            
+  202 QDRIP                            mm/s            
+  203 QDRIP_SNOW                       mm/s            
+  204 QSNOUNLOAD                       mm/s            
+  205 QTOPSOIL                         mm/s            
+  206 QINFL                            mm/s            
+  207 QOVER                            mm/s            
+  208 QRGWL                            mm/s            
+  209 QDRAI                            mm/s            
+  210 QDRAI_PERCH                      mm/s            
+  211 QFLX_LIQ_DYNBAL                  mm/s            
+  212 QFLX_ICE_DYNBAL                  mm/s            
+  213 QRUNOFF                          mm/s            
+  214 QRUNOFF_ICE                      mm/s            
+  215 QRUNOFF_U                        mm/s            
+  216 QRUNOFF_R                        mm/s            
+  217 QSNOMELT                         mm/s            
+  218 QSNOMELT_ICE                     mm/s            
+  219 QSNOFRZ                          kg/m2/s         
+  220 QSNOFRZ_ICE                      mm/s            
+  221 SNO_FRZ                          kg/m2/s         
+  222 SNO_FRZ_ICE                      mm/s            
+  223 QFLX_SNOW_DRAIN                  mm/s            
+  224 QFLX_SNOW_DRAIN_ICE              mm/s            
+  225 QSOIL                            mm/s            
+  226 QSOIL_ICE                        mm/s            
+  227 QVEGE                            mm/s            
+  228 QVEGT                            mm/s            
+  229 QSNOCPLIQ                        mm H2O/s        
+  230 QSNWCPICE                        mm H2O/s        
+  231 QICE                             mm/s            
+  232 QICE_FRZ                         mm/s            
+  233 QICE_MELT                        mm/s            
+  234 QFLX_LIQ_GRND                    mm H2O/s        
+  235 QFLX_SNOW_GRND                   mm H2O/s        
+  236 QFLX_LIQEVAP_FROM_TOP_LAYER      mm H2O/s        
+  237 QFLX_EVAP_VEG                    mm H2O/s        
+  238 QFLX_EVAP_TOT                    kg m-2 s-1      
+  239 QFLX_LIQDEW_TO_TOP_LAYER         mm H2O/s        
+  240 QFLX_SOLIDEVAP_FROM_TOP_LAYER    mm H2O/s        
+  241 QFLX_SOLIDEVAP_FROM_TOP_LAYER_IC mm H2O/s        
+  242 QFLX_SOLIDDEW_TO_TOP_LAYER       mm H2O/s        
+  243 QDRAI_XS                         mm/s            
+  244 QH2OSFC_TO_ICE                   mm/s            
+  245 QIRRIG_FROM_SURFACE              mm/s            
+  246 QIRRIG_FROM_GW_UNCONFINED        mm/s            
+  247 QIRRIG_FROM_GW_CONFINED          mm/s            
+  248 QIRRIG_DRIP                      mm/s            
+  249 QIRRIG_SPRINKLER                 mm/s            
+  250 SNO_MELT                         mm/s            
+  251 SNO_MELT_ICE                     mm/s            
+  252 QROOTSINK                        mm/s            
+  253 QHR                              mm/s            
+  254 QSNO_WINDUNLOAD                  mm/s            
+  255 QSNO_TEMPUNLOAD                  mm/s            
+  256 QSNOEVAP                         mm/s            
+  257 QH2OSFC                          mm/s            
+  258 QPHSNEG                          mm/s            
+  259 AnnET                            mm/s            
+  260 QRUNOFF_TO_COUPLER               mm/s            
+  261 QRUNOFF_ICE_TO_COUPLER           mm/s            
+  262 QRUNOFF_ICE_TO_LIQ               mm/s            
+  263 RAIN_FROM_ATM                    mm/s            
+  264 SNOW_FROM_ATM                    mm/s            
+  265 QBOT                             kg/kg           
+  266 Qair                             kg/kg           
+  267 QBOT_NOT_DOWNSCALED              kg/kg           
+  268 QFLOOD                           mm/s            
+  269 RAIN                             mm/s            
+  270 Rainf                            mm/s            
+  271 RAIN_ICE                         mm/s            
+  272 SNOW                             mm/s            
+  273 SNOW_ICE                         mm/s            
+  274 TDEPTH                           m               
+  275 TDEPTHMAX                        m               
+  276 VOLR                             m3              
+  277 VOLRMCH                          m3              
+  278 RH                               %               
+  279 EFLX_DYNBAL                      W/m^2           
+  280 FSM                              W/m^2           
+  281 FSM_ICE                          W/m^2           
+  282 FSM_R                            W/m^2           
+  283 FSM_U                            W/m^2           
+  284 FIRA                             W/m^2           
+  285 FIRA_ICE                         W/m^2           
+  286 FIRA_R                           W/m^2           
+  287 FIRE                             W/m^2           
+  288 LWup                             W/m^2           
+  289 FIRE_ICE                         W/m^2           
+  290 FIRE_R                           W/m^2           
+  291 FCTR                             W/m^2           
+  292 FCEV                             W/m^2           
+  293 FGEV                             W/m^2           
+  294 FSH                              W/m^2           
+  295 FSH_ICE                          W/m^2           
+  296 FSH_R                            W/m^2           
+  297 Qh                               W/m^2           
+  298 Qle                              W/m^2           
+  299 EFLX_LH_TOT                      W/m^2           
+  300 EFLX_LH_TOT_ICE                  W/m^2           
+  301 EFLX_LH_TOT_R                    W/m^2           
+  302 Qstor                            W/m^2           
+  303 FSH_V                            W/m^2           
+  304 FSH_G                            W/m^2           
+  305 FGR                              W/m^2           
+  306 FGR_ICE                          W/m^2           
+  307 FGR_R                            W/m^2           
+  308 FIRA_U                           W/m^2           
+  309 EFLX_SOIL_GRND                   W/m^2           
+  310 FIRE_U                           W/m^2           
+  311 FSH_U                            W/m^2           
+  312 FSH_PRECIP_CONVERSION            W/m^2           
+  313 EFLX_LH_TOT_U                    W/m^2           
+  314 FGR_U                            W/m^2           
+  315 Rnet                             W/m^2           
+  316 EFLX_GNET                        W/m^2           
+  317 EFLX_GRND_LAKE                   W/m^2           
+  318 EFLXBUILD                        W/m^2           
+  319 URBAN_AC                         W/m^2           
+  320 URBAN_HEAT                       W/m^2           
+  321 DGNETDT                          W/m^2/K         
+  322 FGR12                            W/m^2           
+  323 FGR_SOIL_R                       watt/m^2        
+  324 TRAFFICFLUX                      W/m^2           
+  325 WASTEHEAT                        W/m^2           
+  326 VENTILATION                      W/m^2           
+  327 HEAT_FROM_AC                     W/m^2           
+  328 TAUX                             kg/m/s^2        
+  329 Qtau                             kg/m/s^2        
+  330 TAUY                             kg/m/s^2        
+  331 BTRANMN                          unitless        
+  332 ERRSOI                           W/m^2           
+  333 ERRSEB                           W/m^2           
+  334 ERRSOL                           W/m^2           
+  335 DSTDEP                           kg/m^2/s        
+  336 BCDEP                            kg/m^2/s        
+  337 OCDEP                            kg/m^2/s        
+  338 SNOBCMCL                         kg/m2           
+  339 SNOBCMSL                         kg/m2           
+  340 SNOOCMCL                         kg/m2           
+  341 SNOOCMSL                         kg/m2           
+  342 SNODSTMCL                        kg/m2           
+  343 SNODSTMSL                        kg/m2           
+  344 Z0MG                             m               
+  345 Z0HG                             m               
+  346 Z0QG                             m               
+  347 VA                               m/s             
+  348 U10                              m/s             
+  349 U10_ICE                          m/s             
+  350 U10_DUST                         m/s             
+  351 RAH1                             s/m             
+  352 RAH2                             s/m             
+  353 RAW1                             s/m             
+  354 RAW2                             s/m             
+  355 USTAR                            s/m             
+  356 UM                               m/s             
+  357 UAF                              m/s             
+  358 TAF                              K               
+  359 QAF                              kg/kg           
+  360 OBU                              m               
+  361 ZETA                             unitless        
+  362 VPD                              Pa              
+  363 num_iter                         unitless        
+  364 RB                               s/m             
+  365 RB10                             s/m             
+  366 LAKEICEFRAC                      unitless        
+  367 LAKEICEFRAC_SURF                 unitless        
+  368 LAKEICETHICK                     m               
+  369 TKE1                             W/(mK)          
+  370 RAM_LAKE                         s/m             
+  371 UST_LAKE                         m/s             
+  372 RH_LEAF                          fraction        
+  373 VPD_CAN                          kPa             
+  374 LNC                              gN leaf/m^2     
+  375 FPSN                             umol m-2 s-1    
+  376 FPSN_WC                          umol m-2 s-1    
+  377 FPSN_WJ                          umol m-2 s-1    
+  378 FPSN_WP                          umol m-2 s-1    
+  379 RSSUN                            s/m             
+  380 RSSHA                            s/m             
+  381 GSSUN                            umol H20/m2/s   
+  382 GSSHA                            umol H20/m2/s   
+  383 GSSUNLN                          umol H20/m2/s   
+  384 GSSHALN                          umol H20/m2/s   
+  385 Vcmx25Z                          umol/m2/s       
+  386 Jmx25Z                           umol electrons/m
+  387 PNLCZ                            unitless        
+  388 VCMX25T                          umol/m2/s       
+  389 JMX25T                           umol/m2/s       
+  390 TPU25T                           umol/m2/s       
+  391 FPSN24                           umol CO2/m^2 gro
+  392 NSUBSTEPS                        unitless        
+  393 FROST_TABLE                      m               
+  394 ZWT                              m               
+  395 ZWT_PERCH                        m               
+  396 FCOV                             unitless        
+  397 FSAT                             unitless        
+  398 FSA                              W/m^2           
+  399 FSA_ICE                          W/m^2           
+  400 FSA_R                            W/m^2           
+  401 FSA_U                            W/m^2           
+  402 FSR                              W/m^2           
+  403 SWup                             W/m^2           
+  404 FSR_ICE                          W/m^2           
+  405 SNO_ABS                          W/m^2           
+  406 SNO_ABS_ICE                      W/m^2           
+  407 SABV                             W/m^2           
+  408 SABG                             W/m^2           
+  409 SABG_PEN                         watt/m^2        
+  410 FSDSND                           W/m^2           
+  411 FSDSNI                           W/m^2           
+  412 FSDSNDLN                         W/m^2           
+  413 FSRND                            W/m^2           
+  414 FSRNI                            W/m^2           
+  415 FSRNDLN                          W/m^2           
+  416 SNOINTABS                        -               
+  417 PAR240DZ                         W/m^2           
+  418 PAR240XZ                         W/m^2           
+  419 AZSUN                            radians         
+  420 COSZEN_GRC                       none            
+  421 COSZEN                           none            
+  422 ALBGRD                           proportion      
+  423 ALBGRI                           proportion      
+  424 ALBD                             proportion      
+  425 ALBI                             proportion      
+  426 FSDSVD                           W/m^2           
+  427 FSDSVI                           W/m^2           
+  428 FSRVD                            W/m^2           
+  429 FSRVI                            W/m^2           
+  430 FSDSVDLN                         W/m^2           
+  431 FSDSVILN                         W/m^2           
+  432 PARVEGLN                         W/m^2           
+  433 FSRVDLN                          W/m^2           
+  434 SNOFSDSVD                        W/m^2           
+  435 SNOFSDSND                        W/m^2           
+  436 SNOFSDSVI                        W/m^2           
+  437 SNOFSDSNI                        W/m^2           
+  438 SNOFSRVD                         W/m^2           
+  439 SNOFSRND                         W/m^2           
+  440 SNOFSRVI                         W/m^2           
+  441 SNOFSRNI                         W/m^2           
+  442 DSTFLXT                          kg/m2/s         
+  443 DPVLTRB1                         m/s             
+  444 DPVLTRB2                         m/s             
+  445 DPVLTRB3                         m/s             
+  446 DPVLTRB4                         m/s             
+  447 QIRRIG_DEMAND                    mm/s            
+  448 TOPO_COL                         m               
+  449 TOPO_COL_ICE                     m               
+  450 MEG_isoprene                     kg/m2/sec       
+  451 MEG_carene_3                     kg/m2/sec       
+  452 MEG_pinene_a                     kg/m2/sec       
+  453 MEG_thujene_a                    kg/m2/sec       
+  454 MEG_bornene                      kg/m2/sec       
+  455 MEG_terpineol_4                  kg/m2/sec       
+  456 MEG_terpineol_a                  kg/m2/sec       
+  457 MEG_terpinyl_ACT_a               kg/m2/sec       
+  458 MEG_myrtenal                     kg/m2/sec       
+  459 MEG_sabinene                     kg/m2/sec       
+  460 MEG_pinene_b                     kg/m2/sec       
+  461 MEG_camphene                     kg/m2/sec       
+  462 MEG_fenchene_a                   kg/m2/sec       
+  463 MEG_limonene                     kg/m2/sec       
+  464 MEG_phellandrene_a               kg/m2/sec       
+  465 MEG_terpinene_a                  kg/m2/sec       
+  466 MEG_terpinene_g                  kg/m2/sec       
+  467 MEG_terpinolene                  kg/m2/sec       
+  468 MEG_phellandrene_b               kg/m2/sec       
+  469 MEG_linalool                     kg/m2/sec       
+  470 MEG_ionone_b                     kg/m2/sec       
+  471 MEG_geranyl_acetone              kg/m2/sec       
+  472 MEG_neryl_acetone                kg/m2/sec       
+  473 MEG_jasmone                      kg/m2/sec       
+  474 MEG_verbenene                    kg/m2/sec       
+  475 MEG_ipsenol                      kg/m2/sec       
+  476 MEG_myrcene                      kg/m2/sec       
+  477 MEG_ocimene_t_b                  kg/m2/sec       
+  478 MEG_ocimene_al                   kg/m2/sec       
+  479 MEG_ocimene_c_b                  kg/m2/sec       
+  480 MEG_2met_nonatriene              kg/m2/sec       
+  481 MEG_farnescene_a                 kg/m2/sec       
+  482 MEG_caryophyllene_b              kg/m2/sec       
+  483 MEG_acoradiene                   kg/m2/sec       
+  484 MEG_aromadendrene                kg/m2/sec       
+  485 MEG_bergamotene_a                kg/m2/sec       
+  486 MEG_bergamotene_b                kg/m2/sec       
+  487 MEG_bisabolene_a                 kg/m2/sec       
+  488 MEG_bisabolene_b                 kg/m2/sec       
+  489 MEG_bourbonene_b                 kg/m2/sec       
+  490 MEG_cadinene_d                   kg/m2/sec       
+  491 MEG_cadinene_g                   kg/m2/sec       
+  492 MEG_cedrene_a                    kg/m2/sec       
+  493 MEG_copaene_a                    kg/m2/sec       
+  494 MEG_cubebene_a                   kg/m2/sec       
+  495 MEG_cubebene_b                   kg/m2/sec       
+  496 MEG_elemene_b                    kg/m2/sec       
+  497 MEG_farnescene_b                 kg/m2/sec       
+  498 MEG_germacrene_B                 kg/m2/sec       
+  499 MEG_germacrene_D                 kg/m2/sec       
+  500 MEG_gurjunene_b                  kg/m2/sec       
+  501 MEG_humulene_a                   kg/m2/sec       
+  502 MEG_humulene_g                   kg/m2/sec       
+  503 MEG_isolongifolene               kg/m2/sec       
+  504 MEG_longifolene                  kg/m2/sec       
+  505 MEG_longipinene                  kg/m2/sec       
+  506 MEG_muurolene_a                  kg/m2/sec       
+  507 MEG_muurolene_g                  kg/m2/sec       
+  508 MEG_selinene_b                   kg/m2/sec       
+  509 MEG_selinene_d                   kg/m2/sec       
+  510 MEG_nerolidol_c                  kg/m2/sec       
+  511 MEG_nerolidol_t                  kg/m2/sec       
+  512 MEG_tricyclene                   kg/m2/sec       
+  513 MEG_camphor                      kg/m2/sec       
+  514 MEG_fenchone                     kg/m2/sec       
+  515 MEG_thujone_a                    kg/m2/sec       
+  516 MEG_thujone_b                    kg/m2/sec       
+  517 MEG_cineole_1_8                  kg/m2/sec       
+  518 MEG_borneol                      kg/m2/sec       
+  519 MEG_bornyl_ACT                   kg/m2/sec       
+  520 MEG_cedrol                       kg/m2/sec       
+  521 MEG_decanal                      kg/m2/sec       
+  522 MEG_heptanal                     kg/m2/sec       
+  523 MEG_heptane                      kg/m2/sec       
+  524 MEG_hexane                       kg/m2/sec       
+  525 MEG_nonanal                      kg/m2/sec       
+  526 MEG_octanal                      kg/m2/sec       
+  527 MEG_octanol                      kg/m2/sec       
+  528 MEG_oxopentanal                  kg/m2/sec       
+  529 MEG_pentane                      kg/m2/sec       
+  530 MEG_hexanal                      kg/m2/sec       
+  531 MEG_hexanol_1                    kg/m2/sec       
+  532 MEG_pentanal                     kg/m2/sec       
+  533 MEG_heptanone                    kg/m2/sec       
+  534 MEG_2met_styrene                 kg/m2/sec       
+  535 MEG_estragole                    kg/m2/sec       
+  536 MEG_piperitone                   kg/m2/sec       
+  537 MEG_linalool_OXD_c               kg/m2/sec       
+  538 MEG_linalool_OXD_t               kg/m2/sec       
+  539 MEG_dodecene_1                   kg/m2/sec       
+  540 MEG_met_heptenone                kg/m2/sec       
+  541 MEG_nonenal                      kg/m2/sec       
+  542 MEG_octenol_1e3ol                kg/m2/sec       
+  543 MEG_tetradecene_1                kg/m2/sec       
+  544 MEG_butene                       kg/m2/sec       
+  545 MEG_diallyl_2s                   kg/m2/sec       
+  546 MEG_met_propenyl_2s              kg/m2/sec       
+  547 MEG_met_jasmonate                kg/m2/sec       
+  548 MEG_hexenal_c3                   kg/m2/sec       
+  549 MEG_hexenal_t2                   kg/m2/sec       
+  550 MEG_hexenol_c3                   kg/m2/sec       
+  551 MEG_hexenyl_ACT_c3               kg/m2/sec       
+  552 MEG_toluene                      kg/m2/sec       
+  553 MEG_met_benzoate                 kg/m2/sec       
+  554 MEG_phenyl_CCO                   kg/m2/sec       
+  555 MEG_met_salicylate               kg/m2/sec       
+  556 MEG_indole                       kg/m2/sec       
+  557 MEG_anisole                      kg/m2/sec       
+  558 MEG_benzyl-acetate               kg/m2/sec       
+  559 MEG_benzyl-alcohol               kg/m2/sec       
+  560 MEG_Napthalene                   kg/m2/sec       
+  561 MEG_cymene_p                     kg/m2/sec       
+  562 MEG_cymene_o                     kg/m2/sec       
+  563 MEG_homosalate                   kg/m2/sec       
+  564 MEG_meta-cymenene                kg/m2/sec       
+  565 MEG_methanol                     kg/m2/sec       
+  566 MEG_acetone                      kg/m2/sec       
+  567 MEG_acetaldehyde                 kg/m2/sec       
+  568 MEG_ethanol                      kg/m2/sec       
+  569 MEG_formic_acid                  kg/m2/sec       
+  570 MEG_formaldehyde                 kg/m2/sec       
+  571 MEG_acetic_acid                  kg/m2/sec       
+  572 MEG_benzaldehyde                 kg/m2/sec       
+  573 MEG_butanone_2                   kg/m2/sec       
+  574 MEG_carbon_monoxide              kg/m2/sec       
+  575 MEG_ethane                       kg/m2/sec       
+  576 MEG_ethene                       kg/m2/sec       
+  577 MEG_hydrogen_cyanide             kg/m2/sec       
+  578 MEG_propane                      kg/m2/sec       
+  579 MEG_propene                      kg/m2/sec       
+  580 VOCFLXT                          moles/m2/sec    
+  581 GAMMA                            non             
+  582 GAMMAL                           non             
+  583 GAMMAT                           non             
+  584 GAMMAP                           non             
+  585 GAMMAA                           non             
+  586 GAMMAS                           non             
+  587 GAMMAC                           non             
+  588 EOPT                             non             
+  589 TOPT                             non             
+  590 ALPHA                            non             
+  591 currentPatch                     non             
+  592 PAR_sun                          umol/m2/s       
+  593 PAR24_sun                        umol/m2/s       
+  594 PAR240_sun                       umol/m2/s       
+  595 PAR_shade                        umol/m2/s       
+  596 PAR24_shade                      umol/m2/s       
+  597 PAR240_shade                     umol/m2/s       
+  598 DRYDEPV_ALKNIT                   cm/sec          
+  599 DRYDEPV_ALKOOH                   cm/sec          
+  600 DRYDEPV_BCARY                    cm/sec          
+  601 DRYDEPV_BENZENE                  cm/sec          
+  602 DRYDEPV_BENZOOH                  cm/sec          
+  603 DRYDEPV_BEPOMUC                  cm/sec          
+  604 DRYDEPV_BIGALD                   cm/sec          
+  605 DRYDEPV_BIGALD1                  cm/sec          
+  606 DRYDEPV_BIGALD2                  cm/sec          
+  607 DRYDEPV_BIGALD3                  cm/sec          
+  608 DRYDEPV_BIGALD4                  cm/sec          
+  609 DRYDEPV_BIGALK                   cm/sec          
+  610 DRYDEPV_BIGENE                   cm/sec          
+  611 DRYDEPV_BZALD                    cm/sec          
+  612 DRYDEPV_BZOOH                    cm/sec          
+  613 DRYDEPV_C2H2                     cm/sec          
+  614 DRYDEPV_C2H4                     cm/sec          
+  615 DRYDEPV_C2H5OH                   cm/sec          
+  616 DRYDEPV_C2H5OOH                  cm/sec          
+  617 DRYDEPV_C2H6                     cm/sec          
+  618 DRYDEPV_C3H6                     cm/sec          
+  619 DRYDEPV_C3H7OOH                  cm/sec          
+  620 DRYDEPV_C3H8                     cm/sec          
+  621 DRYDEPV_C6H5OOH                  cm/sec          
+  622 DRYDEPV_CH2O                     cm/sec          
+  623 DRYDEPV_CH3CHO                   cm/sec          
+  624 DRYDEPV_CH3CN                    cm/sec          
+  625 DRYDEPV_CH3COCH3                 cm/sec          
+  626 DRYDEPV_CH3COCHO                 cm/sec          
+  627 DRYDEPV_CH3COOH                  cm/sec          
+  628 DRYDEPV_CH3COOOH                 cm/sec          
+  629 DRYDEPV_CH3OH                    cm/sec          
+  630 DRYDEPV_CH3OOH                   cm/sec          
+  631 DRYDEPV_CO                       cm/sec          
+  632 DRYDEPV_CRESOL                   cm/sec          
+  633 DRYDEPV_DMS                      cm/sec          
+  634 DRYDEPV_EOOH                     cm/sec          
+  635 DRYDEPV_GLYALD                   cm/sec          
+  636 DRYDEPV_GLYOXAL                  cm/sec          
+  637 DRYDEPV_H2O2                     cm/sec          
+  638 DRYDEPV_H2SO4                    cm/sec          
+  639 DRYDEPV_HCN                      cm/sec          
+  640 DRYDEPV_HCOOH                    cm/sec          
+  641 DRYDEPV_HNO3                     cm/sec          
+  642 DRYDEPV_HO2NO2                   cm/sec          
+  643 DRYDEPV_HONITR                   cm/sec          
+  644 DRYDEPV_HPALD                    cm/sec          
+  645 DRYDEPV_HYAC                     cm/sec          
+  646 DRYDEPV_HYDRALD                  cm/sec          
+  647 DRYDEPV_IEPOX                    cm/sec          
+  648 DRYDEPV_ISOP                     cm/sec          
+  649 DRYDEPV_ISOPNITA                 cm/sec          
+  650 DRYDEPV_ISOPNITB                 cm/sec          
+  651 DRYDEPV_ISOPNO3                  cm/sec          
+  652 DRYDEPV_ISOPNOOH                 cm/sec          
+  653 DRYDEPV_ISOPOOH                  cm/sec          
+  654 DRYDEPV_IVOC                     cm/sec          
+  655 DRYDEPV_MACR                     cm/sec          
+  656 DRYDEPV_MACROOH                  cm/sec          
+  657 DRYDEPV_MEK                      cm/sec          
+  658 DRYDEPV_MEKOOH                   cm/sec          
+  659 DRYDEPV_MPAN                     cm/sec          
+  660 DRYDEPV_MTERP                    cm/sec          
+  661 DRYDEPV_MVK                      cm/sec          
+  662 DRYDEPV_N2O5                     cm/sec          
+  663 DRYDEPV_NC4CH2OH                 cm/sec          
+  664 DRYDEPV_NC4CHO                   cm/sec          
+  665 DRYDEPV_NH3                      cm/sec          
+  666 DRYDEPV_NH4                      cm/sec          
+  667 DRYDEPV_NO                       cm/sec          
+  668 DRYDEPV_NO2                      cm/sec          
+  669 DRYDEPV_NOA                      cm/sec          
+  670 DRYDEPV_NTERPOOH                 cm/sec          
+  671 DRYDEPV_O3                       cm/sec          
+  672 DRYDEPV_O3S                      cm/sec          
+  673 DRYDEPV_ONITR                    cm/sec          
+  674 DRYDEPV_PAN                      cm/sec          
+  675 DRYDEPV_PBZNIT                   cm/sec          
+  676 DRYDEPV_PHENOL                   cm/sec          
+  677 DRYDEPV_PHENOOH                  cm/sec          
+  678 DRYDEPV_POOH                     cm/sec          
+  679 DRYDEPV_ROOH                     cm/sec          
+  680 DRYDEPV_SO2                      cm/sec          
+  681 DRYDEPV_SOAG0                    cm/sec          
+  682 DRYDEPV_SOAG1                    cm/sec          
+  683 DRYDEPV_SOAG2                    cm/sec          
+  684 DRYDEPV_SOAG3                    cm/sec          
+  685 DRYDEPV_SOAG4                    cm/sec          
+  686 DRYDEPV_SVOC                     cm/sec          
+  687 DRYDEPV_TEPOMUC                  cm/sec          
+  688 DRYDEPV_TERP2OOH                 cm/sec          
+  689 DRYDEPV_TERPNIT                  cm/sec          
+  690 DRYDEPV_TERPOOH                  cm/sec          
+  691 DRYDEPV_TERPROD1                 cm/sec          
+  692 DRYDEPV_TERPROD2                 cm/sec          
+  693 DRYDEPV_TOLOOH                   cm/sec          
+  694 DRYDEPV_TOLUENE                  cm/sec          
+  695 DRYDEPV_XOOH                     cm/sec          
+  696 DRYDEPV_XYLENES                  cm/sec          
+  697 DRYDEPV_XYLENOOH                 cm/sec          
+  698 DRYDEPV_XYLOL                    cm/sec          
+  699 DRYDEPV_XYLOLOOH                 cm/sec          
+  700 RS_DRYDEP_O3                     s/m             
+ Attempting to read pft dynamic landuse data .....
+(GETFIL): attempting to find local file 
+landuse.timeseries_0.9x1.25_SSP3-7.0_1850-2100_78pfts_c240216.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/landuse.timeseries_0.9x1.25_SSP3-7.0_1850-2100_78pfts_c240216.nc
+  
+ dynpft_consistency_checks settings:
+&DYNPFT_CONSISTENCY_CHECKS
+ CHECK_DYNPFT_CONSISTENCY=F,
+ /
+  
+ Get data for variable PCT_NAT_PFT for year         2000
+ Attempting to read crop dynamic landuse data .....
+(GETFIL): attempting to find local file 
+landuse.timeseries_0.9x1.25_SSP3-7.0_1850-2100_78pfts_c240216.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/landuse.timeseries_0.9x1.25_SSP3-7.0_1850-2100_78pfts_c240216.nc
+ Get data for variable PCT_CROP for year         2000
+ Get data for variable PCT_CFT for year         2000
+ Get data for variable FERTNITRO_CFT for year         2000
+ Attempting to read lake dynamic landuse data .....
+(GETFIL): attempting to find local file 
+landuse.timeseries_0.9x1.25_SSP3-7.0_1850-2100_78pfts_c240216.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/landuse.timeseries_0.9x1.25_SSP3-7.0_1850-2100_78pfts_c240216.nc
+ Get data for variable PCT_LAKE for year         2000
+ Attempting to read urban dynamic landuse data .....
+(GETFIL): attempting to find local file 
+landuse.timeseries_0.9x1.25_SSP3-7.0_1850-2100_78pfts_c240216.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/landuse.timeseries_0.9x1.25_SSP3-7.0_1850-2100_78pfts_c240216.nc
+ Get data for variable PCT_URBAN for year         2000
+Reading initial conditions from file ./init_generated_files/finidat_interp_dest.nc
+(GETFIL): attempting to find local file 
+finidat_interp_dest.nc
+(GETFIL): using ./init_generated_files/finidat_interp_dest.nc
+ Reading restart dataset
+ can't find rootfr in restart (or initial) file...
+ Initialize rootfr to default
+  
+ finidat_consistency_checks settings:
+&FINIDAT_CONSISTENCY_CHECKS
+ CHECK_FINIDAT_YEAR_CONSISTENCY=T,
+ CHECK_FINIDAT_PCT_CONSISTENCY=T,
+ /
+  
+------------------------------------------------------------
+ Successfully read restart data for restart run
+
+  
+ Resetting dynbal baselines for lake columns
+  
+
+ cropcal_stream settings:
+  stream_year_first_cropcal  =     1850
+  stream_year_last_cropcal   =     2100
+  model_year_align_cropcal   =     1850
+  allow_invalid_swindow_inputs = F
+  stream_fldFileName_swindow_start   = 
+  stream_fldFileName_swindow_end     = 
+  stream_fldFileName_cultivar_gdds   = 
+  stream_meshfile_cropcal    = 
+  stream_varnames_sdate  = sdate1_17
+  stream_varnames_cultivar_gdds  = gdd1_17
+  stream_varnames_sdate  = sdate1_18
+  stream_varnames_cultivar_gdds  = gdd1_18
+  stream_varnames_sdate  = sdate1_19
+  stream_varnames_cultivar_gdds  = gdd1_19
+  stream_varnames_sdate  = sdate1_20
+  stream_varnames_cultivar_gdds  = gdd1_20
+  stream_varnames_sdate  = sdate1_21
+  stream_varnames_cultivar_gdds  = gdd1_21
+  stream_varnames_sdate  = sdate1_22
+  stream_varnames_cultivar_gdds  = gdd1_22
+  stream_varnames_sdate  = sdate1_23
+  stream_varnames_cultivar_gdds  = gdd1_23
+  stream_varnames_sdate  = sdate1_24
+  stream_varnames_cultivar_gdds  = gdd1_24
+  stream_varnames_sdate  = sdate1_25
+  stream_varnames_cultivar_gdds  = gdd1_25
+  stream_varnames_sdate  = sdate1_26
+  stream_varnames_cultivar_gdds  = gdd1_26
+  stream_varnames_sdate  = sdate1_27
+  stream_varnames_cultivar_gdds  = gdd1_27
+  stream_varnames_sdate  = sdate1_28
+  stream_varnames_cultivar_gdds  = gdd1_28
+  stream_varnames_sdate  = sdate1_29
+  stream_varnames_cultivar_gdds  = gdd1_29
+  stream_varnames_sdate  = sdate1_30
+  stream_varnames_cultivar_gdds  = gdd1_30
+  stream_varnames_sdate  = sdate1_31
+  stream_varnames_cultivar_gdds  = gdd1_31
+  stream_varnames_sdate  = sdate1_32
+  stream_varnames_cultivar_gdds  = gdd1_32
+  stream_varnames_sdate  = sdate1_33
+  stream_varnames_cultivar_gdds  = gdd1_33
+  stream_varnames_sdate  = sdate1_34
+  stream_varnames_cultivar_gdds  = gdd1_34
+  stream_varnames_sdate  = sdate1_35
+  stream_varnames_cultivar_gdds  = gdd1_35
+  stream_varnames_sdate  = sdate1_36
+  stream_varnames_cultivar_gdds  = gdd1_36
+  stream_varnames_sdate  = sdate1_37
+  stream_varnames_cultivar_gdds  = gdd1_37
+  stream_varnames_sdate  = sdate1_38
+  stream_varnames_cultivar_gdds  = gdd1_38
+  stream_varnames_sdate  = sdate1_39
+  stream_varnames_cultivar_gdds  = gdd1_39
+  stream_varnames_sdate  = sdate1_40
+  stream_varnames_cultivar_gdds  = gdd1_40
+  stream_varnames_sdate  = sdate1_41
+  stream_varnames_cultivar_gdds  = gdd1_41
+  stream_varnames_sdate  = sdate1_42
+  stream_varnames_cultivar_gdds  = gdd1_42
+  stream_varnames_sdate  = sdate1_43
+  stream_varnames_cultivar_gdds  = gdd1_43
+  stream_varnames_sdate  = sdate1_44
+  stream_varnames_cultivar_gdds  = gdd1_44
+  stream_varnames_sdate  = sdate1_45
+  stream_varnames_cultivar_gdds  = gdd1_45
+  stream_varnames_sdate  = sdate1_46
+  stream_varnames_cultivar_gdds  = gdd1_46
+  stream_varnames_sdate  = sdate1_47
+  stream_varnames_cultivar_gdds  = gdd1_47
+  stream_varnames_sdate  = sdate1_48
+  stream_varnames_cultivar_gdds  = gdd1_48
+  stream_varnames_sdate  = sdate1_49
+  stream_varnames_cultivar_gdds  = gdd1_49
+  stream_varnames_sdate  = sdate1_50
+  stream_varnames_cultivar_gdds  = gdd1_50
+  stream_varnames_sdate  = sdate1_51
+  stream_varnames_cultivar_gdds  = gdd1_51
+  stream_varnames_sdate  = sdate1_52
+  stream_varnames_cultivar_gdds  = gdd1_52
+  stream_varnames_sdate  = sdate1_53
+  stream_varnames_cultivar_gdds  = gdd1_53
+  stream_varnames_sdate  = sdate1_54
+  stream_varnames_cultivar_gdds  = gdd1_54
+  stream_varnames_sdate  = sdate1_55
+  stream_varnames_cultivar_gdds  = gdd1_55
+  stream_varnames_sdate  = sdate1_56
+  stream_varnames_cultivar_gdds  = gdd1_56
+  stream_varnames_sdate  = sdate1_57
+  stream_varnames_cultivar_gdds  = gdd1_57
+  stream_varnames_sdate  = sdate1_58
+  stream_varnames_cultivar_gdds  = gdd1_58
+  stream_varnames_sdate  = sdate1_59
+  stream_varnames_cultivar_gdds  = gdd1_59
+  stream_varnames_sdate  = sdate1_60
+  stream_varnames_cultivar_gdds  = gdd1_60
+  stream_varnames_sdate  = sdate1_61
+  stream_varnames_cultivar_gdds  = gdd1_61
+  stream_varnames_sdate  = sdate1_62
+  stream_varnames_cultivar_gdds  = gdd1_62
+  stream_varnames_sdate  = sdate1_63
+  stream_varnames_cultivar_gdds  = gdd1_63
+  stream_varnames_sdate  = sdate1_64
+  stream_varnames_cultivar_gdds  = gdd1_64
+  stream_varnames_sdate  = sdate1_65
+  stream_varnames_cultivar_gdds  = gdd1_65
+  stream_varnames_sdate  = sdate1_66
+  stream_varnames_cultivar_gdds  = gdd1_66
+  stream_varnames_sdate  = sdate1_67
+  stream_varnames_cultivar_gdds  = gdd1_67
+  stream_varnames_sdate  = sdate1_68
+  stream_varnames_cultivar_gdds  = gdd1_68
+  stream_varnames_sdate  = sdate1_69
+  stream_varnames_cultivar_gdds  = gdd1_69
+  stream_varnames_sdate  = sdate1_70
+  stream_varnames_cultivar_gdds  = gdd1_70
+  stream_varnames_sdate  = sdate1_71
+  stream_varnames_cultivar_gdds  = gdd1_71
+  stream_varnames_sdate  = sdate1_72
+  stream_varnames_cultivar_gdds  = gdd1_72
+  stream_varnames_sdate  = sdate1_73
+  stream_varnames_cultivar_gdds  = gdd1_73
+  stream_varnames_sdate  = sdate1_74
+  stream_varnames_cultivar_gdds  = gdd1_74
+  stream_varnames_sdate  = sdate1_75
+  stream_varnames_cultivar_gdds  = gdd1_75
+  stream_varnames_sdate  = sdate1_76
+  stream_varnames_cultivar_gdds  = gdd1_76
+  stream_varnames_sdate  = sdate1_77
+  stream_varnames_cultivar_gdds  = gdd1_77
+  stream_varnames_sdate  = sdate1_78
+  stream_varnames_cultivar_gdds  = gdd1_78
+
+ hist_htapes_build Initializing clm2 history files
+------------------------------------------------------------
+ There will be a total of            0  history tapes
+ hist_htapes_build Successfully initialized clm2 history files
+------------------------------------------------------------
+ Attempting to read annual vegetation data .....
+(GETFIL): attempting to find local file 
+surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+ Attempting to read monthly vegetation data .....
+ nstep =            0  month =            1  day =           16
+(GETFIL): attempting to find local file 
+surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+(GETFIL): using /work/n02/n02/yuansun/cesm/cesm_inputdata/lnd/clm2/surfdata_esmf/ctsm5.2.0/surfdata_0.9x1.25_hist_2000_78pfts_c240216.nc
+ Successfully read monthly vegetation data for
+ month            2
+
+ Successfully initialized the land model
+ begin initial run at: 
+    nstep=            0  year=         2000  month=            1  day=           16  seconds=            0
+
+************************************************************
+
+(shr_orb_params) ------ Computed Orbital Parameters ------
+(shr_orb_params) Eccentricity      =   1.670366E-02
+(shr_orb_params) Obliquity (deg)   =   2.343977E+01
+(shr_orb_params) Obliquity (rad)   =   4.091011E-01
+(shr_orb_params) Long of perh(deg) =   1.028955E+02
+(shr_orb_params) Long of perh(rad) =   4.937458E+00
+(shr_orb_params) Long at v.e.(rad) =  -3.247250E-02
+(shr_orb_params) -----------------------------------------
+(shr_orb_params) ------ Computed Orbital Parameters ------
+(shr_orb_params) Eccentricity      =   1.670366E-02
+(shr_orb_params) Obliquity (deg)   =   2.343977E+01
+(shr_orb_params) Obliquity (rad)   =   4.091011E-01
+(shr_orb_params) Long of perh(deg) =   1.028955E+02
+(shr_orb_params) Long of perh(rad) =   4.937458E+00
+(shr_orb_params) Long at v.e.(rad) =  -3.247250E-02
+(shr_orb_params) -----------------------------------------

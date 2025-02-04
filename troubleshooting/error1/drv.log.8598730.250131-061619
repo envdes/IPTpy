@@ -1,0 +1,17 @@
+ (/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../cesm/driver/esm_time_mod.F90:esm_time_clockInit): driver time interval is :       1800
+ (/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../cesm/driver/esm_time_mod.F90:esm_time_clockInit): driver start_ymd:   20000116
+ (/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../cesm/driver/esm_time_mod.F90:esm_time_clockInit): driver start_tod:          0
+ (/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../cesm/driver/esm_time_mod.F90:esm_time_clockInit): driver curr_ymd:   20000116
+ (/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../cesm/driver/esm_time_mod.F90:esm_time_clockInit): driver curr_tod:          0
+ (/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../cesm/driver/esm_time_mod.F90:esm_time_clockInit): driver stop_ymd:   99990101
+ (/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../cesm/driver/esm_time_mod.F90:esm_time_clockInit): driver stop_tod:          0
+ 8 MB memory   alloc in MB is             8.00\n8 MB memory dealloc in MB is             7.88\nMemory block size conversion in bytes is          1017.54
+ PIO rearranger options:
+   comm type     =            0  (p2p)
+   comm fcd      =            0  (2denable)
+   max pend req (comp2io)  =           -2
+   enable_hs (comp2io)     =  T
+   enable_isend (comp2io)  =  F
+   max pend req (io2comp)  =           64
+   enable_hs (io2comp)    =  F
+   enable_isend (io2comp)  =  T

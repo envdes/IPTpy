@@ -1,0 +1,695 @@
+ (input_data) Reading setup_nml
+ (input_data) Reading grid_nml
+ (input_data) Reading tracer_nml
+ (input_data) Reading thermo_nml
+ (input_data) Reading dynamics_nml
+ (input_data) Reading shortwave_nml
+ (input_data) Reading ponds_nml
+ (input_data) Reading snow_nml
+ (input_data) Reading forcing_nml
+ --------------------------------
+    (input_data)
+   CICE model diagnostic output  
+ --------------------------------
+  
+ (input_data)NOTE: ice_ic = none or internal, setting restart flags to .false.
+ (input_data)NOTE: ice_ic = none or internal, setting use_restart_time=.false.
+  
+ (input_data) WARNING: atmbndy = default is deprecated
+ (input_data) WARNING:   setting atmbndy = similarity
+  Overview of model configuration with relevant parameters
+ =========================================================
+ For details, compare namelist output below with the
+ Case Settings section in the model documentation.
+  
+  Calendar
+ --------------------------------
+ days_per_year    =            365  : number of days in a model year
+ use_leap_years   =              F  : leap days are not included
+ dt               =        1800.00  : model time step
+  
+  Grid, Discretization
+ --------------------------------
+ grid_type        =    rectangular  : internally defined, rectangular grid
+ grid_ice         =              B
+   grid_ice_thrm  =              T
+   grid_ice_dynu  =              U
+   grid_ice_dynv  =              U
+ grid_atm         =              A
+   grid_atm_thrm  =              T
+   grid_atm_dynu  =              T
+   grid_atm_dynv  =              T
+ grid_ocn         =              A
+   grid_ocn_thrm  =              T
+   grid_ocn_dynu  =              T
+   grid_ocn_dynv  =              T
+ kmt_type         =           file
+ nilyr            =              8  : number of ice layers (equal thickness)
+ nslyr            =              3  : number of snow layers (equal thickness)
+ nblyr            =              1  : number of bio layers (equal thickness)
+ dEdd interior and sfc scattering layers are used in both ice, snow (unequal)
+ ncat             =              1  : number of ice categories
+ kcatbound        =              0  : original ITD category bounds
+ kitd             =              0  : delta function ITD approx
+ tr_fsd           =              F  : floe size distribution is disabled
+ nfsd             =              1  : number of floe size categories
+  
+  Horizontal Dynamics
+ --------------------------------
+ kdyn             =              0  : dynamics disabled
+  
+  Mechanical Deformation (Ridging) and Ice Strength
+ --------------------------------------------------
+ tr_lvl           =              T  : ridging related tracers
+ kridge           =              1  : ridging enabled
+ krdg_partic      =              1  : new participation function
+ mu_rdg           =           4.00  : e-folding scale of ridged ice
+ krdg_redist      =              1  : new redistribution function
+ kstrength        =              0  : Hibler (1979)
+ Pstar            =   0.275000D+05  : P* strength factor
+ Cstar            =          20.00  : C* strength exponent factor
+  
+  Thermodynamics
+ --------------------------------
+ ktherm           =              2  : mushy-layer thermo
+ dt               =        1800.00  : thermodynamic time step
+ ksno             =           0.30  : snow thermal conductivity
+ a_rapid_mode     =           0.00  : brine channel diameter
+ Rac_rapid_mode   =          10.00  : critical Rayleigh number
+ aspect_rapid_mode=           1.00  : brine convection aspect ratio
+ dSdt_slow_mode   =  -0.150000D-06  : drainage strength parameter
+ phi_c_slow_mode  =           0.05  : critical liquid fraction
+ phi_i_mushy      =           0.85  : solid fraction at lower boundary
+ Tliquidus_max    =          -0.10  : max mush liquidus temperature
+ hfrazilmin       =           0.05  : minimum new frazil ice thickness
+  
+  Radiation
+ --------------------------------
+ shortwave        =           dEdd  : delta-Eddington multiple-scattering method
+ R_ice            =           0.00  : tuning parameter for sea ice albedo
+ R_pnd            =           0.00  : tuning parameter for ponded sea ice albedo
+ R_snw            =           1.25  : tuning parameter for snow broadband albedo
+ dT_mlt           =           1.50  : change in temperature per change in snow grain radius
+ rsnw_mlt         =        1500.00  : maximum melting snow grain radius
+ kalg             =           0.00  : absorption coefficient for algae
+ emissivity       =       0.950000  : emissivity of snow and ice
+ sw_redist        =              T  : redistribute internal shortwave to surface
+ sw_frac          =           1.00  : fraction redistributed
+ sw_dtemp         =           0.01  : temperature difference from freezing to redistribute
+  
+  Atmospheric Forcing / Coupling
+ --------------------------------
+ calc_Tsfc        =              T  : calculate surface temperature as part of thermo
+ calc_strair      =              T  : calculate wind stress and speed
+ rotate_wind      =              T  : rotate wind/stress to computational grid
+ formdrag         =              F  : use form drag parameterization
+ iceruf           =       0.000500  : ice surface roughness at atmosphere interface (m)
+ highfreq         =              T  : high-frequency atmospheric coupling
+ natmiter         =              5  : number of atmo boundary layer iterations
+ atmiter_conv     =           0.00  : convergence criterion for ustar
+ atmbndy          =     similarity  : stability-based boundary layer
+  
+  Oceanic Forcing / Coupling
+ --------------------------------
+ oceanmixed_ice   =              F  : ocean mixed layer calculation (SST) disabled
+ saltflux_option  =       constant
+ ice_ref_salinity =           4.00
+ tfrz_option      =          mushy  : Assur (1958) as in mushy-layer thermo (ktherm=2)
+ update_ocn_f     =              F  : frazil water/salt fluxes not included in ocean fluxes
+ cpl_frazil       = fresh_ice_corr
+ l_mpond_fresh    =              F  : pond water not retained on ice (virtual only)
+ fbot_xfer_type   =       constant  : ocean heat transfer coefficient is constant
+ ustar_min        =       0.005000  : minimum value of ocean friction velocity
+ hi_min           =       0.010000  : minimum ice thickness allowed (m)
+    calc_dragio   =              F  : dragio hard-coded
+  
+  Age related tracers
+ --------------------------------
+ tr_iage          =              F  : chronological ice age
+ tr_FY            =              F  : first-year ice area
+  
+  Melt ponds
+ --------------------------------
+ tr_pond_lvl      =              T  : level-ice pond formulation
+ pndaspect        =           0.80  : ratio of pond depth to area fraction
+ dpscale          =       0.001000  : time scale for flushing in permeable ice
+ frzpnd           =           cesm  : CESM refreezing empirical formula
+ hs1              =           0.03  : snow depth of transition to pond ice
+ hs0              =           0.00  : snow depth of transition to bare sea ice
+ rfracmin         =           0.15  : minimum fraction of melt water added to ponds
+ rfracmax         =           0.85  : maximum fraction of melt water added to ponds
+  
+  Snow redistribution/metamorphism tracers
+ -----------------------------------------
+  
+  Primary state variables, tracers
+    (excluding biogeochemistry)
+ ---------------------------------
+ Conserved properties (all tracers are conserved):
+ ice concentration, volume and enthalpy
+ snow volume and enthalpy
+        ice salinity
+ tr_lvl           =              T  : ridging related tracers
+ tr_pond_lvl      =              T  : level-ice pond formulation
+ Non-conserved properties:
+ ice surface temperature
+ ice velocity components and internal stress
+  
+  Other ice_in namelist parameters:
+ ===================================== 
+ runid            =  ipt-py_ceds
+ runtype          =  initial
+ year_init        =       0
+ month_init       =       1
+ day_init         =       1
+ sec_init         =       0
+ istep0           =       0
+ npt_unit         =  1
+ npt              =   99999
+ diagfreq         =      24
+ print_global     =       T
+ print_points     =       F
+ debug_model      =       F
+ debug_model_step =             0
+ debug_model_i    =      -1
+ debug_model_i    =      -1
+ debug_model_iblk =      -1
+ debug_model_task =      -1
+ timer_stats      =       F
+ memory_stats     =       F
+ bfbflag          =  off
+ numin            =      11
+ numax            =      99
+ histfreq         =      x     x     x     x     x 
+ histfreq_n       =       0     0     0     0     0
+ histfreq_base    =  zero  zero  zero  zero  zero  
+ hist_avg         =    T  T  T  T  T
+ hist_suffix      =  x     1     2     3     4     
+ history_dir      =  ./
+ history_file     =  ipt-py_ceds.cice.h
+ history_precision=       4
+ history_format   =  cdf1
+ history_rearranger  default
+ history_iotasks  =     -99
+ history_root     =     -99
+ history_stride   =     -99
+ hist_time_axis   =  middle
+ history_deflate  =       0
+ history_chunksize=       0     0
+ dumpfreq         =      y     x     x     x     x 
+ dumpfreq_n       =       1     1     1     1     1
+ dumpfreq_base    =  init  init  init  init  init  
+ dump_last        =       F
+ restart          =       F
+ restart_dir      =  ./
+ restart_ext      =       F
+ restart_coszen   =       T
+ restart_format   =  cdf1
+ restart_deflate  =       0
+ restart_chunksize=       0     0
+ restart_rearranger  default
+ restart_iotasks  =     -99
+ restart_root     =     -99
+ restart_stride   =     -99
+ restart_file     =  ipt-py_ceds.cice.r
+ pointer_file     =  ./rpointer.ice
+ use_restart_time =       F
+ ice_ic           =  internal
+ grid_file        =  UNSET
+ gridcpl_file     =  unknown_gridcpl_file
+ bathymetry_file  =  unknown_bathymetry_file
+ kmt_file         =  UNSET
+ orca_halogrid    =       F
+ conserv_check    =       F
+ fyear_init       =    1900
+ ycycle           =       1
+ atm_data_type    =  default
+ atm_data_version =  _undef
+ default_season   =  winter
+ BGC coupling is switched OFF
+ bgc_data_type    =  default
+ fe_data_type     =  default
+ ice_data_type    =  latsst
+ ice_data_conc    =  parabolic
+ ice_data_dist    =  uniform
+ bgc_data_dir     =  unknown_bgc_data_dir
+ ocn_data_type    =  default
+ restore_ice      =       F
+  
+ Diagnostic point 1: lat, lon =   90.00    0.00
+ Diagnostic point 2: lat, lon =  -65.00  -45.00
+  
+ restart_age      =       F
+ restart_FY       =       F
+ restart_lvl      =       F
+ restart_pond_lvl =       F
+ restart_pond_topo=       F
+ restart_snow     =       F
+ restart_iso      =       F
+ restart_aero     =       F
+ restart_fsd      =       F
+ n_iso            =       0
+ n_aero           =       0
+ n_zaero          =       0
+ n_algae          =       0
+ n_doc            =       0
+ n_dic            =       0
+ n_don            =       0
+ n_fed            =       0
+ n_fep            =       0
+  
+ (input_zbgc) Reading zbgc_nml
+ (input_zbgc) WARNING: restart = false, setting bgc restart flags to false
+  tr_brine                  =        F
+  solve_zsal (deprecated)   =        F
+      WARNING: zsalinity has been deprecated.  Namelists and interfaces
+               will be removed in a future version
+  skl_bgc                   =        F
+  restart_bgc               =        F
+  tr_bgc_N                  =        F
+  tr_bgc_C                  =        F
+  tr_bgc_chl                =        F
+  tr_bgc_Nit                =        F
+  tr_bgc_Am                 =        F
+  tr_bgc_Sil                =        F
+  tr_bgc_hum                =        F
+  tr_bgc_DMS                =        F
+  tr_bgc_PON                =        F
+  tr_bgc_DON                =        F
+  tr_bgc_Fe                 =        F
+  n_aero                    =        0
+  n_zaero                   =        0
+  n_algae                   =        0
+  n_doc                     =        0
+  n_dic                     =        0
+  n_don                     =        0
+  n_fed                     =        0
+  n_fep                     =        0
+  
+  ntrcr                     =       26
+  nbtrcr                    =        0
+  nbtrcr_sw                 =        0
+  
+  nt_sice                   =       13
+  nt_qice                   =        2
+  nt_qsno                   =       10
+  
+ (icepack_write_tracer_flags):
+   tr_iage =  F
+   tr_FY   =  F
+   tr_lvl  =  T
+   tr_pond =  T
+   tr_pond_lvl  =  T
+   tr_pond_topo =  F
+   tr_snow    =  F
+   tr_fsd     =  F
+   tr_iso     =  F
+   tr_aero    =  F
+   tr_brine   =  F
+   tr_zaero   =  F
+   tr_bgc_Nit =  F
+   tr_bgc_N   =  F
+   tr_bgc_DON =  F
+   tr_bgc_C   =  F
+   tr_bgc_chl =  F
+   tr_bgc_Am  =  F
+   tr_bgc_Sil =  F
+   tr_bgc_DMS =  F
+   tr_bgc_Fe  =  F
+   tr_bgc_hum =  F
+   tr_bgc_PON =  F
+ (icepack_write_tracer_sizes):
+   fixed parameters: 
+   max_algae_out =           3
+   max_dic_out   =           1
+   max_doc_out   =           3
+   max_don_out   =           1
+   max_fe_out    =           2
+   nmodal1_out   =          10
+   nmodal2_out   =           8
+   max_iso_out   =           3
+   max_aero_out  =           6
+   max_nbtrcr_out=          29
+   model defined parameters: 
+   ncat      =            1
+   nilyr     =            8
+   nslyr     =            3
+   nblyr     =            1
+   nfsd      =            1
+   n_algae   =            0
+   n_DOC     =            0
+   n_DON     =            0
+   n_DIC     =            0
+   n_fed     =            0
+   n_fep     =            0
+   n_zaero   =            0
+   n_aero    =            0
+   n_iso     =            0
+   ntrcr     =           26
+   ntrcr_o   =           25
+   nbtrcr    =            0
+   nbtrcr_sw =            0
+ (icepack_write_tracer_indices):
+   nt_Tsfc =            1
+   nt_qice =            2
+   nt_qsno =           10
+   nt_sice =           13
+   nt_fbri =           26
+   nt_iage =           26
+   nt_FY   =           26
+   nt_alvl =           21
+   nt_vlvl =           22
+   nt_apnd =           23
+   nt_hpnd =           24
+   nt_ipnd =           25
+   nt_fsd  =           26
+   nt_smice      =           26
+   nt_smliq      =           26
+   nt_rhos       =           26
+   nt_rsnw       =           26
+   nt_isosno     =           26
+   nt_isoice     =           26
+   nt_aero       =           26
+   nt_bgc_Nit    =            0
+   nt_bgc_Am     =            0
+   nt_bgc_Sil    =            0
+   nt_bgc_DMSPp  =            0
+   nt_bgc_DMSPd  =            0
+   nt_bgc_DMS    =            0
+   nt_bgc_hum    =            0
+   nt_bgc_PON    =            0
+   nlt_bgc_Nit   =            0
+   nlt_bgc_Am    =            0
+   nlt_bgc_Sil   =            0
+   nlt_bgc_DMSPp =            0
+   nlt_bgc_DMSPd =            0
+   nlt_bgc_DMS   =            0
+   nlt_bgc_hum   =            0
+   nlt_bgc_PON   =            0
+   nlt_chl_sw    =            0
+   nt_zbgc_frac  =            0
+   nt_bgc_S      =            0  (deprecated)
+   max_nbtrcr =           29
+   bio_index_o(k) =            1           0
+   bio_index(k)   =            1           0
+   bio_index_o(k) =            2           0
+   bio_index(k)   =            2           0
+   bio_index_o(k) =            3           0
+   bio_index(k)   =            3           0
+   bio_index_o(k) =            4           0
+   bio_index(k)   =            4           0
+   bio_index_o(k) =            5           0
+   bio_index(k)   =            5           0
+   bio_index_o(k) =            6           0
+   bio_index(k)   =            6           0
+   bio_index_o(k) =            7           0
+   bio_index(k)   =            7           0
+   bio_index_o(k) =            8           0
+   bio_index(k)   =            8           0
+   bio_index_o(k) =            9           0
+   bio_index(k)   =            9           0
+   bio_index_o(k) =           10           0
+   bio_index(k)   =           10           0
+   bio_index_o(k) =           11           0
+   bio_index(k)   =           11           0
+   bio_index_o(k) =           12           0
+   bio_index(k)   =           12           0
+   bio_index_o(k) =           13           0
+   bio_index(k)   =           13           0
+   bio_index_o(k) =           14           0
+   bio_index(k)   =           14           0
+   bio_index_o(k) =           15           0
+   bio_index(k)   =           15           0
+   bio_index_o(k) =           16           0
+   bio_index(k)   =           16           0
+   bio_index_o(k) =           17           0
+   bio_index(k)   =           17           0
+   bio_index_o(k) =           18           0
+   bio_index(k)   =           18           0
+   bio_index_o(k) =           19           0
+   bio_index(k)   =           19           0
+   bio_index_o(k) =           20           0
+   bio_index(k)   =           20           0
+   bio_index_o(k) =           21           0
+   bio_index(k)   =           21           0
+   bio_index_o(k) =           22           0
+   bio_index(k)   =           22           0
+   bio_index_o(k) =           23           0
+   bio_index(k)   =           23           0
+   bio_index_o(k) =           24           0
+   bio_index(k)   =           24           0
+   bio_index_o(k) =           25           0
+   bio_index(k)   =           25           0
+   bio_index_o(k) =           26           0
+   bio_index(k)   =           26           0
+   bio_index_o(k) =           27           0
+   bio_index(k)   =           27           0
+   bio_index_o(k) =           28           0
+   bio_index(k)   =           28           0
+   bio_index_o(k) =           29           0
+   bio_index(k)   =           29           0
+   max_algae =            3
+   nt_bgc_N(k)  =            1           0
+   nlt_bgc_N(k) =            1           0
+   nt_bgc_C(k)  =            1           0
+   nlt_bgc_C(k) =            1           0
+   nt_bgc_chl(k)  =            1           0
+   nlt_bgc_chl(k) =            1           0
+   nt_bgc_N(k)  =            2           0
+   nlt_bgc_N(k) =            2           0
+   nt_bgc_C(k)  =            2           0
+   nlt_bgc_C(k) =            2           0
+   nt_bgc_chl(k)  =            2           0
+   nlt_bgc_chl(k) =            2           0
+   nt_bgc_N(k)  =            3           0
+   nlt_bgc_N(k) =            3           0
+   nt_bgc_C(k)  =            3           0
+   nlt_bgc_C(k) =            3           0
+   nt_bgc_chl(k)  =            3           0
+   nlt_bgc_chl(k) =            3           0
+   max_DOC =            3
+   nt_bgc_DOC(k)  =            1           0
+   nlt_bgc_DOC(k) =            1           0
+   nt_bgc_DOC(k)  =            2           0
+   nlt_bgc_DOC(k) =            2           0
+   nt_bgc_DOC(k)  =            3           0
+   nlt_bgc_DOC(k) =            3           0
+   max_DON =            1
+   nt_bgc_DON(k)  =            1           0
+   nlt_bgc_DON(k) =            1           0
+   max_DIC =            1
+   nt_bgc_DIC(k)  =            1           0
+   nlt_bgc_DIC(k) =            1           0
+   max_fe =            2
+   nt_bgc_Fed(k)  =            1           0
+   nlt_bgc_Fed(k) =            1           0
+   nt_bgc_Fep(k)  =            1           0
+   nlt_bgc_Fep(k) =            1           0
+   nt_bgc_Fed(k)  =            2           0
+   nlt_bgc_Fed(k) =            2           0
+   nt_bgc_Fep(k)  =            2           0
+   nlt_bgc_Fep(k) =            2           0
+   max_aero =            6
+   nt_zaero(k)     =            1           0
+   nlt_zaero(k)    =            1           0
+   nlt_zaero_sw(k) =            1           0
+   nt_zaero(k)     =            2           0
+   nlt_zaero(k)    =            2           0
+   nlt_zaero_sw(k) =            2           0
+   nt_zaero(k)     =            3           0
+   nlt_zaero(k)    =            3           0
+   nlt_zaero_sw(k) =            3           0
+   nt_zaero(k)     =            4           0
+   nlt_zaero(k)    =            4           0
+   nlt_zaero_sw(k) =            4           0
+   nt_zaero(k)     =            5           0
+   nlt_zaero(k)    =            5           0
+   nlt_zaero_sw(k) =            5           0
+   nt_zaero(k)     =            6           0
+   nlt_zaero(k)    =            6           0
+   nlt_zaero_sw(k) =            6           0
+ (init_domain_blocks) Reading domain_nml
+
+Domain Information
+
+  Horizontal domain: nx =    288
+                     ny =    192
+  No. of categories: nc =      1
+  No. of ice layers: ni =      8
+  No. of snow layers:ns =      3
+  Processors:  total    =    320
+  Processor shape       = square-ice
+  Distribution type     = roundrobin
+  Distribution weight   = blockall
+  Distribution wght file= unknown
+  ew_boundary_type      = cyclic
+  ns_boundary_type      = open
+  maskhalo_dyn          =      T
+  maskhalo_remap        =      T
+  maskhalo_bound        =      T
+  add_mpi_barriers      =      F
+  debug_blocks          =      F
+  block_size_x,_y       =      6     6
+  max_blocks            =      5
+  Number of ghost cells =      1
+
+ ice_domain work_unit, max_work_unit =            4          10
+ ice_domain nocn =           36          36       55296
+ ice_domain work_per_block =           11          11       16896
+ ice: total number of blocks is        1536
+  Block size:  nx_block =      8
+               ny_block =      8
+ send_i2x_per_cat =  F
+ flds_wiso =  F
+ flds_wave =  F
+ mesh file for cice domain is /work/n02/n02/yuansun/cesm/cesm_inputdata/share/meshes/fv0.9x1.25_141008_polemod_ESMFmesh.nc
+ mask file for cice domain is /work/n02/n02/yuansun/cesm/cesm_inputdata/share/meshes/gx1v7_151008_ESMFmesh.nc
+ ICE: PIO numiotasks=           2
+ ICE: PIO stride=         128
+ ICE: PIO rearranger=           2
+ ICE: PIO root=           1
+  
+istep1:         0    idate:       101    sec:         0
+ (init_hist) Reading icefields_nml
+ WARNING: No history output
+ (init_hist_mechred_2D) Reading icefields_mechred_nml
+ (init_hist_pond_2D) Reading icefields_pond_nml
+ (init_hist_bgc_2D) Reading icefields_bgc_nml
+ (init_hist_drag_2D) Reading icefields_drag_nml
+  
+ total number of history fields =            0
+ max number of history fields   =          800
+ The following variables will be written to the history tape: 
+          description                     units             variable  frequency   x
+ *** WARNING: NO HISTORY FIELDS WILL BE WRITTEN ***
+  
+ 
+  (icepack_init_itd_hist)
+  hin_max(n-1) < Cat n < hin_max(n)
+    1.0000000000000000E-002  < Cat            1  <    1.7142818446826256
+ 
+  
+istep1:         0    idate:       101    sec:         0
+ tracer          index  depend  type has_dependents
+ hi                 1       0     1       T
+ hs                 2       0     1       T
+ nt_Tsfc            3       0     1       F
+ nt_qice            4       1     2       F
+ nt_qsno           12       2     2       F
+ nt_sice           15       1     2       F
+ nt_alvl           23       0     1       T
+ nt_vlvl           24       1     2       F
+ nt_apnd           25      23     2       T
+ nt_hpnd           26      25     3       F
+ nt_ipnd           27      25     3       F
+ nt_fbri           28       0     1       F
+ nt_iage           28       0     1       F
+ nt_FY             28       0     1       F
+ nt_smice          28       0     1       F
+ nt_smliq          28       0     1       F
+ nt_rhos           28       0     1       F
+ nt_rsnw           28       0     1       F
+ nt_fsd            28       0     1       F
+ nt_isosno         28       0     1       F
+ nt_isoice         28       0     1       F
+  
+  
+  Find indices of diagnostic points 
+  
+ found point   1
+   lat    lon   TLAT   TLON     i     j   block  task
+  90.0    0.0   90.0  352.5     2     7     5   255
+  
+ found point   2
+   lat    lon   TLAT   TLON     i     j   block  task
+ -65.0  -45.0  -70.2    0.0     2     5     1   144
+ (ice_comp_nuopc):(InitializeRealize) idate from sync clock =     20000116
+ (ice_comp_nuopc):(InitializeRealize)   tod from sync clock =            0
+ (ice_comp_nuopc):(InitializeRealize) resetting idate to match sync clock
+ (ice_comp_nuopc):(InitializeRealize) curr_ymd =     20000116
+ (ice_comp_nuopc):(InitializeRealize) cice year_init =            0
+ (ice_comp_nuopc):(InitializeRealize) cice start date =     20000116
+ (ice_comp_nuopc):(InitializeRealize) cice start ymds =         2000           1          16           0
+ (ice_comp_nuopc):(InitializeRealize) cice calendar_type = NO_LEAP
+  
+istep1:         0    idate:  20000116    sec:         0
+(ice_comp_nuopc):(InitializeRealize) cice init nextsw_cday =  0.16000000000000D+02
+(ice_comp_nuopc):(InitializeRealize) tfrz_option = mushy
+(ice_comp_nuopc):(InitializeRealize) inst_name   = ICE
+(ice_comp_nuopc):(InitializeRealize) inst_index  =        1
+(ice_comp_nuopc):(InitializeRealize) inst_suffix = 
+
+  
+(ice_prescribed_init) This is the prescribed ice coverage option.
+(ice_prescribed_init)   stream_yearfirst = 1850
+(ice_prescribed_init)   stream_yearlast  = 2021
+(ice_prescribed_init)   stream_yearalign = 1850
+(ice_prescribed_init)   stream_meshfile  = /work/n02/n02/yuansun/cesm/cesm_inputdata/share/meshes/fv0.9x1.25_141008_polemod_ESMFmesh.nc
+(ice_prescribed_init)   stream_varname   = ice_cov
+(ice_prescribed_init)   stream_mapalgo   = bilinear
+(ice_prescribed_init)   stream_datafiles   = /work/n02/n02/yuansun/cesm/cesm_inputdata/atm/cam/sst/sst_HadOIBl_bc_0.9x1.25_1850_2022_c230628.nc
+  
+(shr_stream_getCalendar) opening stream filename = /work/n02/n02/yuansun/cesm/cesm_inputdata/atm/cam/sst/sst_HadOIBl_bc_0.9x1.25_1850_2022_c230628.nc
+(shr_stream_getCalendar) closing stream filename = /work/n02/n02/yuansun/cesm/cesm_inputdata/atm/cam/sst/sst_HadOIBl_bc_0.9x1.25_1850_2022_c230628.nc
+ (shr_strdata_set_stream_domain) stream_nlev =            1
+(shr_sdat_init) Creating field bundle array fldbun_data of size 2 for stream        1
+    adding field ice_cov to fldbun_data for stream        1
+
+(shr_strdata_print) ----------------------------------------------------------
+(shr_strdata_print) name        = stream_data
+(shr_strdata_print) calendar    = NO_LEAP
+(shr_strdata_print) eccen       =  1.000000E+36
+(shr_strdata_print) mvelpp      =  1.000000E+36
+(shr_strdata_print) lambm0      =  1.000000E+36
+(shr_strdata_print) obliqr      =  1.000000E+36
+(shr_strdata_print) pio_iotype  =      1
+(shr_strdata_print) nstreams    =      1
+(shr_strdata_print) Per stream information 
+(shr_strdata_print)   taxMode ( 1) = cycle
+(shr_strdata_print)   dtlimit ( 1) =  1.500000E+00
+(shr_strdata_print)   mapalgo ( 1) = bilinear
+(shr_strdata_print)   tintalgo( 1) = linear
+(shr_strdata_print)   readmode( 1) = single
+(shr_strdata_print)   vectors ( 1) = null
+(shr_strdata_print)   src_mask( 1) = 0
+(shr_strdata_print)   dst_mask( 1) = 0
+(shr_strdata_print)  
+(shr_strdata_print) ----------------------------------------------------------
+  successfully initialized sdat
+
+(shr_strdata_print) ----------------------------------------------------------
+(shr_strdata_print) name        = ice coverage prescribed data
+(shr_strdata_print) calendar    = NO_LEAP
+(shr_strdata_print) eccen       =  1.000000E+36
+(shr_strdata_print) mvelpp      =  1.000000E+36
+(shr_strdata_print) lambm0      =  1.000000E+36
+(shr_strdata_print) obliqr      =  1.000000E+36
+(shr_strdata_print) pio_iotype  =      1
+(shr_strdata_print) nstreams    =      1
+(shr_strdata_print) Per stream information 
+(shr_strdata_print)   taxMode ( 1) = cycle
+(shr_strdata_print)   dtlimit ( 1) =  1.500000E+00
+(shr_strdata_print)   mapalgo ( 1) = bilinear
+(shr_strdata_print)   tintalgo( 1) = linear
+(shr_strdata_print)   readmode( 1) = single
+(shr_strdata_print)   vectors ( 1) = null
+(shr_strdata_print)   src_mask( 1) = 0
+(shr_strdata_print)   dst_mask( 1) = 0
+(shr_strdata_print)  
+(shr_strdata_print) ----------------------------------------------------------
+(ice_import_export:realize_fields) :  min_mod2med_areacor, max_mod2med_areacor    1.00000000000000       1.00000000000000    CICE6
+(ice_import_export:realize_fields) :  min_med2mod_areacor, max_med2mod_areacor    1.00000000000000       1.00000000000000    CICE6
+(ice_comp_nuopc):(ModelAdvance) cice istep, nextsw_cday =          0      0.16062500000000D+02
+(shr_orb_params) ------ Computed Orbital Parameters ------
+(shr_orb_params) Eccentricity      =   1.670366E-02
+(shr_orb_params) Obliquity (deg)   =   2.343977E+01
+(shr_orb_params) Obliquity (rad)   =   4.091011E-01
+(shr_orb_params) Long of perh(deg) =   1.028955E+02
+(shr_orb_params) Long of perh(rad) =   4.937458E+00
+(shr_orb_params) Long at v.e.(rad) =  -3.247250E-02
+(shr_orb_params) -----------------------------------------
+(shr_strdata_readstrm) opening   : /work/n02/n02/yuansun/cesm/cesm_inputdata/atm/cam/sst/sst_HadOIBl_bc_0.9x1.25_1850_2022_c230628.nc
+(shr_strdata_readstrm) setting pio descriptor : /work/n02/n02/yuansun/cesm/cesm_inputdata/atm/cam/sst/sst_HadOIBl_bc_0.9x1.25_1850_2022_c230628.nc
+(shr_strdata_set_stream_iodesc) setting iodesc for : ice_cov with dimlens(1), dimlens(2) =      288       192   variable as time dimension time
+(shr_strdata_readstrm) reading file lb: /work/n02/n02/yuansun/cesm/cesm_inputdata/atm/cam/sst/sst_HadOIBl_bc_0.9x1.25_1850_2022_c230628.nc    1800
+(shr_strdata_readstrm) reading file ub: /work/n02/n02/yuansun/cesm/cesm_inputdata/atm/cam/sst/sst_HadOIBl_bc_0.9x1.25_1850_2022_c230628.nc    1801

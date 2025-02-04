@@ -1,0 +1,924 @@
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:InitializeP0): Mediator verbosity is set to off
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:InitializeP0): Mediator profiling is set to 0
+
+ (internalstate init) comp_present(compmed) =    T
+ (internalstate init) comp_present(compatm) =    T
+ (internalstate init) comp_present(complnd) =    T
+ (internalstate init) comp_present(compocn) =    T
+ (internalstate init) comp_present(compice) =    T
+ (internalstate init) comp_present(comprof) =    T
+ (internalstate init) comp_present(compwav) =    F
+
+ (internalstate init) atm model= cam
+ (internalstate init) lnd model= clm
+ (internalstate init) ocn model= docn
+ (internalstate init) ice model= cice
+ (internalstate init) rof model= mosart
+ (internalstate init) med model= cesm
+
+ ========================================================
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields) Mediator aoflux scheme is cesm
+ ========================================================
+ ========================================================
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields) Mediator Coupling Mode is cesm
+ ========================================================
+
+ (esmFldsExchange_cesm)ice2atm_map = idmap
+ (esmFldsExchange_cesm)lnd2atm_map = idmap
+ (esmFldsExchange_cesm)ocn2atm_map = idmap
+ (esmFldsExchange_cesm)atm2lnd_map = idmap
+ (esmFldsExchange_cesm)rof2lnd_map = unset
+ (esmFldsExchange_cesm)atm2ice_map = idmap
+ (esmFldsExchange_cesm)glc2ice_rmapname = idmap
+ (esmFldsExchange_cesm)atm2ocn_map = idmap
+ (esmFldsExchange_cesm)glc2ocn_liq_rmapname = idmap
+ (esmFldsExchange_cesm)glc2ocn_ice_rmapname = idmap
+ (esmFldsExchange_cesm)wav2ocn_smapname = unset
+ (esmFldsExchange_cesm)rof2ocn_fmapname = unset
+ (esmFldsExchange_cesm)rof2ocn_liq_rmapname = unset
+ (esmFldsExchange_cesm)rof2ocn_ice_rmapname = unset
+ (esmFldsExchange_cesm)lnd2rof_map = unset
+ (esmFldsExchange_cesm)atm2wav_map = unset
+ (esmFldsExchange_cesm)ice2wav_smapname = unset
+ (esmFldsExchange_cesm)ocn2wav_smapname = unset
+ (esmFldsExchange_cesm) flds_co2a                       =       T
+ (esmFldsExchange_cesm) flds_co2b                       =       F
+ (esmFldsExchange_cesm) flds_co2c                       =       F
+ (esmFldsExchange_cesm) flds_wiso                       =       F
+ (esmFldsExchange_cesm) flds_i2o_per_cat                =       F
+ (esmFldsExchange_cesm) flds_r2l_stream_channel_depths  =       F
+ (esmFldsExchange_cesm) mapuv_with_cart3d               =       F
+
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: cpl_scalars
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Sa_u
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Sa_v
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Sa_z
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Sa_tbot
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Sa_pbot
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Sa_shum
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Sa_ptem
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Sa_dens
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Faxa_rainc
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Faxa_swnet
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Sa_topo
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Sa_o3
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Sa_lightning
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Faxa_rainl
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Faxa_snowc
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Faxa_snowl
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Faxa_lwdn
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Faxa_swndr
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Faxa_swvdr
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Faxa_swndf
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Faxa_swvdf
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Faxa_bcph
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Faxa_ocph
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Faxa_dstwet
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Faxa_dstdry
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Faxa_ndep
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Faxa_swdn
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Faxa_sen
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Faxa_lat
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Sa_pslv
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Faxa_rain
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Faxa_snow
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Sa_u10m
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Sa_v10m
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Sa_co2prog
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_atm: Sa_co2diag
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: cpl_scalars
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Sl_lfrac
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Si_ifrac
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: So_ofrac
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Sx_avsdr
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Sx_avsdf
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Sx_anidr
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Sx_anidf
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Sx_tref
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Sx_u10
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Sx_qref
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Faxx_taux
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Faxx_tauy
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Faxx_lat
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Faxx_sen
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Faxx_evap
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Faxx_lwup
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: So_t
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Sx_t
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: So_ugustOut
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: So_u10withGust
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: So_u10res
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Si_snowh
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Si_vice
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Si_vsno
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: So_ssq
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: So_re
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: So_ustar
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Sl_fv
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Sl_ram1
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Sl_snowh
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Sl_soilw
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Fall_flxdst
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Fall_voc
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Fall_fire
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Sl_fztop
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Sl_ddvel
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_atm: Faoo_dms_ocn
+
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: cpl_scalars
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Sl_lfrin
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Fall_swnet
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Sl_avsdr
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Sl_avsdf
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Sl_anidr
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Sl_anidf
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Sl_tref
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Sl_u10
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Sl_qref
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Fall_taux
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Fall_tauy
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Fall_lat
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Fall_sen
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Fall_evap
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Fall_lwup
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Sl_t
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Sl_fv
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Sl_ram1
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Sl_snowh
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Sl_soilw
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Fall_flxdst
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Fall_voc
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Fall_fire
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Sl_fztop
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Sl_ddvel
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Flrl_rofsur
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Flrl_rofi
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Flrl_rofgwl
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Flrl_rofsub
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Flrl_irrig
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Sl_tsrf_elev
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Sl_topo_elev
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_lnd: Flgl_qice_elev
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: cpl_scalars
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Sa_z
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Sa_topo
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Sa_u
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Sa_v
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Sa_pbot
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Sa_o3
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Sa_lightning
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Sa_tbot
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Sa_ptem
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Sa_shum
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Faxa_rainc
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Faxa_rainl
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Faxa_snowc
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Faxa_snowl
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Faxa_lwdn
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Faxa_swndr
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Faxa_swvdr
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Faxa_swndf
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Faxa_swvdf
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Faxa_bcph
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Faxa_ocph
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Faxa_dstwet
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Faxa_dstdry
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Faxa_ndep
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Flrr_volr
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Flrr_volrmch
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Flrr_flood
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Sr_tdepth
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Sr_tdepth_max
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Sg_icemask
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Sg_icemask_coupled_fluxes
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Sg_ice_covered_elev
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Sg_topo_elev
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Flgg_hflx_elev
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Sa_co2prog
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_lnd: Sa_co2diag
+
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ocn: cpl_scalars
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ocn: So_omask
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ocn: So_t
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ocn: So_s
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ocn: So_u
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ocn: So_v
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ocn: So_dhdx
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ocn: So_dhdy
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ocn: Fioo_q
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ocn: So_bldepth
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ocn: Faoo_dms_ocn
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: cpl_scalars
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Si_ifrac
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Faxa_lwdn
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Faxa_swndr
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Faxa_swndf
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Faxa_swvdr
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Faxa_swvdf
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Foxx_lwup
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Foxx_lwnet
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Faxa_swdn
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Foxx_swnet
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Foxx_swnet_vdr
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Foxx_swnet_vdf
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Foxx_swnet_idr
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Foxx_swnet_idf
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Faxa_rain
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Faxa_snow
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Foxx_sen
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Foxx_lat
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Foxx_evap
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: So_duu10n
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Sa_pslv
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Faxa_bcph
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Faxa_ocph
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Faxa_dstwet
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Faxa_dstdry
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Faxa_ndep
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Foxx_hrain
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Foxx_hsnow
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Foxx_hevap
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Foxx_hcond
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Foxx_hrofl
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Foxx_hrofi
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Foxx_taux
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Foxx_tauy
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Fioi_meltw
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Fioi_melth
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Fioi_salt
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Fioi_bcphi
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Fioi_bcpho
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Fioi_flxdst
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Foxx_rofl
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Flrr_flood
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Foxx_rofi
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Sw_lamult
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Sw_ustokes
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Sw_vstokes
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Sw_hstokes
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Sw_pstokes_x
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Sw_pstokes_y
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Sa_co2prog
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ocn: Sa_co2diag
+
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: cpl_scalars
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Si_imask
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Faii_swnet
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Si_avsdr
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Si_avsdf
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Si_anidr
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Si_anidf
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Si_tref
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Si_u10
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Si_qref
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Faii_taux
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Faii_tauy
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Faii_lat
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Faii_sen
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Faii_evap
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Faii_lwup
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Si_t
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Si_snowh
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Si_vice
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Si_vsno
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Si_ifrac
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Fioi_swpen
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Fioi_swpen_vdr
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Fioi_swpen_vdf
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Fioi_swpen_idr
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Fioi_swpen_idf
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Fioi_melth
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Fioi_taux
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Fioi_tauy
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Fioi_meltw
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Fioi_salt
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Fioi_bcphi
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Fioi_bcpho
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_ice: Fioi_flxdst
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: cpl_scalars
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: Faxa_lwdn
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: Faxa_swndr
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: Faxa_swvdr
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: Faxa_swndf
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: Faxa_swvdf
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: Faxa_bcph
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: Faxa_ocph
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: Faxa_dstwet
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: Faxa_dstdry
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: Faxa_rain
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: Faxa_snow
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: Sa_z
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: Sa_pbot
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: Sa_tbot
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: Sa_ptem
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: Sa_dens
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: Sa_u
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: Sa_v
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: Sa_shum
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: So_t
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: So_s
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: So_u
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: So_v
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: So_dhdx
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: So_dhdy
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: Fioo_q
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_ice: Fixx_rofi
+
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_rof: cpl_scalars
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_rof: Flrr_volr
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_rof: Flrr_volrmch
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_rof: Flrr_flood
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_rof: Sr_tdepth
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_rof: Sr_tdepth_max
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_rof: Forr_rofl
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_rof: Forr_rofi
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_rof: Firr_rofi
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_rof: cpl_scalars
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_rof: Flrl_rofsur
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_rof: Flrl_rofi
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_rof: Flrl_rofgwl
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_rof: Flrl_rofsub
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_rof: Flrl_irrig
+
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: cpl_scalars
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_ustokes_avg
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_vstokes_avg
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_hs_avg
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_phs0_avg
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_phs1_avg
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_pdir0_avg
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_pdir1_avg
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_pTm10_avg
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_pTm11_avg
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_Tm1_avg
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_thm_avg
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_thp0_avg
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_fp0_avg
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_u_avg
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_v_avg
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_tusx_avg
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_tusy_avg
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_lamult
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_ustokes
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_vstokes
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_hstokes
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_pstokes_x
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):Fr_wav: Sw_pstokes_y
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_wav: cpl_scalars
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_wav: Si_ifrac
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_wav: So_t
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_wav: So_u
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_wav: So_v
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_wav: So_bldepth
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_wav: Sa_u
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_wav: Sa_u10m
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_wav: Sa_v
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_wav: Sa_v10m
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_wav: Sa_tbot
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_wav: Fwxx_taux
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:AdvertiseFields):To_wav: Fwxx_tauy
+  check_for_nans is  T
+  Fields will be checked for NaN values when passed from mediator to component
+ atm_use_data_first_import is  F
+ lnd_use_data_first_import is  F
+ ocn_use_data_first_import is  F
+ ice_use_data_first_import is  F
+ rof_use_data_first_import is  F
+ wav_use_data_first_import is  F
+ MED: PIO numiotasks=          10
+ MED: PIO stride=         128
+ MED: PIO rearranger=           2
+ MED: PIO root=           1
+ (internalstate allowed coupling)Initializing active coupling flags
+  
+ (internalstate allowed coupling) Allowed coupling flags
+  |from to -med  atm  lnd  ocn  ice  rof  wav  
+  |med         -    -    -    -    -    -    -
+  |atm         -    -    T    T    T    -    T
+  |lnd         -    T    -    -    -    T    -
+  |ocn         -    T    -    -    T    -    T
+  |ice         -    T    -    T    -    -    T
+  |rof         -    -    T    T    T    -    -
+  |wav         -    T    -    T    T    -    -
+  
+ (internalstate allowed coupling)  Active coupling flags
+  |from to -med  atm  lnd  ocn  ice  rof  wav  
+  |med         -    -    -    -    -    -    -
+  |atm         -    -    T    -    T    -    -
+  |lnd         -    T    -    -    -    T    -
+  |ocn         -    T    -    -    T    -    -
+  |ice         -    T    -    -    -    -    -
+  |rof         -    -    T    -    T    -    -
+  |wav         -    -    -    -    -    -    -
+  
+Creating mediator field bundles 
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) initializing FBs for atm
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) initializing FBs for atm_lnd
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) initializing FBs for atm_ice
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) initializing FBs for lnd
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) initializing FBs for lnd_atm
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) initializing FBs for lnd_rof
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) initializing FBs for ocn
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) initializing FBs for ocn_atm
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) initializing FBs for ocn_ice
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) initializing FBs for ice
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) initializing FBs for ice_atm
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) initializing FBs for rof
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) initializing FBs for rof_lnd
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) initializing FBs for rof_ice
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) initializing FB FBMed_ocnalb_a
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) initializing FB FBMed_ocnalb_o
+
+ (med_phases_aofluxes_init_fldbuns) initialized FB FBMed_aoflux_a
+ (med_phases_aofluxes_init_fldbuns) initialized FB FBMed_aoflux_o
+ (med_phases_aofluxes_init_fldbuns) following are the fields in FBMed_aoflux_o and FBMed_aoflux_a
+   FBmed_aoflux fieldname = So_tref
+   FBmed_aoflux fieldname = So_u10
+   FBmed_aoflux fieldname = So_qref
+   FBmed_aoflux fieldname = Faox_taux
+   FBmed_aoflux fieldname = Faox_tauy
+   FBmed_aoflux fieldname = Faox_lat
+   FBmed_aoflux fieldname = Faox_sen
+   FBmed_aoflux fieldname = Faox_evap
+   FBmed_aoflux fieldname = Faox_lwup
+   FBmed_aoflux fieldname = So_ugustOut
+   FBmed_aoflux fieldname = So_u10withGust
+   FBmed_aoflux fieldname = So_u10res
+   FBmed_aoflux fieldname = So_ssq
+   FBmed_aoflux fieldname = So_re
+   FBmed_aoflux fieldname = So_ustar
+   FBmed_aoflux fieldname = So_duu10n
+ (med_phases_aofluxes_init_fldbuns) creating field bundle FBImp(compatm,compocn)
+ (med_phases_aofluxes_init_fldbuns) initializing FB for atm_ocn
+ (med_phases_aofluxes_init_fldbuns) initializing FB for ocn_atm
+  
+ mapping atm->lnd Sa_u via fcopy
+ mapping atm->lnd Sa_v via fcopy
+ mapping atm->lnd Sa_z via fcopy
+ mapping atm->lnd Sa_tbot via fcopy
+ mapping atm->lnd Sa_pbot via fcopy
+ mapping atm->lnd Sa_shum via fcopy
+ mapping atm->lnd Sa_ptem via fcopy
+ mapping atm->lnd Faxa_rainc via fcopy
+ mapping atm->lnd Sa_topo via fcopy
+ mapping atm->lnd Sa_o3 via fcopy
+ mapping atm->lnd Faxa_rainl via fcopy
+ mapping atm->lnd Faxa_snowc via fcopy
+ mapping atm->lnd Faxa_snowl via fcopy
+ mapping atm->lnd Faxa_lwdn via fcopy
+ mapping atm->lnd Faxa_swndr via fcopy
+ mapping atm->lnd Faxa_swvdr via fcopy
+ mapping atm->lnd Faxa_swndf via fcopy
+ mapping atm->lnd Faxa_swvdf via fcopy
+ mapping atm->lnd Faxa_bcph via fcopy
+ mapping atm->lnd Faxa_ocph via fcopy
+ mapping atm->lnd Faxa_dstwet via fcopy
+ mapping atm->lnd Faxa_dstdry via fcopy
+ mapping atm->lnd Sa_co2prog via fcopy
+ mapping atm->lnd Sa_co2diag via fcopy
+  
+ mapping atm->ocn Sa_u via fcopy
+ mapping atm->ocn Sa_v via fcopy
+ mapping atm->ocn Sa_z via fcopy
+ mapping atm->ocn Sa_tbot via fcopy
+ mapping atm->ocn Sa_pbot via fcopy
+ mapping atm->ocn Sa_shum via fcopy
+ mapping atm->ocn Sa_ptem via fcopy
+ mapping atm->ocn Sa_dens via fcopy
+ mapping atm->ocn Faxa_rainc via fcopy
+ mapping atm->ocn Faxa_swnet via fcopy
+ mapping atm->ocn Sa_pslv via fcopy
+ mapping atm->ocn Sa_co2prog via fcopy
+ mapping atm->ocn Sa_co2diag via fcopy
+  
+ mapping atm->ice Sa_u via fcopy
+ mapping atm->ice Sa_v via fcopy
+ mapping atm->ice Sa_z via fcopy
+ mapping atm->ice Sa_tbot via fcopy
+ mapping atm->ice Sa_pbot via fcopy
+ mapping atm->ice Sa_shum via fcopy
+ mapping atm->ice Sa_ptem via fcopy
+ mapping atm->ice Sa_dens via fcopy
+ mapping atm->ice Faxa_rainc via fcopy
+ mapping atm->ice Faxa_swnet via fcopy
+ mapping atm->ice Faxa_rainl via fcopy
+ mapping atm->ice Faxa_snowc via fcopy
+ mapping atm->ice Faxa_snowl via fcopy
+ mapping atm->ice Faxa_lwdn via fcopy
+ mapping atm->ice Faxa_swndr via fcopy
+ mapping atm->ice Faxa_swvdr via fcopy
+ mapping atm->ice Faxa_swndf via fcopy
+ mapping atm->ice Faxa_swvdf via fcopy
+ mapping atm->ice Faxa_bcph via fcopy
+ mapping atm->ice Faxa_dstwet via fcopy
+ mapping atm->ice Faxa_dstdry via fcopy
+  
+ mapping lnd->atm Sl_avsdr via fcopy
+ mapping lnd->atm Sl_avsdf via fcopy
+ mapping lnd->atm Sl_anidr via fcopy
+ mapping lnd->atm Sl_anidf via fcopy
+ mapping lnd->atm Sl_tref via fcopy
+ mapping lnd->atm Sl_u10 via fcopy
+ mapping lnd->atm Sl_qref via fcopy
+ mapping lnd->atm Fall_taux via fcopy
+ mapping lnd->atm Fall_tauy via fcopy
+ mapping lnd->atm Fall_lat via fcopy
+ mapping lnd->atm Fall_sen via fcopy
+ mapping lnd->atm Fall_evap via fcopy
+ mapping lnd->atm Fall_lwup via fcopy
+ mapping lnd->atm Sl_t via fcopy
+ mapping lnd->atm Sl_fv via fcopy
+ mapping lnd->atm Sl_ram1 via fcopy
+ mapping lnd->atm Sl_snowh via fcopy
+ mapping lnd->atm Fall_flxdst via fcopy
+ mapping lnd->atm Fall_voc via fcopy
+ mapping lnd->atm Sl_ddvel via fcopy
+  
+ mapping lnd->rof Flrl_rofsur via consf with lfrac normalization
+ mapping lnd->rof Flrl_rofi via consf with lfrac normalization
+ mapping lnd->rof Flrl_rofgwl via consf with lfrac normalization
+ mapping lnd->rof Flrl_rofsub via consf with lfrac normalization
+ mapping lnd->rof Flrl_irrig via consf with lfrac normalization
+  
+ mapping ocn->atm So_t via fcopy
+  
+ mapping ocn->ice So_omask via fcopy
+ mapping ocn->ice So_t via fcopy
+ mapping ocn->ice So_s via fcopy
+ mapping ocn->ice So_u via fcopy
+ mapping ocn->ice So_v via fcopy
+  
+ mapping ice->atm Si_avsdr via fcopy
+ mapping ice->atm Si_avsdf via fcopy
+ mapping ice->atm Si_anidr via fcopy
+ mapping ice->atm Si_anidf via fcopy
+ mapping ice->atm Si_tref via fcopy
+ mapping ice->atm Si_u10 via fcopy
+ mapping ice->atm Si_qref via fcopy
+ mapping ice->atm Faii_taux via fcopy
+ mapping ice->atm Faii_tauy via fcopy
+ mapping ice->atm Faii_lat via fcopy
+ mapping ice->atm Faii_sen via fcopy
+ mapping ice->atm Faii_evap via fcopy
+ mapping ice->atm Faii_lwup via fcopy
+ mapping ice->atm Si_t via fcopy
+ mapping ice->atm Si_snowh via fcopy
+  
+ mapping rof->lnd Flrr_volr via consf with one normalization
+ mapping rof->lnd Flrr_volrmch via consf with one normalization
+ mapping rof->lnd Flrr_flood via consf with one normalization
+  
+ mapping ocn->atm So_tref via fcopy
+ mapping ocn->atm So_u10 via fcopy
+ mapping ocn->atm So_qref via fcopy
+ mapping ocn->atm Faox_taux via fcopy
+ mapping ocn->atm Faox_tauy via fcopy
+ mapping ocn->atm Faox_lat via fcopy
+ mapping ocn->atm Faox_sen via fcopy
+ mapping ocn->atm Faox_evap via fcopy
+ mapping ocn->atm Faox_lwup via fcopy
+ mapping ocn->atm So_ugustOut via fcopy
+ mapping ocn->atm So_u10withGust via fcopy
+ mapping ocn->atm So_ssq via fcopy
+ mapping ocn->atm So_re via fcopy
+ mapping ocn->atm So_ustar via fcopy
+
+(merge_to_atm): Sx_avsdr(atm) = lfrac*Sl_avsdr(lnd) + ifrac*Si_avsdr(ice)
+(merge_to_atm): Sx_avsdf(atm) = lfrac*Sl_avsdf(lnd) + ifrac*Si_avsdf(ice)
+(merge_to_atm): Sx_anidr(atm) = lfrac*Sl_anidr(lnd) + ifrac*Si_anidr(ice)
+(merge_to_atm): Sx_anidf(atm) = lfrac*Sl_anidf(lnd) + ifrac*Si_anidf(ice)
+(merge_to_atm): Sx_tref(atm) = lfrac*Sl_tref(lnd) + ifrac*Si_tref(ice)
+(merge_to_atm): Sx_u10(atm) = lfrac*Sl_u10(lnd) + ifrac*Si_u10(ice)
+(merge_to_atm): Sx_qref(atm) = lfrac*Sl_qref(lnd) + ifrac*Si_qref(ice)
+(merge_to_atm): Faxx_taux(atm) = lfrac*Fall_taux(lnd) + ifrac*Faii_taux(ice)
+(merge_to_atm): Faxx_tauy(atm) = lfrac*Fall_tauy(lnd) + ifrac*Faii_tauy(ice)
+(merge_to_atm): Faxx_lat(atm) = lfrac*Fall_lat(lnd) + ifrac*Faii_lat(ice)
+(merge_to_atm): Faxx_sen(atm) = lfrac*Fall_sen(lnd) + ifrac*Faii_sen(ice)
+(merge_to_atm): Faxx_evap(atm) = lfrac*Fall_evap(lnd) + ifrac*Faii_evap(ice)
+(merge_to_atm): Faxx_lwup(atm) = lfrac*Fall_lwup(lnd) + ifrac*Faii_lwup(ice)
+(merge_to_atm): So_t(atm) = So_t(ocn)
+(merge_to_atm): Sx_t(atm) = lfrac*Sl_t(lnd) + ofrac*So_t(ocn) + ifrac*Si_t(ice)
+(merge_to_atm): Si_snowh(atm) = Si_snowh(ice)
+(merge_to_atm): Sl_fv(atm) = Sl_fv(lnd)
+(merge_to_atm): Sl_ram1(atm) = Sl_ram1(lnd)
+(merge_to_atm): Sl_snowh(atm) = Sl_snowh(lnd)
+(merge_to_atm): Fall_flxdst(atm) = lfrac*Fall_flxdst(lnd)
+(merge_to_atm): Fall_voc(atm) = lfrac*Fall_voc(lnd)
+(merge_to_atm): Sl_ddvel(atm) = Sl_ddvel(lnd)
+(merge_to_lnd): Sa_z(lnd) = Sa_z(atm)
+(merge_to_lnd): Sa_topo(lnd) = Sa_topo(atm)
+(merge_to_lnd): Sa_u(lnd) = Sa_u(atm)
+(merge_to_lnd): Sa_v(lnd) = Sa_v(atm)
+(merge_to_lnd): Sa_pbot(lnd) = Sa_pbot(atm)
+(merge_to_lnd): Sa_o3(lnd) = Sa_o3(atm)
+(merge_to_lnd): Sa_tbot(lnd) = Sa_tbot(atm)
+(merge_to_lnd): Sa_ptem(lnd) = Sa_ptem(atm)
+(merge_to_lnd): Sa_shum(lnd) = Sa_shum(atm)
+(merge_to_lnd): Faxa_rainc(lnd) = Faxa_rainc(atm)
+(merge_to_lnd): Faxa_rainl(lnd) = Faxa_rainl(atm)
+(merge_to_lnd): Faxa_snowc(lnd) = Faxa_snowc(atm)
+(merge_to_lnd): Faxa_snowl(lnd) = Faxa_snowl(atm)
+(merge_to_lnd): Faxa_lwdn(lnd) = Faxa_lwdn(atm)
+(merge_to_lnd): Faxa_swndr(lnd) = Faxa_swndr(atm)
+(merge_to_lnd): Faxa_swvdr(lnd) = Faxa_swvdr(atm)
+(merge_to_lnd): Faxa_swndf(lnd) = Faxa_swndf(atm)
+(merge_to_lnd): Faxa_swvdf(lnd) = Faxa_swvdf(atm)
+(merge_to_lnd): Faxa_bcph(lnd) = Faxa_bcph(atm)
+(merge_to_lnd): Faxa_ocph(lnd) = Faxa_ocph(atm)
+(merge_to_lnd): Faxa_dstwet(lnd) = Faxa_dstwet(atm)
+(merge_to_lnd): Faxa_dstdry(lnd) = Faxa_dstdry(atm)
+(merge_to_lnd): Flrr_volr(lnd) = Flrr_volr(rof)
+(merge_to_lnd): Flrr_volrmch(lnd) = Flrr_volrmch(rof)
+(merge_to_lnd): Flrr_flood(lnd) = Flrr_flood(rof)
+(merge_to_lnd): Sa_co2prog(lnd) = Sa_co2prog(atm)
+(merge_to_lnd): Sa_co2diag(lnd) = Sa_co2diag(atm)
+(merge_to_ocn): Sa_co2prog(ocn) = Sa_co2prog(atm)
+(merge_to_ocn): Sa_co2diag(ocn) = Sa_co2diag(atm)
+(merge_to_ice): Faxa_lwdn(ice) = Faxa_lwdn(atm)
+(merge_to_ice): Faxa_swndr(ice) = Faxa_swndr(atm)
+(merge_to_ice): Faxa_swvdr(ice) = Faxa_swvdr(atm)
+(merge_to_ice): Faxa_swndf(ice) = Faxa_swndf(atm)
+(merge_to_ice): Faxa_swvdf(ice) = Faxa_swvdf(atm)
+(merge_to_ice): Faxa_bcph(ice) = Faxa_bcph(atm)
+(merge_to_ice): Faxa_dstwet(ice) = Faxa_dstwet(atm)
+(merge_to_ice): Faxa_dstdry(ice) = Faxa_dstdry(atm)
+(merge_to_ice): Faxa_rain(ice) = Faxa_rainc:Faxa_rainl(atm)
+(merge_to_ice): Faxa_snow(ice) = Faxa_snowc:Faxa_snowl(atm)
+(merge_to_ice): Sa_z(ice) = Sa_z(atm)
+(merge_to_ice): Sa_pbot(ice) = Sa_pbot(atm)
+(merge_to_ice): Sa_tbot(ice) = Sa_tbot(atm)
+(merge_to_ice): Sa_ptem(ice) = Sa_ptem(atm)
+(merge_to_ice): Sa_dens(ice) = Sa_dens(atm)
+(merge_to_ice): Sa_u(ice) = Sa_u(atm)
+(merge_to_ice): Sa_v(ice) = Sa_v(atm)
+(merge_to_ice): Sa_shum(ice) = Sa_shum(atm)
+(merge_to_ice): So_t(ice) = So_t(ocn)
+(merge_to_ice): So_s(ice) = So_s(ocn)
+(merge_to_ice): So_u(ice) = So_u(ocn)
+(merge_to_ice): So_v(ice) = So_v(ocn)
+(merge_to_rof): Flrl_rofsur(rof) = lfrac*Flrl_rofsur(lnd)
+(merge_to_rof): Flrl_rofi(rof) = lfrac*Flrl_rofi(lnd)
+(merge_to_rof): Flrl_rofgwl(rof) = lfrac*Flrl_rofgwl(lnd)
+(merge_to_rof): Flrl_rofsub(rof) = lfrac*Flrl_rofsub(lnd)
+(merge_to_rof): Flrl_irrig(rof) = lfrac*Flrl_irrig(lnd)
+  
+ (module_med_map: med_map_routehandles_initfrom_field) creating RH redist for atm to lnd srcMask =    -987987 dstMask =    -987987
+ (module_med_map: med_map_routehandles_initfrom_field) creating RH redist for atm to ocn srcMask =    -987987 dstMask =          0
+ (module_med_map: med_map_routehandles_initfrom_field) creating RH redist for atm to ice srcMask =    -987987 dstMask =          0
+ (module_med_map: med_map_routehandles_initfrom_field) creating RH redist for lnd to atm srcMask =    -987987 dstMask =    -987987
+ (module_med_map: med_map_routehandles_initfrom_field) creating RH consf for lnd to rof srcMask =    -987987 dstMask =    -987987
+ (module_med_map: med_map_routehandles_initfrom_field) creating RH redist for ocn to atm srcMask =          0 dstMask =    -987987
+ (module_med_map: med_map_routehandles_initfrom_field) creating RH redist for ocn to ice srcMask =          0 dstMask =          0
+ (module_med_map: med_map_routehandles_initfrom_field) creating RH redist for ice to atm srcMask =          0 dstMask =    -987987
+ (module_med_map: med_map_routehandles_initfrom_field) creating RH consf for rof to lnd srcMask =    -987987 dstMask =    -987987
+
+ (med_map_mod: RouteHandles_init)Initializing unity map normalizations
+ (med_map_mod: RouteHandles_init) created field_NormOne for lnd->rof with mapping consf
+ (med_map_mod: RouteHandles_init) created field_NormOne for rof->lnd with mapping consf
+
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Fall_evap       1
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Fall_flxdst       2
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Fall_lat       6
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Fall_lwup       7
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Fall_sen       8
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Fall_taux       9
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Fall_tauy      10
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Fall_voc      11
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Sl_anidf      33
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Sl_anidr      34
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Sl_avsdf      35
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Sl_avsdr      36
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Sl_ddvel      37
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Sl_fv     139
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Sl_qref     140
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Sl_ram1     141
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Sl_snowh     142
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Sl_t     143
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Sl_tref     144
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Sl_u10     145
+
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  So_t       1
+
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Faii_evap       1
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Faii_lat       2
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Faii_lwup       3
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Faii_sen       4
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Faii_taux       5
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Faii_tauy       6
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Si_anidf       7
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Si_anidr       8
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Si_avsdf       9
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Si_avsdr      10
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Si_qref      11
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Si_snowh      12
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Si_t      13
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Si_tref      14
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Si_u10      15
+
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Faxa_bcph       1
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Faxa_dstdry       4
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Faxa_dstwet       8
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Faxa_lwdn      12
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Faxa_ocph      13
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Faxa_rainc      16
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Faxa_rainl      17
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Faxa_snowc      18
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Faxa_snowl      19
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Faxa_swndf      20
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Faxa_swndr      21
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Faxa_swvdf      22
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Faxa_swvdr      23
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Sa_co2diag      24
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Sa_co2prog      25
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Sa_o3      26
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Sa_pbot      27
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Sa_ptem      28
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Sa_shum      29
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Sa_tbot      30
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Sa_topo      31
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Sa_u      32
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Sa_v      33
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  fcopy  unset  Sa_z      34
+
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  consf  one  Flrr_flood       1
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  consf  one  Flrr_volr       2
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   lnd  consf  one  Flrr_volrmch       3
+
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ocn  fcopy  unset  Faxa_rainc       1
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ocn  fcopy  unset  Faxa_swnet       2
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ocn  fcopy  unset  Sa_co2diag       3
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ocn  fcopy  unset  Sa_co2prog       4
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ocn  fcopy  unset  Sa_dens       5
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ocn  fcopy  unset  Sa_pbot       6
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ocn  fcopy  unset  Sa_pslv       7
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ocn  fcopy  unset  Sa_ptem       8
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ocn  fcopy  unset  Sa_shum       9
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ocn  fcopy  unset  Sa_tbot      10
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ocn  fcopy  unset  Sa_u      11
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ocn  fcopy  unset  Sa_v      12
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ocn  fcopy  unset  Sa_z      13
+
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  Faxa_bcph       1
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  Faxa_dstdry       4
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  Faxa_dstwet       8
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  Faxa_lwdn      12
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  Faxa_rainc      13
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  Faxa_rainl      14
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  Faxa_snowc      15
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  Faxa_snowl      16
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  Faxa_swndf      17
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  Faxa_swndr      18
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  Faxa_swnet      19
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  Faxa_swvdf      20
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  Faxa_swvdr      21
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  Sa_dens      22
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  Sa_pbot      23
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  Sa_ptem      24
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  Sa_shum      25
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  Sa_tbot      26
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  Sa_u      27
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  Sa_v      28
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  Sa_z      29
+
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  So_omask       1
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  So_s       2
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  So_t       3
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  So_u       4
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   ice  fcopy  unset  So_v       5
+
+
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   rof  consf  lfrac  Flrl_irrig       1
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   rof  consf  lfrac  Flrl_rofgwl       2
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   rof  consf  lfrac  Flrl_rofi       3
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   rof  consf  lfrac  Flrl_rofsub       4
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   rof  consf  lfrac  Flrl_rofsur       5
+
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  So_anidf       1
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  So_anidr       2
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  So_avsdf       3
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  So_avsdr       4
+ (med_phases_prep_ocn_init) initializing ocean export accumulation FB for 
+
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   rof  consf  lfrac  Flrl_irrig       1
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   rof  consf  lfrac  Flrl_rofgwl       2
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   rof  consf  lfrac  Flrl_rofi       3
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   rof  consf  lfrac  Flrl_rofsub       4
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   rof  consf  lfrac  Flrl_rofsur       5
+ (module_med_map: med_map_routehandles_initfrom_field) creating RH consd for lnd to rof srcMask =    -987987 dstMask =    -987987
+ (module_med_map: med_map_routehandles_initfrom_field) creating RH redist for ice to ocn srcMask =          0 dstMask =          0
+(shr_orb_params) ------ Computed Orbital Parameters ------
+(shr_orb_params) Eccentricity      =   1.670366E-02
+(shr_orb_params) Obliquity (deg)   =   2.343977E+01
+(shr_orb_params) Obliquity (rad)   =   4.091011E-01
+(shr_orb_params) Long of perh(deg) =   1.028955E+02
+(shr_orb_params) Long of perh(rad) =   4.937458E+00
+(shr_orb_params) Long at v.e.(rad) =  -3.247250E-02
+(shr_orb_params) -----------------------------------------
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize)MED - Initialize-Data-Dependency from ATM NOT YET SATISFIED!!!
+(shr_orb_params) ------ Computed Orbital Parameters ------
+(shr_orb_params) Eccentricity      =   1.670366E-02
+(shr_orb_params) Obliquity (deg)   =   2.343977E+01
+(shr_orb_params) Obliquity (rad)   =   4.091011E-01
+(shr_orb_params) Long of perh(deg) =   1.028955E+02
+(shr_orb_params) Long of perh(rad) =   4.937458E+00
+(shr_orb_params) Long at v.e.(rad) =  -3.247250E-02
+(shr_orb_params) -----------------------------------------
+
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize)Initialize-Data-Dependency allDone check Passed
+
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) med
+
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) atm
+global nx,ny,ntile sizes for atm:     288     192       0
+
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) lnd
+global nx,ny,ntile sizes for lnd:     288     192       0
+
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) ocn
+global nx,ny,ntile sizes for ocn:     288     192       0
+
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) ice
+global nx,ny,ntile sizes for ice:     288     192       0
+
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) rof
+global nx,ny,ntile sizes for rof:     720     360       0
+
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) wav
+
+ Creating budget_diags%comps 
+(med_phases_diag_init) budget table version is v0
+  Add c2a_atm to budgets with index            1
+  Add a2c_atm to budgets with index            2
+  Add c2i_inh to budgets with index            3
+  Add i2c_inh to budgets with index            4
+  Add c2i_ish to budgets with index            5
+  Add i2c_ish to budgets with index            6
+  Add c2l_lnd to budgets with index            7
+  Add l2c_lnd to budgets with index            8
+  Add c2o_ocn to budgets with index            9
+  Add o2c_ocn to budgets with index           10
+  Add c2r_rof to budgets with index           11
+  Add r2c_rof to budgets with index           12
+  Add c2g_glc to budgets with index           13
+  Add g2c_glc to budgets with index           14
+  Add c2a_inh to budgets with index           15
+  Add a2c_inh to budgets with index           16
+  Add c2a_ish to budgets with index           17
+  Add a2c_ish to budgets with index           18
+  Add c2a_lnd to budgets with index           19
+  Add a2c_lnd to budgets with index           20
+  Add c2a_ocn to budgets with index           21
+  Add a2c_ocn to budgets with index           22
+  Add area to budgets with index            1
+  Add hfreeze to budgets with index            2
+  Add hmelt to budgets with index            3
+  Add hnetsw to budgets with index            4
+  Add hlwdn to budgets with index            5
+  Add hlwup to budgets with index            6
+  Add hlatvap to budgets with index            7
+  Add hlatfus to budgets with index            8
+  Add hiroff to budgets with index            9
+  Add hsen to budgets with index           10
+  Add wfreeze to budgets with index           11
+  Add wmelt to budgets with index           12
+  Add wrain to budgets with index           13
+  Add wsnow to budgets with index           14
+  Add wevap to budgets with index           15
+  Add weqsaltf to budgets with index           16
+  Add wrunoff to budgets with index           17
+  Add wfrzrof to budgets with index           18
+  Add     inst to budgets with index            1
+  Add  monthly to budgets with index            2
+  Add   annual to budgets with index            3
+  Add all_time to budgets with index            4
+
+(/mnt/lustre/a2fs-work2/work/n02/n02/yuansun/cesm/my_cesm_sandbox_cesm2.3lcz_new/components/cmeps/cime_config/../mediator/med.F90:DataInitialize) read_restart =  F
+
+(med_time_alarmInit): creating alarm med_profile_alarm
+
+(med_time_alarmInit): creating alarm alarm_stop
+
+(med_aofluxes_init) ocn_surface_flux_scheme is 0
+
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Faox_evap       1
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Faox_lat       2
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Faox_lwup       3
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Faox_sen       4
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Faox_taux       5
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  Faox_tauy       6
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  So_qref       7
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  So_re       8
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  So_ssq       9
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  So_tref      10
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  So_u10      11
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  So_u10withGust      12
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  So_ugustOut      13
+ (med_map_mod:med_packed_field_create)Packed field: destcomp,mapping,mapnorm,fldname,index:   atm  fcopy  unset  So_ustar      14
+(shr_orb_params) ------ Computed Orbital Parameters ------
+(shr_orb_params) Eccentricity      =   1.670366E-02
+(shr_orb_params) Obliquity (deg)   =   2.343977E+01
+(shr_orb_params) Obliquity (rad)   =   4.091011E-01
+(shr_orb_params) Long of perh(deg) =   1.028955E+02
+(shr_orb_params) Long of perh(rad) =   4.937458E+00
+(shr_orb_params) Long at v.e.(rad) =  -3.247250E-02
+(shr_orb_params) -----------------------------------------

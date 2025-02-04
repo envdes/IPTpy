@@ -1,0 +1,54 @@
+((ocn_comp_nuopc))  case_name         = ipt-py_ceds
+((ocn_comp_nuopc))  datamode          = sstdata
+((ocn_comp_nuopc))  model_meshfile    = /work/n02/n02/yuansun/cesm/cesm_inputdata/share/meshes/fv0.9x1.25_141008_polemod_ESMFmesh.nc
+((ocn_comp_nuopc))  model_maskfile    = /work/n02/n02/yuansun/cesm/cesm_inputdata/share/meshes/gx1v7_151008_ESMFmesh.nc
+((ocn_comp_nuopc))  nx_global         =        288
+((ocn_comp_nuopc))  ny_global         =        192
+((ocn_comp_nuopc))  restfilm          = null
+((ocn_comp_nuopc))  skip_restart_read =      F
+((ocn_comp_nuopc))  import_data_fields = none
+  sst_constant_value =   -1.0000000000000000     
+((ocn_comp_nuopc))  export_all        =      F
+ OCN: PIO numiotasks=           2
+ OCN: PIO stride=         128
+ OCN: PIO rearranger=           2
+ OCN: PIO root=           1
+(dshr_mesh_init) (dshr_mod:dshr_mesh_init) obtained OCN mesh from /work/n02/n02/yuansun/cesm/cesm_inputdata/share/meshes/fv0.9x1.25_141008_polemod_ESMFmesh.nc
+(dshr_mesh_init) (dshr_mod:dshr_mesh_init) obtained OCN mask from /work/n02/n02/yuansun/cesm/cesm_inputdata/share/meshes/gx1v7_151008_ESMFmesh.nc
+(shr_stream_getCalendar) opening stream filename = /work/n02/n02/yuansun/cesm/cesm_inputdata/atm/cam/sst/sst_HadOIBl_bc_0.9x1.25_1850_2022_c230628.nc
+(shr_stream_getCalendar) closing stream filename = /work/n02/n02/yuansun/cesm/cesm_inputdata/atm/cam/sst/sst_HadOIBl_bc_0.9x1.25_1850_2022_c230628.nc
+ (shr_strdata_set_stream_domain) stream_nlev =            1
+(shr_sdat_init) Creating field bundle array fldbun_data of size 2 for stream        1
+    adding field So_t to fldbun_data for stream        1
+
+(shr_strdata_print) ----------------------------------------------------------
+(shr_strdata_print) name        = stream_data
+(shr_strdata_print) calendar    = NO_LEAP
+(shr_strdata_print) eccen       =  1.000000E+36
+(shr_strdata_print) mvelpp      =  1.000000E+36
+(shr_strdata_print) lambm0      =  1.000000E+36
+(shr_strdata_print) obliqr      =  1.000000E+36
+(shr_strdata_print) pio_iotype  =      1
+(shr_strdata_print) nstreams    =      1
+(shr_strdata_print) Per stream information 
+(shr_strdata_print)   taxMode ( 1) = cycle
+(shr_strdata_print)   dtlimit ( 1) =  1.500000E+00
+(shr_strdata_print)   mapalgo ( 1) = bilinear
+(shr_strdata_print)   tintalgo( 1) = linear
+(shr_strdata_print)   readmode( 1) = single
+(shr_strdata_print)   vectors ( 1) = null
+(shr_strdata_print)   src_mask( 1) = 0
+(shr_strdata_print)   dst_mask( 1) = 0
+(shr_strdata_print)  
+(shr_strdata_print) ----------------------------------------------------------
+  successfully initialized sdat
+(dshr_addfield_add) setting pointer for export state So_omask
+(dshr_addfield_add) setting pointer for export state So_s
+(dshr_addfield_add) setting pointer for export state So_t
+(dshr_addfield_add) setting pointer for export state So_u
+(dshr_addfield_add) setting pointer for export state So_v
+(shr_strdata_readstrm) opening   : /work/n02/n02/yuansun/cesm/cesm_inputdata/atm/cam/sst/sst_HadOIBl_bc_0.9x1.25_1850_2022_c230628.nc
+(shr_strdata_readstrm) setting pio descriptor : /work/n02/n02/yuansun/cesm/cesm_inputdata/atm/cam/sst/sst_HadOIBl_bc_0.9x1.25_1850_2022_c230628.nc
+(shr_strdata_set_stream_iodesc) setting iodesc for : SST_cpl with dimlens(1), dimlens(2) =      288       192   variable as time dimension time
+(shr_strdata_readstrm) reading file lb: /work/n02/n02/yuansun/cesm/cesm_inputdata/atm/cam/sst/sst_HadOIBl_bc_0.9x1.25_1850_2022_c230628.nc    1800
+(shr_strdata_readstrm) reading file ub: /work/n02/n02/yuansun/cesm/cesm_inputdata/atm/cam/sst/sst_HadOIBl_bc_0.9x1.25_1850_2022_c230628.nc    1801

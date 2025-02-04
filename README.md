@@ -25,7 +25,7 @@ IPTpy enables users to generate global anthropogenic emissions from [Copernicus 
 | Version            | v5.3                                                         | v2021_04_21                                                  |
 | Spatial resolution | 0.1°x0.1°                                                    | 0.5°x0.5°                                                    |
 | Download method    | [Wget](https://permalink.aeris-data.fr/CAMS-GLOB-ANT)        | [Globus](https://www.globus.org/data-transfer)               |
-| Required scripts   | [regrid.py](./src/anthro_emission/fv/regrid.py), [rename.py](./src/anthro_emission/fv/rename.py) | [sum.py](./src/anthro_emission/fv/sum.py), [regrid.py](./src/anthro_emission/fv/regrid.py), [rename.py](./src/anthro_emission/fv/rename.py) |
+| Required scripts   | [regrid.py](./src/iptpy/anthro_emission/fv/regrid.py), [rename.py](./src/iptpy/anthro_emission/fv/rename.py) | [sum.py](./src/iptpy/anthro_emission/fv/sum.py), [regrid.py](./src/iptpy/anthro_emission/fv/regrid.py), [rename.py](./src/iptpy/anthro_emission/fv/rename.py) |
 
 ## Script Structure
 

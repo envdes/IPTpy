@@ -1,44 +1,23 @@
-.. currentmodule:: iptpy.anthro_emission
+.. currentmodule:: iptpy.anthro_emission.fv
 
 User API Reference
 ==================
-This page provides an API reference for the IPTpy package, focusing on modules that handling anthropogenic emissions for the FV dycore.
+This page provides an API reference for the IPTpy package.
 
-IPTpy Routines for FV Dycore
+IPTpy Classes
 ----------------------------
 
-Sum
+FV
 ---
 
-The `sum` module provides functions for aggregating CEDS emissions data across sectors.
-
-.. currentmodule:: iptpy.anthro_emission.fv.sum
+The `FV` class handls anthropogenic emissions for the FV dycore in CESM.
 
 .. autosummary::
    :toctree: ./generated/
-
-   Sum
-
-Regrid
-------
-
-The `regrid` module includes functions for generating and applying a regridder to emission data.
-
-.. currentmodule:: iptpy.anthro_emission.fv.regrid
-
-.. autosummary::
-   :toctree: ./generated/
-
-   Regrid
-
-Rename
-------
-
-The `rename` module provides functionality to rename emission variables compatible with the FV dycore of CESM.
-
-.. currentmodule:: iptpy.anthro_emission.fv.rename
-
-.. autosummary::
-   :toctree: ./generated/
-
-   Rename   
+   
+   FV
+   FV.apply_regridder
+   FV.generate_regridder
+   FV.rename
+   FV.sum_up
+   

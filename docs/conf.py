@@ -10,7 +10,7 @@ from datetime import datetime
 #sys.path.insert(0, os.path.abspath('../IPTpy'))
 #ys.path.insert(0, os.path.abspath('../src'))
 #sys.path.insert(0, os.path.abspath('.'))
-print("sys.path:", sys.path) # returns sys.path: ['/Users/user/Desktop/YuanSun-UoM/IPTpy/docs'
+print("sys.path:", sys.path) # returns sys.path: ['/Users/user/Desktop/envdes/IPTpy/docs'
 #import iptpy
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
@@ -25,9 +25,9 @@ release = "'v0.0.0'"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    'recommonmark', # for markdown, similar to myst_parser
-    #'myst_parser', 
-    'myst_nb', # for ipynb, check 'myst_nb' or 'myst-nb' as typo
+    #'recommonmark', # for markdown, similar to myst_parser
+    'myst_parser',
+    #'myst_nb', # for ipynb, check 'myst_nb' or 'myst-nb' as typo
     'sphinx.ext.napoleon',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
@@ -56,7 +56,7 @@ html_static_path = ['_static']
 # documentation.
 html_theme_options = {
     "repository_url":
-        "https://github.com/YuanSun-UoM/IPTpy",
+        "https://github.com/envdes/IPTpy",
     "repository_branch":
         "main",
     "path_to_docs":
@@ -78,7 +78,7 @@ html_theme_options = {
     "icon_links": [
         {
             "name": "GitHub",
-            "url": "https://github.com/YuanSun-UoM/IPTpy",
+            "url": "https://github.com/envdes/IPTpy",
             "icon": "fa-brands fa-github",
         }
     ]
@@ -88,18 +88,34 @@ html_theme_options = {
 html_last_updated_fmt = ""
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
-source_suffix = ['.rst', '.md']
-'''
+#source_suffix = ['.rst', '.md']
+
 source_suffix = {
     '.md': 'markdown',
     '.rst': 'restructuredtext',
     #'.ipynb': 'myst-nb',
     #'.myst': 'myst-nb',
 }
-'''
+
+
+# MyST Parser Settings
+myst_enable_extensions = [
+    "dollarmath",  # Allows inline `$...$` and block `$$...$$` LaTeX math
+    "amsmath",     # Enables AMS math environments
+]
+
+# MathJax Configuration (optional, but useful)
+mathjax3_config = {
+    "tex": {
+        "inlineMath": [["$", "$"], ["\\(", "\\)"]],
+        "displayMath": [["$$", "$$"], ["\\[", "\\]"]],
+    }
+}
 
 # jupyter_execute_notebooks = "off"
 nb_execution_mode = "off"
 
 # The master toctree document.
 autosummary_generate = True
+
+autodoc_typehints = 'none'

@@ -3,13 +3,13 @@ Below are installation instructions for setting up via the command line in a bas
 
 ## Quick Installation
 
-- Method1: install by [pip](https://pypi.org/project/pip/)
+- Method1: Install IPTpy by [pip](https://pypi.org/project/pip/).
 
 ```bash
 pip install iptpy
 ```
 
-- Method2: install by Conda
+- Method2: Install IPTpy by Conda.
 
 ```bash
 conda install -c conda-forge iptpy
@@ -19,23 +19,23 @@ conda install -c conda-forge iptpy
 
 ### Step 1: Check the Python path and virtual environment
 
-- Check the Python path
+- Check the Python path.
 
 ```bash
 which python3
 ```
 
-- List and choose an existing virtual environment for installation
+- List and choose an existing virtual environment for installation.
 
 ```bash
 # choose an virtual environment in a specific folder
 ls /path/to/venvs
 
-# list Conda virtual environment and choose one
+# or list Conda virtual environment and choose one
 conda env list
 ```
 
-- Or, create a new virtual environment for installation 
+- Or, create a new virtual environment for installation. 
 
 ```bash
 # for example, 'myenv' is the new virtual environment name
@@ -56,14 +56,14 @@ conda create -n myenv python=3.9 -c conda-forge numpy xarray pandas datetime net
 
 ### Step 2: Install IPTpy
 
-- Install IPTpy in a venv virtual environment
+- Install IPTpy in a venv virtual environment.
 
 ```bash
 source myenv/bin/activate
 pip install iptpy 
 ```
 
-- Install IPTpy in a Conda virtual environment
+- Install IPTpy in a Conda virtual environment.
 
 ```bash
 conda activate myenv
@@ -72,13 +72,13 @@ conda install -c conda-forge iptpy
 
 ### Step 3: Verify installation
 
-- For venv virtual environment:
+- Verify installation in a venv virtual environment.
 
 ```bash
 pip show iptpy
 ```
 
-- For Conda virtual environment:
+- Verify installation in a Conda virtual environment.
 
 ```bash
 conda list iptpy
@@ -86,19 +86,46 @@ conda list iptpy
 
 ### Step 4: Deactivation
 
-- For venv virtual environment:
+- Deactivate venv virtual environment after installation.
 
 ```bash
 deactivate
 ```
 
-- For Conda virtual environment
+- Deactivate Conda virtual environment after installation. 
 
 ```bash
 conda deactivate
 ```
 
-## Package incompatibility
+# Environment 
+
+## Requirement
+
+IPTpy requires seven libraries for its functionality. 
+
+- [numpy](https://numpy.org/): A fundamental package for scientific computing with Python.
+- [xarray](https://xarray.dev/): Working with labeled arrays and datasets.
+- [pandas](https://pandas.pydata.org/): A data analysis and manipulation tool.
+- [netcdf4](https://unidata.github.io/netcdf4-python/#netCDF4): A Python interface to the netCDF C library. 
+- [esmpy](https://earthsystemmodeling.org/esmpy/): ESMF Python regridding interface. 
+- [xesmf](https://xesmf.readthedocs.io/en/latest/#): Universal regridder for geospatial data. 
+
+For reference, the following version setup works: numpy=2.0.2, xarray=2024.7.0, pandas=2.2.3, netcdf4=1.7.1, esmfpy=8.6.1, xesmf=0.8.7. Specifying versions during installation as follow:
+
+```bash
+# using pip
+pip install numpy==2.0.2 xarray==2024.7.0 pandas==2.2.3 netCDF4==1.7.1 esmpy==8.6.1 xesmf==0.8.7
+
+# using conda
+conda install -c conda-forge numpy=2.0.2 xarray=2024.7.0 pandas=2.2.3 netCDF4=1.7.1 esmpy=8.6.1 xesmf=0.8.7
+```
+
+
+
+## Error (selected)
+
+Errors may occur during library installation, such as package incompatibility or dependency conflicts. 
 
 **error1**: 
 
@@ -139,3 +166,17 @@ AttributeError: 'numpy.ufunc' object has no attribute '__module__'
 **note**: AttributeError: 'numpy.ufunc' object has no attribute '__module__', is likely due to an incompatibility between xesmf and your version of numpy. This issue can occur when a library is trying to use an outdated or unsupported feature in a newer version of numpy.
 
 **solution**: conda install numpy==**2.0.2**. After reinstalling numpy, remember to restart the kernel. 
+
+
+
+**error2** 
+
+ERROR: Could not find a version that satisfies the requirement esmpy (from iptpy) (from versions: none)
+ERROR: No matching distribution found for esmpy
+
+**note**: esmpy is not distributed through the Python Package Index (PyPI), so you won’t be able to install it via pip install esmpy unless it’s available from another source.
+
+```bash
+conda install -c conda-forge esmpy
+```
+

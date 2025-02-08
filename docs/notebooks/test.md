@@ -7,11 +7,7 @@
 ```python
 tag = 'CAMS-GLOB-ANTv5.3'
 period = '20180101_20181201'
-for var in ['bc_a4', 'CO', 'NH3', 'NO', 'pom_a4', 'SO2', 
-                               'C2H6', 'C3H8', 'C2H4', 'C3H6', 'C2H2', 'BIGENE', 
-                               'BENZENE', 'TOLUENE', 'CH2O', 'CH3CHO', 'BIGALK', 'XYLENES', 
-                               'CH3OH', 'C2H5OH', 'CH3COCH3', 'MEK', 'HCOOH',
-                               'CH3COOH', 'IVOC']:
+for var in ['bc_a4', 'CO', 'NH3', 'NO', 'pom_a4',  'C2H6', 'C3H8', 'C2H4', 'C3H6', 'C2H2', 'BIGENE', 'BENZENE', 'TOLUENE', 'CH2O', 'CH3CHO', 'BIGALK', 'XYLENES', 'CH3OH', 'C2H5OH', 'CH3COCH3', 'MEK', 'HCOOH', 'CH3COOH', 'IVOC']:
     check = xr.open_dataset(f'/gws/nopw/j04/duicv/yuansun/IPTpy/tests/rename/{tag}_{var}_anthro_{period}_0.9x1.25_c20250131.nc')
     # Print max value
     print(check['emiss_anthro'].max().item())
@@ -25,7 +21,7 @@ for var in ['bc_a4', 'CO', 'NH3', 'NO', 'pom_a4', 'SO2',
 
 ## Test for CESM Simulation
 
-- Choose an appropriate CESM component set (composet), such as, **FCHIST,** and run a test simulation. 
+- Choose an appropriate CESM component set (composet) in the *cime_config/config_compsets.xml*, such as, **FCHIST,** and run a test simulation. 
 - Below is an example job script for CESM2.3 including CAM6.3 and CTSM5.2. Users should modify the script based on their model version and configure it according to their computing environment. 
 
 ```bash

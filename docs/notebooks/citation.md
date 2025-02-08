@@ -13,12 +13,12 @@ DOIs for all the IPTpy versions can be found on [Zenodo](https://zenodo.org/sear
 - Cite a specific version of IPTpy:
 
 ```
-Yuan Sun, Zhonghua Zheng. (2022). Python-based Input Processing Tools for CESM: IPTpy (v2022.05.0) [Software]. doi:.
+Yuan Sun, Zhonghua Zheng. (2025). Python-based Input Processing Tools for CESM: IPTpy (v2022.05.0) [Software]. doi:.
 ```
 
 - Or, cit3 GeoCAT-viz without referring to a specific version:
 
 ```
-Yuan Sun, Zhonghua Zheng. (2022). Python-based Input Processing Tools for CESM: IPTpy (v2022.05.0) [Software]. doi:.
+Yuan Sun, Zhonghua Zheng. (2025). Python-based Input Processing Tools for CESM: IPTpy (v2022.05.0) [Software]. doi:.
 ```
 

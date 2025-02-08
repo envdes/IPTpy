@@ -1,5 +1,6 @@
 recommonmark
 myst-nb
+myst-parser
 sphinx-book-theme
 sphinx_design
 sphinx

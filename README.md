@@ -47,4 +47,4 @@ IPTpy enables users to generate global anthropogenic emissions from [Copernicus 
 
 - Contributors: [Yuan Sun](https://github.com/YuanSun-UoM), [Zhonghua Zheng](https://zhonghuazheng.com) (zhonghua.zheng@manchester.ac.uk)
 - If you’re interested in contributing to the development of a Python-based IPT for [CESM](https://github.com/ESCOMP/CESM)/[CAM-Chem](https://wiki.ucar.edu/display/camchem/Home)/[MUSICA](https://wiki.ucar.edu/display/MUSICA/MUSICA+Home), please reach out to [Yuan Sun](https://github.com/YuanSun-UoM) or submit an issue on the [Issues](https://github.com/envdes/IPTpy/issues) page for any ideas or suggestions. We will respond as soon as possible.
-- We also provide [testing scripts](./test) for validating IPTpy functions in CESM. 
+- We also provide [testing scripts](./tests) for validating IPTpy functions in CESM. 

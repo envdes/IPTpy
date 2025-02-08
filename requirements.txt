@@ -1,7 +1,6 @@
-numpy
+numpy==2.0.2
 pandas
 xarray
 netcdf4
-esmpy
 xesmf
-datetime
+esmpy

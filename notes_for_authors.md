@@ -107,7 +107,7 @@ source_suffix '.md' is already registered
 - Add GitHub Repo description
 
 ```
-Python-based Input Processing Tools for CESM
+Python-based Input Processing Tools for the Community Earth System Model (CESM)
 ```
 
 

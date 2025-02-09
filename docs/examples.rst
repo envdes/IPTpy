@@ -4,15 +4,15 @@
 
 Usage Examples
 ==============
-We provides two examples for using IPTpy to process CAMSv5.3 and CEDSv2021_04_21 data. Users can taste the basic functions of IPTpy through `Jupyter Notebook <https://jupyter.org>`_.
+We provides two examples for using IPTpy to process CAMS-GLOB-ANT and CEDSv2021_04_21 data. Users can taste the basic functions of IPTpy through `Jupyter Notebook <https://jupyter.org>`_.
 
 .. grid:: 1 1 2 2
     :gutter: 2
 
-    .. grid-item-card::  CAMSv5.3
+    .. grid-item-card::  CAMS-GLOB-ANT
         :class-title: custom-title
         :class-body: custom-body
-        :link: notebooks/examples/CAMSv5.3.html
+        :link: notebooks/examples/CAMS-GLOB-ANT.html
 
         Use rename and regrid fuctions
         
@@ -43,7 +43,7 @@ We provides two examples for using IPTpy to process CAMSv5.3 and CEDSv2021_04_21
    :maxdepth: 2
    :hidden:
 
-   CAMSv5.3 <notebooks/examples/CAMSv5.3.md>
+   CAMS-GLOB-ANT <notebooks/examples/CAMS-GLOB-ANT.md>
    CEDSv2021_04_21 <notebooks/examples/CEDSv2021_04_21.md>
    
 

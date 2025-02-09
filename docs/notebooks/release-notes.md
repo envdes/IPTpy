@@ -6,3 +6,7 @@
 
 
 
+## To-do list for development
+
+- Vertical anthropogenic emissions.
+- FINN2.5 processing.

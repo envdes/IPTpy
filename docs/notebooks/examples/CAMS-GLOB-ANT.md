@@ -1,6 +1,6 @@
-# CAMSv5.3
+# CAMS-GLOB-ANT
 
-This Python script is used to process CAMSv5.3 data using IPTpy. Users could use [Jupyter Notebook](https://jupyter.org/) to taste the code. 
+This Python script is used to process CAMS-GLOB-ANT data using IPTpy. Users could use [Jupyter Notebook](https://jupyter.org/) to taste the code. 
 
 ```python
 # import packages
@@ -31,12 +31,14 @@ fv_instance.generate_regridder()
 fv_instance.apply_regridder()
 ```
 
-- Once a regridder exists, it can be reused and does not need to be generated when running apply_regridder() multiple times.
+- Once a regridder exists, it can be reused and does not need to be generated when running `apply_regridder()` multiple times.
 
  ## Step2: Rename gridded data
 
 ```python
-fv_instance.rename('/gws/nopw/j04/duicv/yuansun/IPTpy/tests/renamed/')
+fv_instance.rename(
+  renamed_path ='/gws/nopw/j04/duicv/yuansun/IPTpy/tests/renamed/'
+)
 ```
 
-- Note that files in the output_path will be automatically deleted before new files are generated, so manual deletion is not required.
+- Note that the `regridder_filename` and files in the `preregrid_path` or `regridded_path` or `renamed_path` will be automatically deleted before new files are generated, so manual deletion is not required.

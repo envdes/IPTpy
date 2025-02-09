@@ -94,12 +94,21 @@ where $\rho$ is the density, $\frac{\pi}{6}$ is a geometric factor that accounts
 | num_so4_a1_anthro-ene-vertical for emiss_ene_ind | 1770                    | 0.261e-6            |
 | num_pom                                          | 1000                    | 0.134e-6            |
 
+Given that ESMF does not support for regridding mutiple-dimensional data, IPTpy can not generate vertial emission data yet. However, we only generate verticle anthropogenic emission data for so4_a1_anthro-ene-vertical for altitudes of 0.175, 0.225, 0.275, 0.325 $km$ based on **Equation 5**:
+
+$$
+\operatorname{so4\_a1\_anthro-ene-vertical} = \frac{0.025 \times (ene + ind)}{2e4}, \tag{5}
+$$
+
+where $ene$ and $ind$ denotes surface emission from energy and industrial sectors. 
+
 # Notes
+
 [^1]: Emitted black carbon (bc_a4)
 [^2]: Primary organic matter (pom_a4)
-[^3]: Fan, T., Liu, X., Ma, P. L., Zhang, Q., Li, Z., Jiang, Y., ... & Wang, Y. (2018). Emission or atmospheric processes? An attempt to attribute the source of large bias of aerosols in eastern China simulated by global climate models. Atmospheric Chemistry and Physics, 18(2), 1395-1417. [https://doi.org/10.5194/acp-18-1395-2018](https://doi.org/10.5194/acp-18-1395-2018)
+[^3]: Fan, T., Liu, X., Ma, P. L., Zhang, Q., Li, Z., Jiang, Y., ... & Wang, Y. (2018). Emission or atmospheric processes? An attempt to attribute the source of large bias of aerosols in eastern China simulated by global climate models. *Atmospheric Chemistry and Physics*, 18(2), 1395-1417. [https://doi.org/10.5194/acp-18-1395-2018](https://doi.org/10.5194/acp-18-1395-2018)
 [^4]: Methyl Ethyl Ketone (MEK)
 [^5]: Intermediate Volatile Organic Compound (IVOC)
-[^6]: Jo, D. S., Tilmes, S., Emmons, L. K., Wang, S., & Vitt, F. (2023). A new simplified parameterization of secondary organic aerosol in the Community Earth System Model Version 2 (CESM2; CAM6. 3). Geoscientific Model Development, 16(12), 3893–3906. [https://doi.org/10.5194/gmd-16-3893-2023](https://doi.org/10.5194/gmd-16-3893-2023)
+[^6]: Jo, D. S., Tilmes, S., Emmons, L. K., Wang, S., & Vitt, F. (2023). A new simplified parameterization of secondary organic aerosol in the Community Earth System Model Version 2 (CESM2; CAM6. 3). *Geoscientific Model Development*, 16(12), 3893–3906. [https://doi.org/10.5194/gmd-16-3893-2023](https://doi.org/10.5194/gmd-16-3893-2023)
 [^7]: Semi-Volatile Organic Compound (SVOC)
 [^8]: [Notes for MOZART-T1 chemistry with MAM4 aerosols in CESM2](https://wiki.ucar.edu/display/MUSICA/Grid+FINN)

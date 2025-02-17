@@ -1,0 +1,988 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Source Data Download &#8212; IPTpy &#39;v0.0.0&#39; documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=068a6d78"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/source-data-download';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="User API Reference" href="../api.html" />
+    <link rel="prev" title="Installation" href="installation.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+    <meta name="docbuild:last-update" content="Feb 17, 2025"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">IPTpy 'v0.0.0' documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/envdes/IPTpy" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">For Users</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Overview</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Source Data Download</a></li>
+
+<li class="toctree-l1 has-children"><a class="reference internal" href="../api.html">User API Reference</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../generated/iptpy.anthro_emission.fv.FV.html">iptpy.anthro_emission.fv.FV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../generated/iptpy.anthro_emission.fv.FV.apply_regridder.html">iptpy.anthro_emission.fv.FV.apply_regridder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../generated/iptpy.anthro_emission.fv.FV.generate_regridder.html">iptpy.anthro_emission.fv.FV.generate_regridder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../generated/iptpy.anthro_emission.fv.FV.rename.html">iptpy.anthro_emission.fv.FV.rename</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../generated/iptpy.anthro_emission.fv.FV.sum_up.html">iptpy.anthro_emission.fv.FV.sum_up</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="understand.html">Understand the Process</a></li>
+
+<li class="toctree-l1 has-children"><a class="reference internal" href="../examples.html">Usage Examples</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples/CAMS-GLOB-ANT.html">CAMS-GLOB-ANT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/CEDSv2021_04_21.html">CEDSv2021_04_21</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="citation.html">Cite IPTpy</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">For Developers</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../development.html">Development</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="release-notes.html">Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contrib.html">Make A Contribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">Test</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting Support</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/envdes/IPTpy/issues">GitHub Issues</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/envdes/IPTpy" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/envdes/IPTpy/edit/main/docs/notebooks/source-data-download.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/envdes/IPTpy/issues/new?title=Issue%20on%20page%20%2Fnotebooks/source-data-download.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/source-data-download.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Source Data Download</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Source Data Download</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#global-anthropogenic-emission-inventories">Global Anthropogenic Emission Inventories</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparison-of-global-anthropogenic-emission-inventories">Comparison of Global Anthropogenic Emission Inventories</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-data-manually">Download Data Manually</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#method1-wget">Method1: Wget</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cams-glob-antv5-3">CAMS-GLOB-ANTv5.3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cams-glob-antv6-1">CAMS-GLOB-ANTv6.1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cedsv2021-04-21">CEDSv2021_04_21</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#method2-globus">Method2: Globus</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">CEDSv2021_04_21</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#list-of-species-name">List of Species Name</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#so2">SO2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#notes">Notes</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="source-data-download">
+<h1>Source Data Download<a class="headerlink" href="#source-data-download" title="Link to this heading">#</a></h1>
+<section id="global-anthropogenic-emission-inventories">
+<h2>Global Anthropogenic Emission Inventories<a class="headerlink" href="#global-anthropogenic-emission-inventories" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://www.cesm.ucar.edu/models/cesm2">CESM2</a>’s default anthropogenic emission data is based on <a class="reference external" href="https://doi.org/10.5194/gmd-13-461-2020">CEDSv2017_05_18</a> over 1750-2100 for CMIP6, incorporating historical data up to 2014 and projection data from 2015 to 2100 under several SSP scenarios. Besides the default data, there is a rising need to use other inventories for the most recent history data, such as <a class="reference external" href="https://permalink.aeris-data.fr/CAMS-GLOB-ANT">CAMS-GLOB-ANT</a> and <a class="reference external" href="https://data.pnnl.gov/dataset/CEDS-4-21-21">CEDSv2021_04_21</a>.</p>
+<section id="comparison-of-global-anthropogenic-emission-inventories">
+<h3>Comparison of Global Anthropogenic Emission Inventories<a class="headerlink" href="#comparison-of-global-anthropogenic-emission-inventories" title="Link to this heading">#</a></h3>
+<p>Inventories vary across different periods, release versions, spatial resolutions, and download methods (<strong>Table 1</strong>).</p>
+<p><em><strong>Table 1</strong> Comparison between CAMS-GLOB-ANT and CEDS anthropogenic emission inventories.</em></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Feature</p></th>
+<th class="head"><p><a class="reference external" href="https://permalink.aeris-data.fr/CAMS-GLOB-ANT">CAMS-GLOB-ANTv5.3</a>, <a class="reference external" href="https://permalink.aeris-data.fr/CAMS-GLOB-ANT">CAMS-GLOB-ANTv6.1</a></p></th>
+<th class="head"><p><a class="reference external" href="https://data.pnnl.gov/dataset/CEDS-4-21-21">CEDSv2021_04_21</a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Time step</p></td>
+<td><p>Monthly</p></td>
+<td><p>Monthly</p></td>
+</tr>
+<tr class="row-odd"><td><p>Period</p></td>
+<td><p>2000-01-01 to present</p></td>
+<td><p>1750-01-16 to 2019-12-16</p></td>
+</tr>
+<tr class="row-even"><td><p>Version</p></td>
+<td><p>v5.3, v6.1</p></td>
+<td><p>v2021_04_21</p></td>
+</tr>
+<tr class="row-odd"><td><p>Spatial resolution</p></td>
+<td><p>0.1°x0.1°</p></td>
+<td><p>0.5°x0.5°</p></td>
+</tr>
+<tr class="row-even"><td><p>Download method</p></td>
+<td><p><a class="reference external" href="https://permalink.aeris-data.fr/CAMS-GLOB-ANT">Wget</a></p></td>
+<td><p><a class="reference external" href="https://www.globus.org/data-transfer">Globus (1750-2019)</a>, <a class="reference external" href="https://permalink.aeris-data.fr/CEDS">Wget (1950-2019)</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="download-data-manually">
+<h2>Download Data Manually<a class="headerlink" href="#download-data-manually" title="Link to this heading">#</a></h2>
+<section id="method1-wget">
+<h3>Method1: Wget<a class="headerlink" href="#method1-wget" title="Link to this heading">#</a></h3>
+<section id="cams-glob-antv5-3">
+<h4><a class="reference external" href="https://permalink.aeris-data.fr/CAMS-GLOB-ANT">CAMS-GLOB-ANTv5.3</a><a class="headerlink" href="#cams-glob-antv5-3" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Sign up and log in with your <a class="reference external" href="https://eccad.sedoo.fr">ECCAD account</a>.</p></li>
+<li><p>Visit the <a class="reference external" href="https://eccad.sedoo.fr/#/metadata/479">CAMS-GLOB-ANT</a> webpage and click the <strong>Go to Data</strong> button in the top right corner (<strong>Figure 1</strong>).</p></li>
+</ul>
+<img src="../_static/images/download/CAMS-GLOB-ANT/webpage.png" alt="webpage" width="100%">
+<p><em><strong>Figure 1</strong> CAMS-GLOB-ANT webpage.</em></p>
+<br>
+<ul class="simple">
+<li><p>On the selection page, choose <strong>CAMS</strong> under DATASETS, <strong>Anthropogenic</strong> under CATEGORIES, <strong>CAMS-GLOB-ANT</strong> under DATASET, and <strong>V5.3</strong> under SCENARIOS / VERSIONS. Then, select the desired groups or parameters; otherwise, all parameters will be selected by default. Finally, click the <strong>Add</strong> button at the top to prepare for download (<strong>Figure 2</strong>).</p></li>
+</ul>
+<img src="../_static/images/download/CAMS-GLOB-ANT/datalist.png" alt="datalist" width="100%">
+<p><em><strong>Figure 2</strong> Select.</em></p>
+<br>
+<ul class="simple">
+<li><p>After clicking <strong>Add</strong>, the selected item will appear in the left panel. Then, click the <strong>Download</strong> button at the top (<strong>Figure 3</strong>).</p></li>
+</ul>
+<img src="../_static/images/download/CAMS-GLOB-ANT/add.png" alt="add" width="100%">
+<p><em><strong>Figure 3</strong> Add.</em></p>
+<br>
+<ul class="simple">
+<li><p>Select the desired species, sectors, and file options:</p>
+<ul>
+<li><p>For sectors, select <strong>Sum Sectors</strong> for most species, but choose all sectors for SO2.</p></li>
+<li><p>For file options, choose <strong>1 file per year</strong>, <strong>Monthly</strong>, specify the date range from January to December of a single year (e.g., 2000-01-01 to 2000-12-01), and choose <strong>flux (kg m-2 s-1)</strong>.</p></li>
+<li><p>Finally, scroll to the bottom of the page and click <strong>Download</strong> (<strong>Figure 4</strong>).</p></li>
+</ul>
+</li>
+</ul>
+<img src="../_static/images/download/CAMS-GLOB-ANT/selection.png" alt="selection" width="100%">
+<p><em><strong>Figure 4</strong> Download.</em></p>
+<br>
+<ul class="simple">
+<li><p>Wait for the server to process your download request. Once notified by email, go to <strong>My Downloads</strong> in your account at the top right corner (<strong>Figure 5</strong>).</p></li>
+</ul>
+<img src="../_static/images/download/CAMS-GLOB-ANT/mydownload.png" alt="mydownload" width="100%">
+<p><em><strong>Figure 5</strong> Copy wget command.</em></p>
+<br>
+<ul>
+<li><p>Click <strong>Copy wget command</strong> and paste it into the terminal of your machine or server for data storage. The downloaded file will be named, for example, <em>CAMS-GLOB-ANT_Glb_0.1x0.1_anthro_propane_v5.3_monthly_2000.zip</em>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Go to the directory for storing CAMS data and create a folder, for example, named CAMS-GLOB-ANTv5.3</span>
+mkdir<span class="w"> </span>-p<span class="w"> </span>CAMS-GLOB-ANTv5.3
+<span class="nb">cd</span><span class="w"> </span>CAMS-GLOB-ANTv5.3
+
+<span class="c1"># Create a folder for the year 2000</span>
+mkdir<span class="w"> </span>-p<span class="w"> </span><span class="m">2000</span>
+
+<span class="c1"># Below is an example of a command line copied from the webpage. It should be expired over time. </span>
+wget<span class="w"> </span>--no-check-certificate<span class="w"> </span>-c<span class="w"> </span>-t<span class="w"> </span><span class="m">0</span><span class="w"> </span>--timeout<span class="o">=</span><span class="m">60</span><span class="w"> </span>--waitretry<span class="o">=</span><span class="m">300</span><span class="w"> </span>--content-disposition<span class="w"> </span>https://api.sedoo.fr/eccad-download-rest/public/links/C2KHSnGmZ6
+
+<span class="c1"># Unzip the downloaded file and get files for a single species by year </span>
+unzip<span class="w"> </span>CAMS-GLOB-ANT_Glb_0.1x0.1_anthro_propane_v5.3_monthly.zip<span class="w"> </span>-d<span class="w"> </span><span class="m">2000</span>
+
+<span class="c1"># delete zip files and empty folders if necessary</span>
+rm<span class="w"> </span>-rf<span class="w"> </span>CAMS-GLOB-ANT_Glb_0.1x0.1_anthro_propane_v5.3_monthly.zip
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="cams-glob-antv6-1">
+<h4><a class="reference external" href="https://permalink.aeris-data.fr/CAMS-GLOB-ANT">CAMS-GLOB-ANTv6.1</a><a class="headerlink" href="#cams-glob-antv6-1" title="Link to this heading">#</a></h4>
+<p>Similar to CAMS-GLOB-ANTv5.3.</p>
+</section>
+<section id="cedsv2021-04-21">
+<h4><a class="reference external" href="https://permalink.aeris-data.fr/CEDS">CEDSv2021_04_21</a><a class="headerlink" href="#cedsv2021-04-21" title="Link to this heading">#</a></h4>
+<p>The unzipped file for a single year may include two NetCDF files. Users can leave them as they are, as the code is designed to handle it.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># select data from 2000-01-16 to 2000-12-16 and wget the data similarly to the above</span>
+<span class="n">unzip</span> <span class="n">CEDS_Glb_0</span><span class="mf">.5</span><span class="n">x0</span><span class="mf">.5</span><span class="n">_anthro_propane__monthly</span><span class="o">.</span><span class="n">zip</span> <span class="o">-</span><span class="n">d</span> <span class="mi">2000</span>
+
+<span class="c1"># returns 2 NetCDF files for a single year</span>
+<span class="n">CEDS_Glb_0</span><span class="mf">.5</span><span class="n">x0</span><span class="mf">.5</span><span class="n">_anthro_SO2__monthly_1999</span><span class="o">.</span><span class="n">nc</span> <span class="c1"># data for 2000-01-16 to 2000-02-16</span>
+<span class="n">CEDS_Glb_0</span><span class="mf">.5</span><span class="n">x0</span><span class="mf">.5</span><span class="n">_anthro_SO2__monthly_2000</span><span class="o">.</span><span class="n">nc</span> <span class="c1"># data for 2000-03-16 to 2000-12-06</span>
+</pre></div>
+</div>
+<ul>
+<li><p>Note that the data downloaded through this method1 should be stored by year. That is, the directory structure should be organized as follows:</p>
+<p>/</p>
+<p>│── 2000/</p>
+<p>│  ├── CAMS-GLOB-ANT_Glb_0.1x0.1_anthro_acetylene_v5.3_monthly_2000.nc</p>
+<p>│  ├── *_v5.3_monthly_2000.nc</p>
+<p>│  ├── ……</p>
+<p>│── 2001/</p>
+<p>│  ├── *_monthly_2001.nc</p>
+<p>│  ├── ……</p>
+<p>│── ……</p>
+</li>
+<li><p>Ensure that each year’s data is stored in its corresponding folder. If the directory is inconsistent, the code may encounter errors due to missing data files.</p></li>
+</ul>
+</section>
+</section>
+<section id="method2-globus">
+<h3>Method2: Globus<a class="headerlink" href="#method2-globus" title="Link to this heading">#</a></h3>
+<p>Since the Wget method can only download CEDS data from 1950 to 2019, Globus is used to access older data from 1750 to 2019. We recommend using Globus for those familiar with the tool, as it offers more stable and faster data transfers. In contrast, Wget may encounter HTTP issues due to server limitations.</p>
+<section id="id1">
+<h4><a class="reference external" href="https://data.pnnl.gov/dataset/CEDS-4-21-21">CEDSv2021_04_21</a><a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Sign up and log in with your <a class="reference external" href="https://www.globus.org/">Globus account</a>.</p></li>
+<li><p>Search for the <strong>PNNL Data Hub</strong> collection and click the <strong>Open in File Management</strong> button on the right (<strong>Figure 6</strong>).</p>
+<ul>
+<li><p>Or search by UUID: f58973c0-08c1-43a7-9a0e-71f54ddc973c</p></li>
+</ul>
+</li>
+</ul>
+<img src="../_static/images/download/CEDSv2021_04_21/pnnl.png" alt="pnnl" width="100%">
+<p><em><strong>Figure 6</strong> PNNL DataHub in Globus.</em></p>
+<br>
+<ul class="simple">
+<li><p>Enter the <strong>Path</strong> on the left side, for example, <em>/CEDS/CEDS_gridded_data_2021-04-21/data/BC/individual_files/</em>, and select the targeted files. On the right side, enter the destination collection (<strong>Figure 7</strong>).</p>
+<ul>
+<li><p>Ensure that the destination collection is an <a class="reference external" href="https://docs.globus.org/guides/overviews/collections-and-endpoints/">active GLOBUS endpoint</a>. For example, we saved CEDS data to the authors’ working space on <a class="reference external" href="https://jasmin.ac.uk/about/">JASMIN</a>, a UK HPC platform supporting large-scale data analysis.</p></li>
+<li><p>Users may also save data to their local computer or other HPC platforms.</p></li>
+</ul>
+</li>
+</ul>
+<img src="../_static/images/download/CEDSv2021_04_21/send.png" alt="send" width="100%">
+<p><em><strong>Figure 7</strong> Date transfer.</em></p>
+<br>
+<ul class="simple">
+<li><p>Maintain the directory structure of the downloaded data as it is in PNNL DataHub (shown on the left side of the above image).  Similarly, if the data structure is inconsistent, the code may encounter errors due to missing data files.</p></li>
+<li><p>Alternatively, users can use the <a class="reference external" href="https://docs.globus.org/cli/">GLOBUS command-line interface (CLI)</a> for data downloads, ensuring a reliable and high-performance transfer. A <a class="reference download internal" download="" href="../_downloads/955b4f2186ff5e6ce3344dadd3f60023/ceds.sh"><span class="xref download myst">bash job script</span></a> is provided for reference.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="list-of-species-name">
+<h2>List of Species Name<a class="headerlink" href="#list-of-species-name" title="Link to this heading">#</a></h2>
+<p>Species names vary across different inventories and download methods. We have standardized the species name in the regridded files for consistency (<strong>Table 2</strong>).</p>
+<p><em><strong>Table 2</strong> Species name in the file name.</em></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>CAMS-GLOB-ANTv5.3, CAMS-GLOB-ANTv6.1</p></th>
+<th class="head"><p>CEDSv2021_04_21</p></th>
+<th class="head"><p>Regridded</p></th>
+<th class="head"><p>Renamed</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>acetylene</p></td>
+<td><p>VOC09-ethyne</p></td>
+<td><p>ethyne</p></td>
+<td><p>C2H2</p></td>
+</tr>
+<tr class="row-odd"><td><p>alcohols</p></td>
+<td><p>VOC01-alcohols</p></td>
+<td><p>alcohols</p></td>
+<td><p>CH3OH, C2H5OH</p></td>
+</tr>
+<tr class="row-even"><td><p>bc</p></td>
+<td><p>BC</p></td>
+<td><p>bc</p></td>
+<td><p>bc_a4</p></td>
+</tr>
+<tr class="row-odd"><td><p>benzene</p></td>
+<td><p>VOC13-benzene</p></td>
+<td><p>benzene</p></td>
+<td><p>BENZENE</p></td>
+</tr>
+<tr class="row-even"><td><p>butanes</p></td>
+<td><p>VOC04-butanes</p></td>
+<td><p>butanes</p></td>
+<td><p>BIGALK</p></td>
+</tr>
+<tr class="row-odd"><td><p>co</p></td>
+<td><p>CO</p></td>
+<td><p>co</p></td>
+<td><p>CO</p></td>
+</tr>
+<tr class="row-even"><td><p>esters</p></td>
+<td><p>VOC18-esters</p></td>
+<td><p>esters</p></td>
+<td><p>BIGALK</p></td>
+</tr>
+<tr class="row-odd"><td><p>ethane</p></td>
+<td><p>VOC02-ethane</p></td>
+<td><p>ethane</p></td>
+<td><p>C2H6</p></td>
+</tr>
+<tr class="row-even"><td><p>ethene</p></td>
+<td><p>VOC07-ethene</p></td>
+<td><p>ethene</p></td>
+<td><p>C2H4</p></td>
+</tr>
+<tr class="row-odd"><td><p>ethers</p></td>
+<td><p>VOC19-ethers</p></td>
+<td><p>ethers</p></td>
+<td><p>BIGALK</p></td>
+</tr>
+<tr class="row-even"><td><p>formaldehyde</p></td>
+<td><p>VOC21-methanal</p></td>
+<td><p>methanal</p></td>
+<td><p>CH2O</p></td>
+</tr>
+<tr class="row-odd"><td><p>hexanes</p></td>
+<td><p>VOC06-hexanes-pl</p></td>
+<td><p>hexanes</p></td>
+<td><p>BIGALK</p></td>
+</tr>
+<tr class="row-even"><td><p>nh3</p></td>
+<td><p>NH3</p></td>
+<td><p>nh3</p></td>
+<td><p>NH3</p></td>
+</tr>
+<tr class="row-odd"><td><p>nox</p></td>
+<td><p>NOx</p></td>
+<td><p>nox</p></td>
+<td><p>NO</p></td>
+</tr>
+<tr class="row-even"><td><p>oc</p></td>
+<td><p>OC</p></td>
+<td><p>oc</p></td>
+<td><p>pom_a4</p></td>
+</tr>
+<tr class="row-odd"><td><p>other-aldehydes</p></td>
+<td><p>VOC22-other-alka</p></td>
+<td><p>other-aldehydes</p></td>
+<td><p>CH3CHO</p></td>
+</tr>
+<tr class="row-even"><td><p>other-alkenes-and-alkynes</p></td>
+<td><p>VOC12-other-alke</p></td>
+<td><p>other-alkenes-and-alkynes</p></td>
+<td><p>BIGENE</p></td>
+</tr>
+<tr class="row-odd"><td><p>other-aromatics</p></td>
+<td><p>VOC17-other-arom</p></td>
+<td><p>other-aromatics</p></td>
+<td><p>XYLENES</p></td>
+</tr>
+<tr class="row-even"><td><p>pentanes</p></td>
+<td><p>VOC05-pentanes</p></td>
+<td><p>pentanes</p></td>
+<td><p>BIGALK</p></td>
+</tr>
+<tr class="row-odd"><td><p>propane</p></td>
+<td><p>VOC03-propane</p></td>
+<td><p>propane</p></td>
+<td><p>C3H8</p></td>
+</tr>
+<tr class="row-even"><td><p>propene</p></td>
+<td><p>VOC08-propene</p></td>
+<td><p>propene</p></td>
+<td><p>C3H6</p></td>
+</tr>
+<tr class="row-odd"><td><p>so2</p></td>
+<td><p>SO2</p></td>
+<td><p>so2</p></td>
+<td><p>SO2</p></td>
+</tr>
+<tr class="row-even"><td><p>toluene</p></td>
+<td><p>VOC14-toluene</p></td>
+<td><p>toluene</p></td>
+<td><p>TOLUENE</p></td>
+</tr>
+<tr class="row-odd"><td><p>total-acids</p></td>
+<td><p>VOC24-acids</p></td>
+<td><p>acids</p></td>
+<td><p>HCOOH, CH3COOH</p></td>
+</tr>
+<tr class="row-even"><td><p>total-ketones</p></td>
+<td><p>VOC23-ketones</p></td>
+<td><p>ketones</p></td>
+<td><p>CH3COCH3, MEK</p></td>
+</tr>
+<tr class="row-odd"><td><p>trimethylbenzene</p></td>
+<td><p>VOC16-trimethylb</p></td>
+<td><p>trimethylbenzene</p></td>
+<td><p>XYLENES</p></td>
+</tr>
+<tr class="row-even"><td><p>xylene</p></td>
+<td><p>VOC15-xylene</p></td>
+<td><p>xylene</p></td>
+<td><p>XYLENES</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p>The <strong>Regridded</strong> column denotes the name in the regridded data file name, used for renaming.</p></li>
+<li><p>The <strong>Renamed</strong> column denotes the name in the renamed data file name, used for simulation.</p>
+<ul>
+<li><p>BIGALK = butanes + pentanes + hexanes + esters + ethers</p></li>
+<li><p>XYLENES = xylene + trimethylbenzene + other-aromatics</p></li>
+</ul>
+</li>
+</ul>
+<section id="so2">
+<h3>SO2<a class="headerlink" href="#so2" title="Link to this heading">#</a></h3>
+<p>When downloading data by Wget, we suggest only the sum for most species but specify sectors for sulfate<a class="footnote-reference brackets" href="#id3" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
+<ul class="simple">
+<li><p>CEDSv2021_04_21 includes eight sectors—0: Agriculture (<strong>agr</strong>); 1: Energy (<strong>ene</strong>); 2: Industrial (<strong>ind</strong>); 3: Transportation (<strong>tra</strong>); 4: Residential, Commercial, Other (<strong>res</strong>); 5: Solvents production and application (<strong>sol</strong>); 6: Waste (<strong>was</strong>); 7: International Shipping (<strong>shp</strong>)—but has not yet been aggregated.</p></li>
+<li><p>CAMS-GLOB-ANTv5.3 includes 10 sectors—<strong>awb</strong>: Agricultural waste burning; <strong>ene</strong>: Power generation; <strong>fef</strong>: Fugitives; <strong>ind</strong>: Industry; <strong>ref</strong>: Oil refineries and transformation industry; <strong>res</strong>: Residential,  commercial and other combustion; <strong>shp</strong>: Ships; <strong>swd</strong>: Solid waste and waste water;  <strong>tro</strong>: Road transportation; <strong>tnr</strong>: Off road transportation.</p></li>
+<li><p>CAMS-GLOB-ANTv6.2 includes 10 sectors—<strong>awb</strong>: Agricultural waste burning; <strong>com</strong>: Commercial buildings; <strong>ene</strong>: Power generation; <strong>fef</strong>: Fugitives; <strong>ind</strong>: Industry; <strong>ref</strong>: Oil refineries and transformation industry; <strong>res</strong>: Residential buildings; <strong>shp</strong>: Ships; <strong>tro</strong>: Road transportation; <strong>tnr</strong>: Off road transportation.</p></li>
+</ul>
+<p><em><strong>Table 3</strong> Sectors for sulfate.</em></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Filename</p></th>
+<th class="head"><p>Related variables</p></th>
+<th class="head"><p>Involved CEDSv2021_04_21 sectors</p></th>
+<th class="head"><p>Involved CAMS-GLOB-ANTv5.3 sectors</p></th>
+<th class="head"><p>Involved CAMS-GLOB-ANTv6.2 sectors</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>SO2_anthro-ag-ship-res</p></td>
+<td><p>emiss_ag_sol_was</p></td>
+<td><p>agr, sol, was</p></td>
+<td><p>awb, swd</p></td>
+<td><p>awb</p></td>
+</tr>
+<tr class="row-odd"><td><p>SO2_anthro-ag-ship-res</p></td>
+<td><p>emiss_res_tran</p></td>
+<td><p>res, tra</p></td>
+<td><p>res, ref, fef, tro, tnr</p></td>
+<td><p>com, res, ref, fef, tro, tnr</p></td>
+</tr>
+<tr class="row-even"><td><p>SO2_anthro-ag-ship-res</p></td>
+<td><p>emiss_ship</p></td>
+<td><p>shp</p></td>
+<td><p>shp</p></td>
+<td><p>shp</p></td>
+</tr>
+<tr class="row-odd"><td><p>SO2_anthro-ene</p></td>
+<td><p>emiss_ene_ind</p></td>
+<td><p>ene, ind</p></td>
+<td><p>ene, ind</p></td>
+<td><p>ene, ind,</p></td>
+</tr>
+<tr class="row-even"><td><p>so4_a1_anthro-ag-ship</p></td>
+<td><p>emiss_ag_sol_was</p></td>
+<td><p>agr, sol, was</p></td>
+<td><p>awb, swd</p></td>
+<td><p>awb</p></td>
+</tr>
+<tr class="row-odd"><td><p>so4_a1_anthro-ag-ship</p></td>
+<td><p>emiss_ship</p></td>
+<td><p>shp</p></td>
+<td><p>shp</p></td>
+<td><p>shp</p></td>
+</tr>
+<tr class="row-even"><td><p>so4_a2_anthro-res</p></td>
+<td><p>emiss_res_tran</p></td>
+<td><p>res, tra</p></td>
+<td><p>res, ref, fef, tro, tnr</p></td>
+<td><p>com, ref, fef, res, tro, tnr</p></td>
+</tr>
+<tr class="row-odd"><td><p>so4_a1_anthro-ene-vertical</p></td>
+<td><p>emiss_ene_ind</p></td>
+<td><p>ene, ind</p></td>
+<td><p>ene, ind</p></td>
+<td><p>ene, ind</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="notes">
+<h1>Notes<a class="headerlink" href="#notes" title="Link to this heading">#</a></h1>
+</section>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id3" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
+<p>Soulie, A., Granier, C., Darras, S., Zilbermann, N., Doumbia, T., Guevara, M., … &amp; Smith, S. (2024). Supplement of global anthropogenic emissions (CAMS-GLOB-ANT) for the Copernicus Atmosphere Monitoring Service simulations of air quality forecasts and reanalyses. <em>Supplement of Earth System Science Data</em>, 16(5), 2261-2279. <a class="reference external" href="https://doi.org/10.5194/essd-16-2261-2024-supplement">https://doi.org/10.5194/essd-16-2261-2024-supplement</a></p>
+</aside>
+</aside>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="installation.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Installation</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../api.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">User API Reference</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Source Data Download</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#global-anthropogenic-emission-inventories">Global Anthropogenic Emission Inventories</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparison-of-global-anthropogenic-emission-inventories">Comparison of Global Anthropogenic Emission Inventories</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-data-manually">Download Data Manually</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#method1-wget">Method1: Wget</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cams-glob-antv5-3">CAMS-GLOB-ANTv5.3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cams-glob-antv6-1">CAMS-GLOB-ANTv6.1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cedsv2021-04-21">CEDSv2021_04_21</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#method2-globus">Method2: Globus</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">CEDSv2021_04_21</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#list-of-species-name">List of Species Name</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#so2">SO2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#notes">Notes</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Yuan Sun, Zhonghua Zheng
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    <p class="last-updated">
+  Last updated on Feb 17, 2025.
+  <br/>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

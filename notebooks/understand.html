@@ -1,0 +1,815 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Understand the Process &#8212; IPTpy &#39;v0.0.0&#39; documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=068a6d78"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "displayMath": [["$$", "$$"], ["\\[", "\\]"]]}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/understand';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Usage Examples" href="../examples.html" />
+    <link rel="prev" title="iptpy.anthro_emission.fv.FV.sum_up" href="../generated/iptpy.anthro_emission.fv.FV.sum_up.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+    <meta name="docbuild:last-update" content="Feb 17, 2025"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">IPTpy 'v0.0.0' documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/envdes/IPTpy" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">For Users</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Overview</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="source-data-download.html">Source Data Download</a></li>
+
+<li class="toctree-l1 has-children"><a class="reference internal" href="../api.html">User API Reference</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../generated/iptpy.anthro_emission.fv.FV.html">iptpy.anthro_emission.fv.FV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../generated/iptpy.anthro_emission.fv.FV.apply_regridder.html">iptpy.anthro_emission.fv.FV.apply_regridder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../generated/iptpy.anthro_emission.fv.FV.generate_regridder.html">iptpy.anthro_emission.fv.FV.generate_regridder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../generated/iptpy.anthro_emission.fv.FV.rename.html">iptpy.anthro_emission.fv.FV.rename</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../generated/iptpy.anthro_emission.fv.FV.sum_up.html">iptpy.anthro_emission.fv.FV.sum_up</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Understand the Process</a></li>
+
+<li class="toctree-l1 has-children"><a class="reference internal" href="../examples.html">Usage Examples</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples/CAMS-GLOB-ANT.html">CAMS-GLOB-ANT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/CEDSv2021_04_21.html">CEDSv2021_04_21</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="citation.html">Cite IPTpy</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">For Developers</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../development.html">Development</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="release-notes.html">Release Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contrib.html">Make A Contribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">Test</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting Support</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/envdes/IPTpy/issues">GitHub Issues</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/envdes/IPTpy" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/envdes/IPTpy/edit/main/docs/notebooks/understand.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/envdes/IPTpy/issues/new?title=Issue%20on%20page%20%2Fnotebooks/understand.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/notebooks/understand.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Understand the Process</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Understand the Process</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sum">Sum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regrid">Regrid</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rename">Rename</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#notes">Notes</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="understand-the-process">
+<h1>Understand the Process<a class="headerlink" href="#understand-the-process" title="Link to this heading">#</a></h1>
+<section id="sum">
+<h2>Sum<a class="headerlink" href="#sum" title="Link to this heading">#</a></h2>
+<p>CESM requires summed values for most species, except for sulfate, which is sector-specific. The <code class="docutils literal notranslate"><span class="pre">FV.sum_up</span></code> function allows users to aggregate the <strong>CEDS data downloaded via Globus</strong>. The download data is stored in <code class="docutils literal notranslate"><span class="pre">input_path</span></code> and the aggregated data is saved in <code class="docutils literal notranslate"><span class="pre">preregrid_path</span></code> for subsequent processing. In contrast, data obtained using Wget is already pre-summed.</p>
+</section>
+<section id="regrid">
+<h2>Regrid<a class="headerlink" href="#regrid" title="Link to this heading">#</a></h2>
+<p>Consistent with IPT, we use the <strong>conservative</strong> regridding algorithm from ESMF. For a detailed explanation, refer to the <a class="reference external" href="https://earthsystemmodeling.org/regrid/#regridding-methods">ESMF Regridding methods</a>. To regrid emission data from high to low spatial resolution, <code class="docutils literal notranslate"><span class="pre">FV.generate_regridder</span></code> creates a regridder, which is automatically saved as <code class="docutils literal notranslate"><span class="pre">regridder_filename</span></code>. Then, <code class="docutils literal notranslate"><span class="pre">FV.apply_regridder</span></code> applies the regridder to data stored in <code class="docutils literal notranslate"><span class="pre">preregrid_path</span></code> and saves the output in <code class="docutils literal notranslate"><span class="pre">regridded_path</span></code>. Notably,<code class="docutils literal notranslate"><span class="pre">FV.apply_regridder</span></code> regrids salfate emission by sectors, while all other species are processed as summed values.</p>
+</section>
+<section id="rename">
+<h2>Rename<a class="headerlink" href="#rename" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">FV.rename</span></code> convert emission from the original unit <span class="math notranslate nohighlight">\(kg/m^2 s\)</span> to <span class="math notranslate nohighlight">\(\text{molecules}/{cm}^2~s\)</span> based on the <strong>Equation 1</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+E_{converted} = E_{original} \times \frac{N_A}{M} \times \frac{10^3}{10^4}, \tag{1}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(E_{\text{original}}\)</span> is the emission in <span class="math notranslate nohighlight">\(kg/ m^{2}~ s\)</span>, <span class="math notranslate nohighlight">\(E_{\text{converted}}\)</span> is the emission in <span class="math notranslate nohighlight">\(\text{molecules}/cm^{2} ~s\)</span>, <span class="math notranslate nohighlight">\(N_A\)</span> is Avogadro’s number (<span class="math notranslate nohighlight">\(6.022 \times 10^{23}\)</span> molecules/mol), <span class="math notranslate nohighlight">\(M\)</span> is the molecular weight of the species in g/mol, <span class="math notranslate nohighlight">\(10^3\)</span> accounts for the unit conversion from <span class="math notranslate nohighlight">\(kg\)</span> to <span class="math notranslate nohighlight">\(g\)</span>, <span class="math notranslate nohighlight">\(10^4\)</span> accounts for the unit conversion from <span class="math notranslate nohighlight">\(m^2\)</span> to <span class="math notranslate nohighlight">\({cm}^2\)</span> .</p>
+<p>Besides, scale factors are applied to adjust emissions based on specific assumptions or corrections. These factors can account for uncertainties, regional variations, or improvements in emission estimates (<strong>Equation 2</strong>):</p>
+<div class="math notranslate nohighlight">
+\[
+E_{scaled} = E_{converted} \times \textrm{SF}, \tag{2}
+\]</div>
+<p>where  <span class="math notranslate nohighlight">\(E_{\text{scaled}}\)</span> is the adjusted emission, <span class="math notranslate nohighlight">\(E_{\text{converted}}\)</span> is the emission converted from the original unit, <span class="math notranslate nohighlight">\(\text{SF}\)</span> is the scale factor, which varies based on species, regions, or datasets. <strong>Table 1</strong> list the default <span class="math notranslate nohighlight">\(M\)</span> and <span class="math notranslate nohighlight">\(SF\)</span> that <code class="docutils literal notranslate"><span class="pre">FV.rename</span></code> automatically assigns based on the <code class="docutils literal notranslate"><span class="pre">model_var_list</span></code>. Users can also specify custom values using <code class="docutils literal notranslate"><span class="pre">mw_mapping</span></code> and <code class="docutils literal notranslate"><span class="pre">sf_mapping</span></code>.</p>
+<p><em><strong>Table 1</strong> Lists of molecular weight (<span class="math notranslate nohighlight">\(M\)</span>) and scale factors (<span class="math notranslate nohighlight">\(\text{SF}\)</span>)</em>.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable name</p></th>
+<th class="head"><p>Molecular weight (<span class="math notranslate nohighlight">\(M\)</span>)</p></th>
+<th class="head"><p>Scale factor (<span class="math notranslate nohighlight">\(\text{SF}\)</span>)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>bc_a4<a class="footnote-reference brackets" href="#id10" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p></td>
+<td><p>12</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>CO</p></td>
+<td><p>28</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>NH3</p></td>
+<td><p>17</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>NO</p></td>
+<td><p>30</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{46}{30}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>pom_a4<a class="footnote-reference brackets" href="#id11" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p></td>
+<td><p>12</p></td>
+<td><p>1.4*OC<a class="footnote-reference brackets" href="#id12" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>SO2</p></td>
+<td><p>64</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>C2H6</p></td>
+<td><p>30</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>C3H8</p></td>
+<td><p>44</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>C2H4</p></td>
+<td><p>28</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>C3H6</p></td>
+<td><p>42</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>C2H2</p></td>
+<td><p>26</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>BIGENE</p></td>
+<td><p>56</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>BENZENE</p></td>
+<td><p>78</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>TOLUENE</p></td>
+<td><p>92</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>CH2O</p></td>
+<td><p>30</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>CH3CHO</p></td>
+<td><p>44</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>BIGALK</p></td>
+<td><p>72</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>XYLENES</p></td>
+<td><p>106</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>CH3OH</p></td>
+<td><p>32</p></td>
+<td><p>0.15*alcohols</p></td>
+</tr>
+<tr class="row-odd"><td><p>C2H5OH</p></td>
+<td><p>46</p></td>
+<td><p>0.85*alcohols</p></td>
+</tr>
+<tr class="row-even"><td><p>CH3COCH3</p></td>
+<td><p>58</p></td>
+<td><p>0.2*ketones</p></td>
+</tr>
+<tr class="row-odd"><td><p>MEK<a class="footnote-reference brackets" href="#id13" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a></p></td>
+<td><p>72</p></td>
+<td><p>0.8*ketones</p></td>
+</tr>
+<tr class="row-even"><td><p>HCOOH</p></td>
+<td><p>46</p></td>
+<td><p>0.5*acids</p></td>
+</tr>
+<tr class="row-odd"><td><p>CH3COOH</p></td>
+<td><p>60</p></td>
+<td><p>0.5*acids</p></td>
+</tr>
+<tr class="row-even"><td><p>IVOC<a class="footnote-reference brackets" href="#id14" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a></p></td>
+<td><p>184</p></td>
+<td><p>0.2*HCs<a class="footnote-reference brackets" href="#id15" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>6<span class="fn-bracket">]</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>butanes</p></td>
+<td><p>58</p></td>
+<td><p>/</p></td>
+</tr>
+<tr class="row-even"><td><p>pentanes</p></td>
+<td><p>72</p></td>
+<td><p>/</p></td>
+</tr>
+<tr class="row-odd"><td><p>hexanes</p></td>
+<td><p>86</p></td>
+<td><p>/</p></td>
+</tr>
+<tr class="row-even"><td><p>esters</p></td>
+<td><p>184</p></td>
+<td><p>/</p></td>
+</tr>
+<tr class="row-odd"><td><p>ethers</p></td>
+<td><p>81</p></td>
+<td><p>/</p></td>
+</tr>
+<tr class="row-even"><td><p>xylene</p></td>
+<td><p>106</p></td>
+<td><p>/</p></td>
+</tr>
+<tr class="row-odd"><td><p>trimethylbenzene</p></td>
+<td><p>120</p></td>
+<td><p>/</p></td>
+</tr>
+<tr class="row-even"><td><p>other-aromatics</p></td>
+<td><p>126</p></td>
+<td><p>/</p></td>
+</tr>
+<tr class="row-odd"><td><p>SVOC<a class="footnote-reference brackets" href="#id16" id="id7" role="doc-noteref"><span class="fn-bracket">[</span>7<span class="fn-bracket">]</span></a></p></td>
+<td><p>310</p></td>
+<td><p>0.6*pom_a4<a class="footnote-reference brackets" href="#id15" id="id8" role="doc-noteref"><span class="fn-bracket">[</span>6<span class="fn-bracket">]</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>HCN</p></td>
+<td><p>27</p></td>
+<td><p>0.003*CO</p></td>
+</tr>
+<tr class="row-odd"><td><p>CH3CN</p></td>
+<td><p>41</p></td>
+<td><p>0.002*CO</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p>HCs include: C3H6, C3H8, C2H6, C2H4, BIGENE, BIGALK, CH3COCH3, MEK, CH3CHO, CH2O, BENZENE, TOLUENE, XYLENES<a class="footnote-reference brackets" href="#id17" id="id9" role="doc-noteref"><span class="fn-bracket">[</span>8<span class="fn-bracket">]</span></a>.</p></li>
+</ul>
+<p>CESM also requires the number of bc_a4, pom_a4, and SO2, which is calculated using <strong>Equation 3</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+num = \frac{\text{particles} \times M}{f}, \tag{3}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(num\)</span> is the number of particles (unit: <span class="math notranslate nohighlight">\(\left(\frac{\text{particles}}{\text{cm}^2~ \text{s}}\right)\left(\frac{\text{molecules}}{\text{mole}}\right)\left(\frac{\text{g}}{\text{kg}}\right)\)</span>), particle is the total mass of the particles. <span class="math notranslate nohighlight">\(f\)</span> is the mass per particle, calculated by <strong>Equation 4</strong>:
+$<span class="math notranslate nohighlight">\(
+f = \rho \times \frac{\pi}{6} \times {diam}^3, \tag{4}
+\)</span>$</p>
+<p>where <span class="math notranslate nohighlight">\(\rho\)</span> is the density, <span class="math notranslate nohighlight">\(\frac{\pi}{6}\)</span> is a geometric factor that accounts for the volume of a sphere, <span class="math notranslate nohighlight">\(diam^3\)</span>​ is the cube of the particle’s diameter.</p>
+<p><em><strong>Table 2</strong> List of density (<span class="math notranslate nohighlight">\(\rho\)</span>) and diameter (<span class="math notranslate nohighlight">\(diam\)</span>).</em></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable name</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\rho\)</span> (Unit: <span class="math notranslate nohighlight">\(g/cm^3\)</span>)</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(diam\)</span> (Unit: <span class="math notranslate nohighlight">\(cm\)</span>)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>num_bc_a4</p></td>
+<td><p>1700</p></td>
+<td><p>0.134e-6</p></td>
+</tr>
+<tr class="row-odd"><td><p>num_so4_a1 for emiss_ag_sol_was</p></td>
+<td><p>1770</p></td>
+<td><p>0.134e-6</p></td>
+</tr>
+<tr class="row-even"><td><p>num_so4_a1 for emiss_ship</p></td>
+<td><p>1770</p></td>
+<td><p>0.261e-6</p></td>
+</tr>
+<tr class="row-odd"><td><p>num_so4_a2 for emiss_res_tran</p></td>
+<td><p>1770</p></td>
+<td><p>0.0504e-6</p></td>
+</tr>
+<tr class="row-even"><td><p>num_so4_a1_anthro-ene-vertical for emiss_ene_ind</p></td>
+<td><p>1770</p></td>
+<td><p>0.261e-6</p></td>
+</tr>
+<tr class="row-odd"><td><p>num_pom</p></td>
+<td><p>1000</p></td>
+<td><p>0.134e-6</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Given that ESMF does not support for regridding mutiple-dimensional data, IPTpy can not generate vertial emission data yet. However, we only generate verticle anthropogenic emission data for so4_a1_anthro-ene-vertical for altitudes of 0.175, 0.225, 0.275, 0.325 <span class="math notranslate nohighlight">\(km\)</span> based on <strong>Equation 5</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+\operatorname{so4\_a1\_anthro-ene-vertical} = \frac{0.025 \times (ene + ind)}{2e4}, \tag{5}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(ene\)</span> and <span class="math notranslate nohighlight">\(ind\)</span> denotes SO2 surface emission from energy and industrial sectors.</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="notes">
+<h1>Notes<a class="headerlink" href="#notes" title="Link to this heading">#</a></h1>
+</section>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id10" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Emitted black carbon (bc_a4)</p>
+</aside>
+<aside class="footnote brackets" id="id11" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>Primary organic matter (pom_a4)</p>
+</aside>
+<aside class="footnote brackets" id="id12" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">3</a><span class="fn-bracket">]</span></span>
+<p>Fan, T., Liu, X., Ma, P. L., Zhang, Q., Li, Z., Jiang, Y., … &amp; Wang, Y. (2018). Emission or atmospheric processes? An attempt to attribute the source of large bias of aerosols in eastern China simulated by global climate models. <em>Atmospheric Chemistry and Physics</em>, 18(2), 1395-1417. <a class="reference external" href="https://doi.org/10.5194/acp-18-1395-2018">https://doi.org/10.5194/acp-18-1395-2018</a></p>
+</aside>
+<aside class="footnote brackets" id="id13" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">4</a><span class="fn-bracket">]</span></span>
+<p>Methyl Ethyl Ketone (MEK)</p>
+</aside>
+<aside class="footnote brackets" id="id14" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">5</a><span class="fn-bracket">]</span></span>
+<p>Intermediate Volatile Organic Compound (IVOC)</p>
+</aside>
+<aside class="footnote brackets" id="id15" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>6<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id6">1</a>,<a role="doc-backlink" href="#id8">2</a>)</span>
+<p>Jo, D. S., Tilmes, S., Emmons, L. K., Wang, S., &amp; Vitt, F. (2023). A new simplified parameterization of secondary organic aerosol in the Community Earth System Model Version 2 (CESM2; CAM6. 3). <em>Geoscientific Model Development</em>, 16(12), 3893–3906. <a class="reference external" href="https://doi.org/10.5194/gmd-16-3893-2023">https://doi.org/10.5194/gmd-16-3893-2023</a></p>
+</aside>
+<aside class="footnote brackets" id="id16" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id7">7</a><span class="fn-bracket">]</span></span>
+<p>Semi-Volatile Organic Compound (SVOC)</p>
+</aside>
+<aside class="footnote brackets" id="id17" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id9">8</a><span class="fn-bracket">]</span></span>
+<p><a class="reference external" href="https://wiki.ucar.edu/display/MUSICA/Grid+FINN">Notes for MOZART-T1 chemistry with MAM4 aerosols in CESM2</a></p>
+</aside>
+</aside>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../generated/iptpy.anthro_emission.fv.FV.sum_up.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">iptpy.anthro_emission.fv.FV.sum_up</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../examples.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Usage Examples</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Understand the Process</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sum">Sum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regrid">Regrid</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rename">Rename</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#notes">Notes</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Yuan Sun, Zhonghua Zheng
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    <p class="last-updated">
+  Last updated on Feb 17, 2025.
+  <br/>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

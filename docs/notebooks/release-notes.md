@@ -8,5 +8,7 @@
 
 ## To-do list for development
 
+- Surface anthropogenic emissions for SE dycore.
 - Vertical anthropogenic emissions.
-- FINN2.5 processing.
+- Fire emissions such as FINN2.5.
+- Atmospheric forcing for CTSM.

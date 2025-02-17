@@ -2,7 +2,7 @@
 
 IPTpy enables users to generate global anthropogenic emissions from [Copernicus Atmosphere Monitoring Service (CAMS)](https://atmosphere.copernicus.eu) or [Community Emissions Data System (CEDS)](https://www.pnnl.gov/projects/ceds) inventories for the finite volume dynamic core (FV dycore) in Community Atmosphere Model (CAM), covering the most recent historical data. Compared to the original, IPTpy offers greater flexibility by allowing users to generate specific species and specify data on a monthly basis. 
 
-## Why IPTpy?
+## Emission
 
 The differences between IPT and IPTpy include the programming language, supported model dycores, inventory versions, and output method, as summarized in **Table 1**. 
 

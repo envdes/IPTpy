@@ -4,7 +4,7 @@
 
 [CESM2](https://www.cesm.ucar.edu/models/cesm2)'s default anthropogenic emission data is based on [CEDSv2017_05_18](https://doi.org/10.5194/gmd-13-461-2020) over 1750-2100 for CMIP6, incorporating historical data up to 2014 and projection data from 2015 to 2100 under several SSP scenarios. Besides the default data, there is a rising need to use other inventories for the most recent history data, such as [CAMS-GLOB-ANT](https://permalink.aeris-data.fr/CAMS-GLOB-ANT) and [CEDSv2021_04_21](https://data.pnnl.gov/dataset/CEDS-4-21-21). 
 
-### Comparison of Global Anthropogenic Inventories
+### Comparison of Global Anthropogenic Emission Inventories
 
 Inventories vary across different periods, release versions, spatial resolutions, and download methods (**Table 1**).
 
@@ -163,36 +163,43 @@ Species names vary across different inventories and download methods. We have st
 
 ***Table 2** Species name in the file name.*
 
-| CAMS-GLOB-ANTv5.3, CAMS-GLOB-ANTv6.1 | CEDSv2021_04_21  | Regridded                 |
-| ------------------------------------ | ---------------- | ------------------------- |
-| acetylene                            | VOC09-ethyne     | ethyne                    |
-| alcohols                             | VOC01-alcohols   | alcohols                  |
-| bc                                   | BC               | bc                        |
-| butanes                              | VOC04-butanes    | butanes                   |
-| co                                   | CO               | co                        |
-| esters                               | VOC18-esters     | esters                    |
-| ethane                               | VOC02-ethane     | ethane                    |
-| ethene                               | VOC07-ethene     | ethene                    |
-| ethers                               | VOC19-ethers     | ethers                    |
-| formaldehyde                         | VOC21-methanal   | methanal                  |
-| hexanes                              | VOC06-hexanes-pl | hexanes                   |
-| nh3                                  | NH3              | nh3                       |
-| nox                                  | NOx              | Nox                       |
-| oc                                   | OC               | oc                        |
-| other-aldehydes                      | VOC22-other-alka | other-aldehydes           |
-| other-alkenes-and-alkynes            | VOC12-other-alke | other-alkenes-and-alkynes |
-| other-aromatics                      | VOC17-other-arom | other-aromatics           |
-| pentanes                             | VOC05-pentanes   | pentanes                  |
-| propane                              | VOC03-propane    | propane                   |
-| propene                              | VOC08-propene    | propene                   |
-| so2                                  | SO2              | so2                       |
-| toluene                              | VOC14-toluene    | toluene                   |
-| total-acids                          | VOC24-acids      | acids                     |
-| total-ketones                        | VOC23-ketones    | ketones                   |
-| trimethylbenzene                     | VOC16-trimethylb | trimethylbenzene          |
-| xylene                               | VOC15-xylene     | xylene                    |
+| CAMS-GLOB-ANTv5.3, CAMS-GLOB-ANTv6.1 | CEDSv2021_04_21  | Regridded                 | Renamed        |
+| ------------------------------------ | ---------------- | ------------------------- | -------------- |
+| acetylene                            | VOC09-ethyne     | ethyne                    | C2H2           |
+| alcohols                             | VOC01-alcohols   | alcohols                  | CH3OH, C2H5OH  |
+| bc                                   | BC               | bc                        | bc_a4          |
+| benzene                              | VOC13-benzene    | benzene                   | BENZENE        |
+| butanes                              | VOC04-butanes    | butanes                   | BIGALK         |
+| co                                   | CO               | co                        | CO             |
+| esters                               | VOC18-esters     | esters                    | BIGALK         |
+| ethane                               | VOC02-ethane     | ethane                    | C2H6           |
+| ethene                               | VOC07-ethene     | ethene                    | C2H4           |
+| ethers                               | VOC19-ethers     | ethers                    | BIGALK         |
+| formaldehyde                         | VOC21-methanal   | methanal                  | CH2O           |
+| hexanes                              | VOC06-hexanes-pl | hexanes                   | BIGALK         |
+| nh3                                  | NH3              | nh3                       | NH3            |
+| nox                                  | NOx              | nox                       | NO             |
+| oc                                   | OC               | oc                        | pom_a4         |
+| other-aldehydes                      | VOC22-other-alka | other-aldehydes           | CH3CHO         |
+| other-alkenes-and-alkynes            | VOC12-other-alke | other-alkenes-and-alkynes | BIGENE         |
+| other-aromatics                      | VOC17-other-arom | other-aromatics           | XYLENES        |
+| pentanes                             | VOC05-pentanes   | pentanes                  | BIGALK         |
+| propane                              | VOC03-propane    | propane                   | C3H8           |
+| propene                              | VOC08-propene    | propene                   | C3H6           |
+| so2                                  | SO2              | so2                       | SO2            |
+| toluene                              | VOC14-toluene    | toluene                   | TOLUENE        |
+| total-acids                          | VOC24-acids      | acids                     | HCOOH, CH3COOH |
+| total-ketones                        | VOC23-ketones    | ketones                   | CH3COCH3, MEK  |
+| trimethylbenzene                     | VOC16-trimethylb | trimethylbenzene          | XYLENES        |
+| xylene                               | VOC15-xylene     | xylene                    | XYLENES        |
+
+- The **Regridded** column denotes the name in the regridded data file name, used for renaming.
+- The **Renamed** column denotes the name in the renamed data file name, used for simulation.
+  - BIGALK = butanes + pentanes + hexanes + esters + ethers
+  - XYLENES = xylene + trimethylbenzene + other-aromatics
 
 ### SO2
+
 When downloading data by Wget, we suggest only the sum for most species but specify sectors for sulfate[^1]. 
 
 - CEDSv2021_04_21 includes eight sectors—0: Agriculture (**agr**); 1: Energy (**ene**); 2: Industrial (**ind**); 3: Transportation (**tra**); 4: Residential, Commercial, Other (**res**); 5: Solvents production and application (**sol**); 6: Waste (**was**); 7: International Shipping (**shp**)—but has not yet been aggregated.

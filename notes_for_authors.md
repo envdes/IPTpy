@@ -94,7 +94,10 @@ source_suffix '.md' is already registered
 ## Publish
 
 - [ReadTheDocs](https://app.readthedocs.org/), log in with the author's Github account. It keeps updating webpages with the GitHub commit. 
-- GitHub pages. Choose **/docs**
+- GitHub pages. 
+  - Add a .github/workflows/docs.yml to build webpage automatically.
+  - enable Read and write permissions for `secrets.GITHUB_TOKEN` in `Action`.
+
 
 ## Reference
 

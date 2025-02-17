@@ -69,14 +69,13 @@ where  $E_{\text{scaled}}$ is the adjusted emission, $E_{\text{converted}}$ is t
 
 - HCs include: C3H6, C3H8, C2H6, C2H4, BIGENE, BIGALK, CH3COCH3, MEK, CH3CHO, CH2O, BENZENE, TOLUENE, XYLENES[^8].
 
-CESM also requires the numbder bc_a4, pom_a4, and SO2, which is calculated using **Equation 3**:
+CESM also requires the number of bc_a4, pom_a4, and SO2, which is calculated using **Equation 3**:
 
 $$
-num = \frac{{particle} \times M}{f}, \tag{3}
+num = \frac{\text{particles} \times M}{f}, \tag{3}
 $$
 
-where $num$ is the number of particles (unit: $\left(\frac{\text{particles}}{\text{cm}^2~ \text{s}}\right)\left(\frac{\text{molecules}}{\text{mole}}\right)\left(\frac{\text{g}}{\text{kg}}\right)$), particle is the total mass of the particles. $f$ is the mass per paticle, calculated by **Equation 4**:
-
+where $num$ is the number of particles (unit: $\left(\frac{\text{particles}}{\text{cm}^2~ \text{s}}\right)\left(\frac{\text{molecules}}{\text{mole}}\right)\left(\frac{\text{g}}{\text{kg}}\right)$), particle is the total mass of the particles. $f$ is the mass per particle, calculated by **Equation 4**:
 $$
 f = \rho \times \frac{\pi}{6} \times {diam}^3, \tag{4}
 $$
@@ -100,7 +99,7 @@ $$
 \operatorname{so4\_a1\_anthro-ene-vertical} = \frac{0.025 \times (ene + ind)}{2e4}, \tag{5}
 $$
 
-where $ene$ and $ind$ denotes surface emission from energy and industrial sectors. 
+where $ene$ and $ind$ denotes SO2 surface emission from energy and industrial sectors. 
 
 # Notes
 

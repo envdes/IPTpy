@@ -1,0 +1,47 @@
+name: Build and Deploy Docs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Remove existing Conda environment (if exists)
+        run: |
+          conda init bash
+          source /usr/share/miniconda/etc/profile.d/conda.sh
+          conda deactivate || true  # Deactivate any active environment
+          conda env remove --name myenv || true  # Remove environment if it exists
+
+      - name: Create Conda environment from IPTpy requirements
+        run: |
+          source /usr/share/miniconda/etc/profile.d/conda.sh
+          conda env create -f requirements.yml -n myenv  
+
+      - name: Install IPTpy from local source
+        run: |
+          source /usr/share/miniconda/etc/profile.d/conda.sh
+          conda activate myenv
+          pip install -e . 
+          pip install -r docs/requirements.txt
+
+      - name: Build documentation
+        run: |
+          source /usr/share/miniconda/etc/profile.d/conda.sh
+          conda activate myenv
+          cd docs
+          make html
+
+      - name: Deploy to GitHub Pages
+        if: success()
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/_build/html/

@@ -41,7 +41,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=068a6d78"></script>
-    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
@@ -435,6 +435,7 @@
 <p>Below are installation instructions for setting up via the command line in a bash environment. We recommend managing the environment using <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/">Conda</a>.</p>
 <section id="quick-installation">
 <h2>Quick Installation<a class="headerlink" href="#quick-installation" title="Link to this heading">#</a></h2>
+<p>In case all required packages are already installed in a certain Conda virtual environment, install IPTpy directly using the methods below.</p>
 <ul class="simple">
 <li><p>Method1: Install IPTpy by <a class="reference external" href="https://pypi.org/project/pip/">pip</a>.</p></li>
 </ul>
@@ -458,6 +459,7 @@ pip<span class="w"> </span>install<span class="w"> </span>.
 </section>
 <section id="installation-step-by-step">
 <h2>Installation Step by Step<a class="headerlink" href="#installation-step-by-step" title="Link to this heading">#</a></h2>
+<p>Otherwise, create a new virtual environment and install required packages and IPTpy step by step.</p>
 <section id="step-1-check-the-python-path-and-virtual-environment">
 <h3>Step 1: Check the Python path and virtual environment<a class="headerlink" href="#step-1-check-the-python-path-and-virtual-environment" title="Link to this heading">#</a></h3>
 <ul class="simple">
@@ -483,10 +485,10 @@ conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </
 conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>myenv<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9
 
 <span class="c1"># or create a Conda virtual environment with a specific version of Python and packages</span>
-conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>myenv<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>numpy<span class="w"> </span>xarray<span class="w"> </span>pandas<span class="w"> </span>datetime<span class="w"> </span>netcdf4<span class="w"> </span>esmpy<span class="w"> </span>xesmf<span class="w"> </span>iptpy
+conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>myenv<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>numpy<span class="w"> </span>xarray<span class="w"> </span>pandas<span class="w"> </span>datetime<span class="w"> </span>netcdf4<span class="w"> </span>esmpy<span class="w"> </span>xesmf
 
-<span class="c1"># or create a Conda virtual environment using .yml</span>
-conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>myenv<span class="w"> </span>-f<span class="w"> </span>requirement.yml
+<span class="c1"># or create a Conda virtual environment with required packages using .yml</span>
+conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>myenv<span class="w"> </span>-f<span class="w"> </span>requirements.yml
 </pre></div>
 </div>
 </section>
@@ -524,7 +526,7 @@ conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> <
 <h1>Environment<a class="headerlink" href="#environment" title="Link to this heading">#</a></h1>
 <section id="requirement">
 <h2>Requirement<a class="headerlink" href="#requirement" title="Link to this heading">#</a></h2>
-<p>IPTpy requires seven libraries for its functionality.</p>
+<p>IPTpy requires seven packages for its functionality.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://numpy.org/">numpy</a>: A fundamental package for scientific computing with Python.</p></li>
 <li><p><a class="reference external" href="https://xarray.dev/">xarray</a>: Working with labeled arrays and datasets.</p></li>
@@ -534,10 +536,7 @@ conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> <
 <li><p><a class="reference external" href="https://xesmf.readthedocs.io/en/latest/#">xesmf</a>: Universal regridder for geospatial data.</p></li>
 </ul>
 <p>For reference, the following version setup works: numpy=2.0.2, xarray=2024.7.0, pandas=2.2.3, netcdf4=1.7.1, esmfpy=8.6.1, xesmf=0.8.7. Specifying versions during installation as follow:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># using pip</span>
-pip<span class="w"> </span>install<span class="w"> </span><span class="nv">numpy</span><span class="o">==</span><span class="m">2</span>.0.2<span class="w"> </span><span class="nv">xarray</span><span class="o">==</span><span class="m">2024</span>.7.0<span class="w"> </span><span class="nv">pandas</span><span class="o">==</span><span class="m">2</span>.2.3<span class="w"> </span><span class="nv">netCDF4</span><span class="o">==</span><span class="m">1</span>.7.1<span class="w"> </span><span class="nv">esmpy</span><span class="o">==</span><span class="m">8</span>.6.1<span class="w"> </span><span class="nv">xesmf</span><span class="o">==</span><span class="m">0</span>.8.7
-
-<span class="c1"># using conda</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># using conda</span>
 conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span><span class="nv">numpy</span><span class="o">=</span><span class="m">2</span>.0.2<span class="w"> </span><span class="nv">xarray</span><span class="o">=</span><span class="m">2024</span>.7.0<span class="w"> </span><span class="nv">pandas</span><span class="o">=</span><span class="m">2</span>.2.3<span class="w"> </span><span class="nv">netCDF4</span><span class="o">=</span><span class="m">1</span>.7.1<span class="w"> </span><span class="nv">esmpy</span><span class="o">=</span><span class="m">8</span>.6.1<span class="w"> </span><span class="nv">xesmf</span><span class="o">=</span><span class="m">0</span>.8.7
 </pre></div>
 </div>

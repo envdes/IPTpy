@@ -3,6 +3,8 @@ Below are installation instructions for setting up via the command line in a bas
 
 ## Quick Installation
 
+In case all required packages are already installed in a certain Conda virtual environment, install IPTpy directly using the methods below. 
+
 - Method1: Install IPTpy by [pip](https://pypi.org/project/pip/).
 
 ```bash
@@ -26,6 +28,8 @@ pip install .
 
 
 ## Installation Step by Step
+
+Otherwise, create a new virtual environment and install required packages and IPTpy step by step. 
 
 ### Step 1: Check the Python path and virtual environment
 
@@ -52,10 +56,10 @@ conda create -n myenv
 conda create -n myenv python=3.9
 
 # or create a Conda virtual environment with a specific version of Python and packages
-conda create -n myenv python=3.9 -c conda-forge numpy xarray pandas datetime netcdf4 esmpy xesmf iptpy
+conda create -n myenv python=3.9 -c conda-forge numpy xarray pandas datetime netcdf4 esmpy xesmf
 
-# or create a Conda virtual environment using .yml
-conda env create -n myenv -f requirement.yml
+# or create a Conda virtual environment with required packages using .yml
+conda env create -n myenv -f requirements.yml
 ```
 
 ### Step 2: Install IPTpy
@@ -87,7 +91,7 @@ conda deactivate
 
 ## Requirement
 
-IPTpy requires seven libraries for its functionality. 
+IPTpy requires seven packages for its functionality. 
 
 - [numpy](https://numpy.org/): A fundamental package for scientific computing with Python.
 - [xarray](https://xarray.dev/): Working with labeled arrays and datasets.
@@ -99,9 +103,6 @@ IPTpy requires seven libraries for its functionality.
 For reference, the following version setup works: numpy=2.0.2, xarray=2024.7.0, pandas=2.2.3, netcdf4=1.7.1, esmfpy=8.6.1, xesmf=0.8.7. Specifying versions during installation as follow:
 
 ```bash
-# using pip
-pip install numpy==2.0.2 xarray==2024.7.0 pandas==2.2.3 netCDF4==1.7.1 esmpy==8.6.1 xesmf==0.8.7
-
 # using conda
 conda install -c conda-forge numpy=2.0.2 xarray=2024.7.0 pandas=2.2.3 netCDF4=1.7.1 esmpy=8.6.1 xesmf=0.8.7
 ```

@@ -10,7 +10,7 @@ IPTpy enables users to generate global anthropogenic emissions from [Copernicus 
 
 | Feature                                     | [IPT](https://github.com/NCAR/IPT)                           | [IPTpy](https://github.com/envdes/IPTpy)                     |
 | ------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Functions                                   | Processing anthropogenic and biomass emission for FV and SE dycores | Processing anthropogenic emissions for FV dycore             |
+| Functions                                   | Processing anthropogenic and biomass emissions for FV and SE dycores | Processing anthropogenic emissions for FV dycore             |
 | Global anthropogenic emission inventories   | [CAMS-GLOB-ANTv4.2](https://ads.atmosphere.copernicus.eu/datasets/cams-global-emission-inventories?tab=overview), [CEDSv2017_05_18](https://doi.org/10.5194/gmd-11-369-2018) | [CAM-GLOB-ANTv5.3](https://permalink.aeris-data.fr/CAMS-GLOB-ANT), [CAM-GLOB-ANTv6.2](https://permalink.aeris-data.fr/CAMS-GLOB-ANT), [CEDSv2021_04_21](https://data.pnnl.gov/dataset/CEDS-4-21-21) |
 | Global biomass burning emission inventories | [FINN](https://www2.acom.ucar.edu/modeling/finn-fire-inventory-ncar), [QFED](https://gmao.gsfc.nasa.gov/research/science_snapshots/global_fire_emissions.php#:~:text=The%20Quick%20Fire%20Emissions%20Dataset%20%28QFED%29%20was%20developed,Observing%20System%20%28GEOS%29%20modeling%20and%20data%20assimilation%20systems.) | Not applicable yet                                           |
 | Emission species                            | Generates all species by default (no user selection).        | Allows users to select specific species as needed.           |
@@ -49,5 +49,5 @@ IPTpy enables users to generate global anthropogenic emissions from [Copernicus 
 # Collaboration & Reach-out
 
 - Contributors: [Yuan Sun](https://github.com/YuanSun-UoM), [Zhonghua Zheng](https://zhonghuazheng.com) (zhonghua.zheng@manchester.ac.uk)
-- If you’re interested in contributing to the development of a Python-based IPT for [CESM](https://github.com/ESCOMP/CESM)/[CAM-Chem](https://wiki.ucar.edu/display/camchem/Home)/[MUSICA](https://wiki.ucar.edu/display/MUSICA/MUSICA+Home), please reach out to [Yuan Sun](https://github.com/YuanSun-UoM) or submit an issue on the [Issues](https://github.com/envdes/IPTpy/issues) page for any ideas or suggestions. We will respond as soon as possible.
+- If you’re interested in contributing to the development of a Python-based IPT for [CESM](https://github.com/ESCOMP/CESM)/[CAM-Chem](https://wiki.ucar.edu/display/camchem/Home)/[MUSICA](https://wiki.ucar.edu/display/MUSICA/MUSICA+Home)/[CTSM](https://github.com/ESCOMP/CTSM), please reach out to [Yuan Sun](https://github.com/YuanSun-UoM) or submit an issue on the [Issues](https://github.com/envdes/IPTpy/issues) page for any ideas or suggestions. We will respond as soon as possible.
 - We also provide [testing scripts](./tests) for validating IPTpy functions in CESM. 

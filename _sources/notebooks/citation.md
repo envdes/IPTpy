@@ -19,6 +19,6 @@ Yuan Sun, Zhonghua Zheng. (2025). Python-based Input Processing Tools for CESM: 
 - Or, cite IPTpy without referring to a specific version:
 
 ```
-Yuan Sun, Zhonghua Zheng. (2025). Python-based Input Processing Tools for CESM: IPTpy  [Software]. doi:.
+Yuan Sun, Zhonghua Zheng. (2025). Python-based Input Processing Tools for CESM: IPTpy [Software]. doi:.
 ```
 

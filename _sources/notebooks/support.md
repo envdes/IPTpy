@@ -6,7 +6,7 @@ Encountered an error? No worries. Errors are opportunities for learning and prog
 
 Errors may occur during library installation, such as package incompatibility or dependency conflicts. 
 
-### **error1**
+### error1
 
 ```
 ---------------------------------------------------------------------------
@@ -46,7 +46,7 @@ AttributeError: 'numpy.ufunc' object has no attribute '__module__'
 
 **solution**: conda install numpy==**2.0.2**. After reinstalling numpy, remember to restart the kernel. 
 
-### **error2** 
+### error2
 
 ERROR: Could not find a version that satisfies the requirement esmpy (from iptpy) (from versions: none)
 ERROR: No matching distribution found for esmpy

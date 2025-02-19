@@ -447,7 +447,7 @@ E_{converted} = E_{original} \times \frac{N_A}{M} \times \frac{10^3}{10^4}, \tag
 \[
 E_{scaled} = E_{converted} \times \textrm{SF}, \tag{2}
 \]</div>
-<p>where  <span class="math notranslate nohighlight">\(E_{\text{scaled}}\)</span> is the adjusted emission, <span class="math notranslate nohighlight">\(E_{\text{converted}}\)</span> is the emission converted from the original unit, <span class="math notranslate nohighlight">\(\text{SF}\)</span> is the scale factor, which varies based on species, regions, or datasets. <strong>Table 1</strong> list the default <span class="math notranslate nohighlight">\(M\)</span> and <span class="math notranslate nohighlight">\(SF\)</span> that <code class="docutils literal notranslate"><span class="pre">FV.rename</span></code> automatically assigns based on the <code class="docutils literal notranslate"><span class="pre">model_var_list</span></code>. Users can also specify custom values using <code class="docutils literal notranslate"><span class="pre">mw_mapping</span></code> and <code class="docutils literal notranslate"><span class="pre">sf_mapping</span></code>.</p>
+<p>where  <span class="math notranslate nohighlight">\(E_{\text{scaled}}\)</span> is the adjusted emission, <span class="math notranslate nohighlight">\(E_{\text{converted}}\)</span> is the emission converted from the original unit, <span class="math notranslate nohighlight">\(\text{SF}\)</span> is the scale factor, which varies based on species, regions, or datasets. <strong>Table 1</strong> list the default molecular weight (<span class="math notranslate nohighlight">\(M\)</span>) and scale factor (<span class="math notranslate nohighlight">\(SF\)</span>) that <code class="docutils literal notranslate"><span class="pre">FV.rename</span></code> automatically assigns based on the <code class="docutils literal notranslate"><span class="pre">model_var_list</span></code>. Users can also specify custom values using <code class="docutils literal notranslate"><span class="pre">mw_mapping</span></code> and <code class="docutils literal notranslate"><span class="pre">sf_mapping</span></code>.</p>
 <p><em><strong>Table 1</strong> Lists of molecular weight (<span class="math notranslate nohighlight">\(M\)</span>) and scale factors (<span class="math notranslate nohighlight">\(\text{SF}\)</span>)</em>.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -612,10 +612,11 @@ E_{scaled} = E_{converted} \times \textrm{SF}, \tag{2}
 \[
 num = \frac{\text{particles} \times M}{f}, \tag{3}
 \]</div>
-<p>where <span class="math notranslate nohighlight">\(num\)</span> is the number of particles (unit: <span class="math notranslate nohighlight">\(\left(\frac{\text{particles}}{\text{cm}^2~ \text{s}}\right)\left(\frac{\text{molecules}}{\text{mole}}\right)\left(\frac{\text{g}}{\text{kg}}\right)\)</span>), <span class="math notranslate nohighlight">\(\text{particles}\)</span> is the total mass of the particles. <span class="math notranslate nohighlight">\(f\)</span> is the mass per particle, calculated by <strong>Equation 4</strong>:
-$<span class="math notranslate nohighlight">\(
+<p>where <span class="math notranslate nohighlight">\(num\)</span> is the number of particles (unit: <span class="math notranslate nohighlight">\(\left(\frac{\text{particles}}{\text{cm}^2~ \text{s}}\right)\left(\frac{\text{molecules}}{\text{mole}}\right)\left(\frac{\text{g}}{\text{kg}}\right)\)</span>), <span class="math notranslate nohighlight">\(\text{particles}\)</span> is the total mass of the particles. <span class="math notranslate nohighlight">\(f\)</span> is the mass per particle, calculated by <strong>Equation 4</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
 f = \rho \times \frac{\pi}{6} \times {\text{diam}}^3, \tag{4}
-\)</span>$</p>
+\]</div>
 <p>where <span class="math notranslate nohighlight">\(\rho\)</span> is the density, <span class="math notranslate nohighlight">\(\frac{\pi}{6}\)</span> is a geometric factor that accounts for the volume of a sphere, <span class="math notranslate nohighlight">\(\text{diam}^3\)</span>​ is the cube of the particle’s diameter.</p>
 <p><em><strong>Table 2</strong> List of density (<span class="math notranslate nohighlight">\(\rho\)</span>) and diameter (<span class="math notranslate nohighlight">\(diam\)</span>).</em></p>
 <div class="pst-scrollable-table-container"><table class="table">

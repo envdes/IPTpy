@@ -24,7 +24,7 @@ $$
 E_{scaled} = E_{converted} \times \textrm{SF}, \tag{2}
 $$
 
-where  $E_{\text{scaled}}$ is the adjusted emission, $E_{\text{converted}}$ is the emission converted from the original unit, $\text{SF}$ is the scale factor, which varies based on species, regions, or datasets. **Table 1** list the default $M$ and $SF$ that `FV.rename` automatically assigns based on the `model_var_list`. Users can also specify custom values using `mw_mapping` and `sf_mapping`. 
+where  $E_{\text{scaled}}$ is the adjusted emission, $E_{\text{converted}}$ is the emission converted from the original unit, $\text{SF}$ is the scale factor, which varies based on species, regions, or datasets. **Table 1** list the default molecular weight ($M$) and scale factor ($SF$) that `FV.rename` automatically assigns based on the `model_var_list`. Users can also specify custom values using `mw_mapping` and `sf_mapping`. 
 
 ***Table 1** Lists of molecular weight ($M$) and scale factors ($\text{SF}$)*.
 
@@ -76,6 +76,7 @@ num = \frac{\text{particles} \times M}{f}, \tag{3}
 $$
 
 where $num$ is the number of particles (unit: $\left(\frac{\text{particles}}{\text{cm}^2~ \text{s}}\right)\left(\frac{\text{molecules}}{\text{mole}}\right)\left(\frac{\text{g}}{\text{kg}}\right)$), $\text{particles}$ is the total mass of the particles. $f$ is the mass per particle, calculated by **Equation 4**:
+
 $$
 f = \rho \times \frac{\pi}{6} \times {\text{diam}}^3, \tag{4}
 $$

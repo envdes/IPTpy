@@ -17,7 +17,7 @@ pip install iptpy
 conda install -c conda-forge iptpy
 ```
 
-- Method3: Install IPTpy by clone
+- Method3: Install IPTpy by cloning the repository.
 
 ```bash
 git clone https://github.com/envdes/IPTpy.git

@@ -77,21 +77,21 @@ $$
 
 where $num$ is the number of particles (unit: $\left(\frac{\text{particles}}{\text{cm}^2~ \text{s}}\right)\left(\frac{\text{molecules}}{\text{mole}}\right)\left(\frac{\text{g}}{\text{kg}}\right)$), $\text{particles}$ is the total mass of the particles. $f$ is the mass per particle, calculated by **Equation 4**:
 $$
-f = \rho \times \frac{\pi}{6} \times {diam}^3, \tag{4}
+f = \rho \times \frac{\pi}{6} \times {\text{diam}}^3, \tag{4}
 $$
 
-where $\rho$ is the density, $\frac{\pi}{6}$ is a geometric factor that accounts for the volume of a sphere, $diam^3$​ is the cube of the particle's diameter. 
+where $\rho$ is the density, $\frac{\pi}{6}$ is a geometric factor that accounts for the volume of a sphere, $\text{diam}^3$​ is the cube of the particle's diameter. 
 
 ***Table 2** List of density ($\rho$) and diameter ($diam$).*
 
-| Variable name                                    | $\rho$ (Unit: $g/cm^3$) | $diam$ (Unit: $cm$) |
-| ------------------------------------------------ | ----------------------- | ------------------- |
-| num_bc_a4                                        | 1700                    | 0.134e-6            |
-| num_so4_a1 for emiss_ag_sol_was                  | 1770                    | 0.134e-6            |
-| num_so4_a1 for emiss_ship                        | 1770                    | 0.261e-6            |
-| num_so4_a2 for emiss_res_tran                    | 1770                    | 0.0504e-6           |
-| num_so4_a1_anthro-ene-vertical for emiss_ene_ind | 1770                    | 0.261e-6            |
-| num_pom                                          | 1000                    | 0.134e-6            |
+| Variable name                                    | $\rho$ (Unit: $g/cm^3$) | $\text{diam}$ (Unit: $cm$) |
+| ------------------------------------------------ | ----------------------- | -------------------------- |
+| num_bc_a4                                        | 1700                    | 0.134e-6                   |
+| num_so4_a1 for emiss_ag_sol_was                  | 1770                    | 0.134e-6                   |
+| num_so4_a1 for emiss_ship                        | 1770                    | 0.261e-6                   |
+| num_so4_a2 for emiss_res_tran                    | 1770                    | 0.0504e-6                  |
+| num_so4_a1_anthro-ene-vertical for emiss_ene_ind | 1770                    | 0.261e-6                   |
+| num_pom                                          | 1000                    | 0.134e-6                   |
 
 Given that ESMF does not support for regridding mutiple-dimensional data, IPTpy can not generate vertial emission data yet. However, we only generate verticle anthropogenic emission data for so4_a1_anthro-ene-vertical for altitudes of 0.175, 0.225, 0.275, 0.325 $km$ based on **Equation 5**:
 

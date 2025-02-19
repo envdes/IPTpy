@@ -20,7 +20,7 @@ The differences between IPT and IPTpy include the programming language, supporte
 - While IPT-py does not yet replicate all IPT functionalities, contributions are welcome to enhance its capabilities further.
 
 - Emission data varies across versions. 
-  - For example, black carbon emissions exhibit notable differences between CAMS-GLOB-ANTv4.2 and CAMS-GLOB-ANTv5.3. On 1 January 2019, the relative difference $\frac{\text{CAMS-GLOB-ANTv4.2} - \text{CAMS-GLOB-ANTv5.3}}{\text{CAMS-GLOB-ANTv5.3}} \times 100\%$ exceeds 100% (**Figure 1**a) or $-$100% (**Figure 1**b), indicating that CAMS-GLOB-ANTv5.3 reports substantially lower emissions than CAMS-GLOB-ANTv4.2. 
+  - For example, black carbon emissions exhibit notable differences between CAMS-GLOB-ANTv4.2 and CAMS-GLOB-ANTv5.3. On 1 January 2019, the relative difference $\frac{\text{CAMS-GLOB-ANTv4.2} - \text{CAMS-GLOB-ANTv5.3}}{\text{CAMS-GLOB-ANTv5.3}} \times 100\%$ exceeds 100% (**Figure 1**a) or $-$100% (**Figure 1**b).
   
     <br>
   

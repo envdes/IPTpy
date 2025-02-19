@@ -11,4 +11,4 @@
 - Surface anthropogenic emissions for SE dycore.
 - Vertical anthropogenic emissions.
 - Fire emissions such as FINN2.5.
-- Atmospheric forcing for CTSM.
+- Regional atmospheric forcing data for CTSM.
